@@ -42,3 +42,14 @@ C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlannin
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\obj\Debug\NewByteKnight.dll
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\obj\Debug\NewByteKnight.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\bin\NewByteKnight.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\bin\NewByteKnight.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\bin\Business.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\bin\ServiceContracts.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\bin\DataAccess.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\bin\Business.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\bin\ServiceContracts.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\bin\DataAccess.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\obj\Debug\NewByteKnight.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\NewByteKnight\obj\Debug\NewByteKnight.pdb

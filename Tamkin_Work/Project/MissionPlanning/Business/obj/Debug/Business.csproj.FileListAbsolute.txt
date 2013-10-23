@@ -34,3 +34,12 @@ C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlannin
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\obj\Debug\Business.dll
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\obj\Debug\Business.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\bin\Debug\Business.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\bin\Debug\Business.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\bin\Debug\DataAccess.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\bin\Debug\ServiceContracts.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\bin\Debug\DataAccess.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\bin\Debug\ServiceContracts.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\obj\Debug\Business.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\obj\Debug\Business.pdb

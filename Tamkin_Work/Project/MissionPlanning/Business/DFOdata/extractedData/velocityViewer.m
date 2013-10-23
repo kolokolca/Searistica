@@ -12,7 +12,7 @@ function GradientDescentFinal(learningRate)
     Y =  xy(:,3);    
     figure;
     scale = 2;
-    quiver(X,Y,U,V, scale)   
+    quiver(X,Y,U,V, scale, 'MarkerFaceColor','c', 'MarkerEdgeColor','c')   
     hold on
     
     %for selected points of a cell
@@ -21,7 +21,7 @@ function GradientDescentFinal(learningRate)
     Y =  xy(:,2);
     U =  xy(:,3);
     V =  xy(:,4);
-    scatter(X,Y,3,'O', 'MarkerEdgeColor','r','MarkerFaceColor','r', 'LineWidth',2)
+    scatter(X,Y,3,'O', 'MarkerEdgeColor','r','MarkerFaceColor','w', 'LineWidth', 0.1)
     %scatter(X + U,Y + V,3,'O', 'MarkerEdgeColor','r','MarkerFaceColor','r', 'LineWidth',2)
     %quiver(X,Y,U,V, scale)
     
@@ -30,7 +30,7 @@ function GradientDescentFinal(learningRate)
     Y =  xy(:,2);
     %cx = [0 0.114506883260149*10000]
     %cy = [0 -0.0450954228782883 *10000]
-    plot(X, Y, 'LineWidth',  4)
-    %scatter(X,Y,4,'O', 'MarkerEdgeColor','b','MarkerFaceColor','b', 'LineWidth', 5)
+    %plot(X, Y, 'LineWidth',  4)
+    scatter(X,Y,4,'O', 'MarkerEdgeColor','g','MarkerFaceColor','g', 'LineWidth', 1)
     
 end
