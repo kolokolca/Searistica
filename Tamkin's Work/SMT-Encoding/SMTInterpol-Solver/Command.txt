@@ -1,0 +1,9 @@
+java -jar smtinterpol.jar -q input.smt2
+
+Other options:
+
+Option 	Value 	Description 	Equivalent SMTLIB option
+-q 	none 	Do not print debugging and info messages. 	:set-verbosity 3
+-v 	none 	Print debugging and info messages. 	:set-verbosity 5
+-t 	positive number 	Set the timeout for a satisfiability check. 	:timeout arg
+-r 	positive number 	Set the random seed. 	:random-seed arg
