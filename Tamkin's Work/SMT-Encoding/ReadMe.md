@@ -1,2 +1,3 @@
 ##### Here our Encoding with several SAT solvers will be available.
-* Curruently we have done encoding using Z3 solver.
+* Use python script '' to generate SMTLib engoding.
+* Then use generated SMT encoding as input to for different solvres
