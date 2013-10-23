@@ -56,7 +56,7 @@ namespace Business.DFOdata
 
         }
 
-        public void InsertNewData()
+        public void InsertNewDFOData()
         {
             var folderPath = GetDataFolderPath();
             var xyFilePath = folderPath + "\\paresedXY.txt";
