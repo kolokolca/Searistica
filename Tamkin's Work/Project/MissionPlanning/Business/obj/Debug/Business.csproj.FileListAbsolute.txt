@@ -1,0 +1,36 @@
+H:\faukaz\trunk\NewByteKnight\Business\bin\Debug\Business.dll
+H:\faukaz\trunk\NewByteKnight\Business\bin\Debug\Business.pdb
+H:\faukaz\trunk\NewByteKnight\Business\bin\Debug\DataAccess.dll
+H:\faukaz\trunk\NewByteKnight\Business\bin\Debug\ServiceContracts.dll
+H:\faukaz\trunk\NewByteKnight\Business\bin\Debug\DataAccess.pdb
+H:\faukaz\trunk\NewByteKnight\Business\bin\Debug\ServiceContracts.pdb
+H:\faukaz\trunk\NewByteKnight\Business\obj\Debug\ResolveAssemblyReference.cache
+H:\faukaz\trunk\NewByteKnight\Business\obj\Debug\Business.dll
+H:\faukaz\trunk\NewByteKnight\Business\obj\Debug\Business.pdb
+H:\NewByteKnight\Business\bin\Debug\Business.dll
+H:\NewByteKnight\Business\bin\Debug\Business.pdb
+H:\NewByteKnight\Business\bin\Debug\DataAccess.dll
+H:\NewByteKnight\Business\bin\Debug\ServiceContracts.dll
+H:\NewByteKnight\Business\bin\Debug\DataAccess.pdb
+H:\NewByteKnight\Business\bin\Debug\ServiceContracts.pdb
+H:\NewByteKnight\Business\obj\Debug\ResolveAssemblyReference.cache
+H:\NewByteKnight\Business\obj\Debug\Business.dll
+H:\NewByteKnight\Business\obj\Debug\Business.pdb
+H:\AUVMissionPlanning\Business\obj\Debug\ResolveAssemblyReference.cache
+H:\AUVMissionPlanning\Business\bin\Debug\Business.dll
+H:\AUVMissionPlanning\Business\bin\Debug\Business.pdb
+H:\AUVMissionPlanning\Business\bin\Debug\DataAccess.dll
+H:\AUVMissionPlanning\Business\bin\Debug\ServiceContracts.dll
+H:\AUVMissionPlanning\Business\bin\Debug\DataAccess.pdb
+H:\AUVMissionPlanning\Business\bin\Debug\ServiceContracts.pdb
+H:\AUVMissionPlanning\Business\obj\Debug\Business.dll
+H:\AUVMissionPlanning\Business\obj\Debug\Business.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\bin\Debug\Business.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\bin\Debug\Business.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\bin\Debug\DataAccess.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\bin\Debug\ServiceContracts.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\bin\Debug\DataAccess.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\bin\Debug\ServiceContracts.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\obj\Debug\Business.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\Business\obj\Debug\Business.pdb

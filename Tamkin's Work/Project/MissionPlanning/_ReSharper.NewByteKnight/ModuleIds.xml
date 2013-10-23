@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="3958FC5F-FD0E-40C6-96AD-0858F30B76CB" ModuleId="NewByteKnight" />
+  <Module PersistentId="AFB8668B-B7B9-4FBE-A281-8BA761279E98" ModuleId="DataAccess" />
+  <Module PersistentId="2EB597E1-5C70-4983-A2BA-CD9FC922C21E" ModuleId="Business" />
+  <Module PersistentId="B09B82C3-91A6-4529-A163-CF87AD330883" ModuleId="ServiceContracts" />
+  <Module PersistentId="D6DB5126-C020-490F-AC64-B2A370E33DDF" ModuleId="DFOData" />
+</Modules>

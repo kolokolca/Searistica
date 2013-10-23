@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="byteknightModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ByteKnightContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SubmittedProblems" EntityType="byteknightModel.SubmittedProblem" />
+    <EntitySet Name="Problems" EntityType="byteknightModel.Problem" />
+    <EntitySet Name="TeamProblemSolutionKeys" EntityType="byteknightModel.TeamProblemSolutionKey" />
+    <AssociationSet Name="FK_SubmittedProblem_Problem" Association="byteknightModel.FK_SubmittedProblem_Problem">
+      <End Role="Problem" EntitySet="Problems" />
+      <End Role="SubmittedProblem" EntitySet="SubmittedProblems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamProblemSolutionKey_Problem" Association="byteknightModel.FK_TeamProblemSolutionKey_Problem">
+      <End Role="Problem" EntitySet="Problems" />
+      <End Role="TeamProblemSolutionKey" EntitySet="TeamProblemSolutionKeys" />
+    </AssociationSet>
+    <EntitySet Name="Teams" EntityType="byteknightModel.Team" />
+    <AssociationSet Name="FK_SubmittedProblem_Team" Association="byteknightModel.FK_SubmittedProblem_Team">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="SubmittedProblem" EntitySet="SubmittedProblems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamProblemSolutionKey_Team" Association="byteknightModel.FK_TeamProblemSolutionKey_Team">
+      <End Role="Team" EntitySet="Teams" />
+      <End Role="TeamProblemSolutionKey" EntitySet="TeamProblemSolutionKeys" />
+    </AssociationSet>
+    <EntitySet Name="DFOdatas" EntityType="byteknightModel.DFOdata" />
+  </EntityContainer>
+  <EntityType Name="SubmittedProblem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="Int32" Nullable="false" />
+    <Property Name="ProblemId" Type="Int32" Nullable="false" />
+    <Property Name="Time" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Problem" Relationship="byteknightModel.FK_SubmittedProblem_Problem" FromRole="SubmittedProblem" ToRole="Problem" />
+    <NavigationProperty Name="Team" Relationship="byteknightModel.FK_SubmittedProblem_Team" FromRole="SubmittedProblem" ToRole="Team" />
+  </EntityType>
+  <EntityType Name="Problem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Point" />
+    <NavigationProperty Name="SubmittedProblems" Relationship="byteknightModel.FK_SubmittedProblem_Problem" FromRole="Problem" ToRole="SubmittedProblem" />
+    <NavigationProperty Name="TeamProblemSolutionKeys" Relationship="byteknightModel.FK_TeamProblemSolutionKey_Problem" FromRole="Problem" ToRole="TeamProblemSolutionKey" />
+  </EntityType>
+  <EntityType Name="TeamProblemSolutionKey">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TeamId" Nullable="false" />
+    <Property Type="Int32" Name="ProblemId" />
+    <Property Type="String" Name="SolutionKey" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Problem" Relationship="byteknightModel.FK_TeamProblemSolutionKey_Problem" FromRole="TeamProblemSolutionKey" ToRole="Problem" />
+    <NavigationProperty Name="Team" Relationship="byteknightModel.FK_TeamProblemSolutionKey_Team" FromRole="TeamProblemSolutionKey" ToRole="Team" />
+  </EntityType>
+  <Association Name="FK_SubmittedProblem_Problem">
+    <End Type="byteknightModel.Problem" Role="Problem" Multiplicity="1" />
+    <End Type="byteknightModel.SubmittedProblem" Role="SubmittedProblem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Problem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubmittedProblem">
+        <PropertyRef Name="ProblemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamProblemSolutionKey_Problem">
+    <End Type="byteknightModel.Problem" Role="Problem" Multiplicity="0..1" />
+    <End Type="byteknightModel.TeamProblemSolutionKey" Role="TeamProblemSolutionKey" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Problem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamProblemSolutionKey">
+        <PropertyRef Name="ProblemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Team">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Score" />
+    <NavigationProperty Name="SubmittedProblems" Relationship="byteknightModel.FK_SubmittedProblem_Team" FromRole="Team" ToRole="SubmittedProblem" />
+    <NavigationProperty Name="TeamProblemSolutionKeys" Relationship="byteknightModel.FK_TeamProblemSolutionKey_Team" FromRole="Team" ToRole="TeamProblemSolutionKey" />
+  </EntityType>
+  <Association Name="FK_SubmittedProblem_Team">
+    <End Type="byteknightModel.Team" Role="Team" Multiplicity="1" />
+    <End Type="byteknightModel.SubmittedProblem" Role="SubmittedProblem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubmittedProblem">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamProblemSolutionKey_Team">
+    <End Type="byteknightModel.Team" Role="Team" Multiplicity="1" />
+    <End Type="byteknightModel.TeamProblemSolutionKey" Role="TeamProblemSolutionKey" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamProblemSolutionKey">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DFOdata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Double" Name="X" Nullable="false" />
+    <Property Type="Double" Name="Y" Nullable="false" />
+    <Property Type="Double" Name="U" Nullable="false" />
+    <Property Type="Double" Name="V" Nullable="false" />
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

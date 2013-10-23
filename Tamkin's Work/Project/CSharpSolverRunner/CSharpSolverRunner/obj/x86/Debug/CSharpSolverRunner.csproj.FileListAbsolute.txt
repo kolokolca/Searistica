@@ -1,0 +1,10 @@
+H:\Study\MUN\SAT\Code\CSharpSolverRunner\CSharpSolverRunner\bin\Debug\CSharpSolverRunner.exe
+H:\Study\MUN\SAT\Code\CSharpSolverRunner\CSharpSolverRunner\bin\Debug\CSharpSolverRunner.pdb
+H:\Study\MUN\SAT\Code\CSharpSolverRunner\CSharpSolverRunner\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Study\MUN\SAT\Code\CSharpSolverRunner\CSharpSolverRunner\obj\x86\Debug\CSharpSolverRunner.exe
+H:\Study\MUN\SAT\Code\CSharpSolverRunner\CSharpSolverRunner\obj\x86\Debug\CSharpSolverRunner.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\CSharpSolverRunner\CSharpSolverRunner\obj\x86\Debug\CSharpSolverRunner.exe
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\CSharpSolverRunner\CSharpSolverRunner\obj\x86\Debug\CSharpSolverRunner.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\CSharpSolverRunner\CSharpSolverRunner\bin\Debug\CSharpSolverRunner.exe
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\CSharpSolverRunner\CSharpSolverRunner\bin\Debug\CSharpSolverRunner.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\CSharpSolverRunner\CSharpSolverRunner\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="byteknightModelStoreContainer" CdmEntityContainer="ByteKnightContext">
+    <EntitySetMapping Name="SubmittedProblems">
+      <EntityTypeMapping TypeName="byteknightModel.SubmittedProblem">
+        <MappingFragment StoreEntitySet="SubmittedProblem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TeamId" ColumnName="TeamId" />
+          <ScalarProperty Name="ProblemId" ColumnName="ProblemId" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Problems">
+      <EntityTypeMapping TypeName="byteknightModel.Problem">
+        <MappingFragment StoreEntitySet="Problem">
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamProblemSolutionKeys">
+      <EntityTypeMapping TypeName="byteknightModel.TeamProblemSolutionKey">
+        <MappingFragment StoreEntitySet="TeamProblemSolutionKey">
+          <ScalarProperty Name="SolutionKey" ColumnName="SolutionKey" />
+          <ScalarProperty Name="ProblemId" ColumnName="ProblemId" />
+          <ScalarProperty Name="TeamId" ColumnName="TeamId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teams">
+      <EntityTypeMapping TypeName="byteknightModel.Team">
+        <MappingFragment StoreEntitySet="Team">
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DFOdatas">
+      <EntityTypeMapping TypeName="byteknightModel.DFOdata">
+        <MappingFragment StoreEntitySet="DFOdata">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="V" ColumnName="V" />
+          <ScalarProperty Name="U" ColumnName="U" />
+          <ScalarProperty Name="Y" ColumnName="Y" />
+          <ScalarProperty Name="X" ColumnName="X" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

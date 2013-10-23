@@ -1,0 +1,20 @@
+H:\faukaz\trunk\NewByteKnight\ServiceContracts\bin\Debug\ServiceContracts.dll
+H:\faukaz\trunk\NewByteKnight\ServiceContracts\bin\Debug\ServiceContracts.pdb
+H:\faukaz\trunk\NewByteKnight\ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+H:\faukaz\trunk\NewByteKnight\ServiceContracts\obj\Debug\ServiceContracts.dll
+H:\faukaz\trunk\NewByteKnight\ServiceContracts\obj\Debug\ServiceContracts.pdb
+H:\NewByteKnight\ServiceContracts\bin\Debug\ServiceContracts.dll
+H:\NewByteKnight\ServiceContracts\bin\Debug\ServiceContracts.pdb
+H:\NewByteKnight\ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+H:\NewByteKnight\ServiceContracts\obj\Debug\ServiceContracts.dll
+H:\NewByteKnight\ServiceContracts\obj\Debug\ServiceContracts.pdb
+H:\AUVMissionPlanning\ServiceContracts\bin\Debug\ServiceContracts.dll
+H:\AUVMissionPlanning\ServiceContracts\bin\Debug\ServiceContracts.pdb
+H:\AUVMissionPlanning\ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+H:\AUVMissionPlanning\ServiceContracts\obj\Debug\ServiceContracts.dll
+H:\AUVMissionPlanning\ServiceContracts\obj\Debug\ServiceContracts.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\ServiceContracts\bin\Debug\ServiceContracts.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\ServiceContracts\bin\Debug\ServiceContracts.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\ServiceContracts\obj\Debug\ServiceContracts.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\ServiceContracts\obj\Debug\ServiceContracts.pdb

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="byteknightModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="byteknightModelStoreContainer">
+    <EntitySet Name="DFOdata" EntityType="byteknightModel.Store.DFOdata" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Problem" EntityType="byteknightModel.Store.Problem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SubmittedProblem" EntityType="byteknightModel.Store.SubmittedProblem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Team" EntityType="byteknightModel.Store.Team" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TeamProblemSolutionKey" EntityType="byteknightModel.Store.TeamProblemSolutionKey" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_SubmittedProblem_Problem" Association="byteknightModel.Store.FK_SubmittedProblem_Problem">
+      <End Role="Problem" EntitySet="Problem" />
+      <End Role="SubmittedProblem" EntitySet="SubmittedProblem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubmittedProblem_Team" Association="byteknightModel.Store.FK_SubmittedProblem_Team">
+      <End Role="Team" EntitySet="Team" />
+      <End Role="SubmittedProblem" EntitySet="SubmittedProblem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamProblemSolutionKey_Problem" Association="byteknightModel.Store.FK_TeamProblemSolutionKey_Problem">
+      <End Role="Problem" EntitySet="Problem" />
+      <End Role="TeamProblemSolutionKey" EntitySet="TeamProblemSolutionKey" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamProblemSolutionKey_Team" Association="byteknightModel.Store.FK_TeamProblemSolutionKey_Team">
+      <End Role="Team" EntitySet="Team" />
+      <End Role="TeamProblemSolutionKey" EntitySet="TeamProblemSolutionKey" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="DFOdata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="X" Type="float" Nullable="false" />
+    <Property Name="Y" Type="float" Nullable="false" />
+    <Property Name="U" Type="float" Nullable="false" />
+    <Property Name="V" Type="float" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Problem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Point" Type="int" />
+  </EntityType>
+  <EntityType Name="SubmittedProblem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="int" Nullable="false" />
+    <Property Name="ProblemId" Type="int" Nullable="false" />
+    <Property Name="Time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Team">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Score" Type="int" />
+  </EntityType>
+  <EntityType Name="TeamProblemSolutionKey">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TeamId" Type="int" Nullable="false" />
+    <Property Name="ProblemId" Type="int" />
+    <Property Name="SolutionKey" Type="ntext" />
+  </EntityType>
+  <Association Name="FK_SubmittedProblem_Problem">
+    <End Role="Problem" Type="byteknightModel.Store.Problem" Multiplicity="1" />
+    <End Role="SubmittedProblem" Type="byteknightModel.Store.SubmittedProblem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Problem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubmittedProblem">
+        <PropertyRef Name="ProblemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubmittedProblem_Team">
+    <End Role="Team" Type="byteknightModel.Store.Team" Multiplicity="1" />
+    <End Role="SubmittedProblem" Type="byteknightModel.Store.SubmittedProblem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubmittedProblem">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamProblemSolutionKey_Problem">
+    <End Role="Problem" Type="byteknightModel.Store.Problem" Multiplicity="0..1" />
+    <End Role="TeamProblemSolutionKey" Type="byteknightModel.Store.TeamProblemSolutionKey" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Problem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamProblemSolutionKey">
+        <PropertyRef Name="ProblemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamProblemSolutionKey_Team">
+    <End Role="Team" Type="byteknightModel.Store.Team" Multiplicity="1" />
+    <End Role="TeamProblemSolutionKey" Type="byteknightModel.Store.TeamProblemSolutionKey" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TeamProblemSolutionKey">
+        <PropertyRef Name="TeamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

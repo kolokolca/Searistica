@@ -1,0 +1,44 @@
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\bin\NewByteKnight.dll
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\bin\NewByteKnight.pdb
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\obj\Debug\ResolveAssemblyReference.cache
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\obj\Debug\NewByteKnight.dll
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\obj\Debug\NewByteKnight.pdb
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\bin\Business.dll
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\bin\ServiceContracts.dll
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\bin\DataAccess.dll
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\bin\Business.pdb
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\bin\ServiceContracts.pdb
+H:\faukaz\trunk\NewByteKnight\NewByteKnight\bin\DataAccess.pdb
+H:\NewByteKnight\NewByteKnight\bin\NewByteKnight.dll
+H:\NewByteKnight\NewByteKnight\bin\NewByteKnight.pdb
+H:\NewByteKnight\NewByteKnight\bin\Business.dll
+H:\NewByteKnight\NewByteKnight\bin\ServiceContracts.dll
+H:\NewByteKnight\NewByteKnight\bin\DataAccess.dll
+H:\NewByteKnight\NewByteKnight\bin\Business.pdb
+H:\NewByteKnight\NewByteKnight\bin\ServiceContracts.pdb
+H:\NewByteKnight\NewByteKnight\bin\DataAccess.pdb
+H:\NewByteKnight\NewByteKnight\obj\Debug\ResolveAssemblyReference.cache
+H:\NewByteKnight\NewByteKnight\obj\Debug\NewByteKnight.dll
+H:\NewByteKnight\NewByteKnight\obj\Debug\NewByteKnight.pdb
+H:\AUVMissionPlanning\NewByteKnight\obj\Debug\ResolveAssemblyReference.cache
+H:\AUVMissionPlanning\NewByteKnight\obj\Debug\NewByteKnight.pdb
+H:\AUVMissionPlanning\NewByteKnight\bin\NewByteKnight.dll
+H:\AUVMissionPlanning\NewByteKnight\bin\NewByteKnight.pdb
+H:\AUVMissionPlanning\NewByteKnight\bin\Business.dll
+H:\AUVMissionPlanning\NewByteKnight\bin\ServiceContracts.dll
+H:\AUVMissionPlanning\NewByteKnight\bin\DataAccess.dll
+H:\AUVMissionPlanning\NewByteKnight\bin\Business.pdb
+H:\AUVMissionPlanning\NewByteKnight\bin\ServiceContracts.pdb
+H:\AUVMissionPlanning\NewByteKnight\bin\DataAccess.pdb
+H:\AUVMissionPlanning\NewByteKnight\obj\Debug\NewByteKnight.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\bin\NewByteKnight.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\bin\NewByteKnight.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\bin\Business.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\bin\ServiceContracts.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\bin\DataAccess.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\bin\Business.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\bin\ServiceContracts.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\bin\DataAccess.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\obj\Debug\NewByteKnight.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\NewByteKnight\obj\Debug\NewByteKnight.pdb

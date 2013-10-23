@@ -1,0 +1,24 @@
+H:\faukaz\trunk\NewByteKnight\DataAccess\bin\Debug\DataAccess.dll.config
+H:\faukaz\trunk\NewByteKnight\DataAccess\bin\Debug\DataAccess.dll
+H:\faukaz\trunk\NewByteKnight\DataAccess\bin\Debug\DataAccess.pdb
+H:\faukaz\trunk\NewByteKnight\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+H:\faukaz\trunk\NewByteKnight\DataAccess\obj\Debug\DataAccess.dll
+H:\faukaz\trunk\NewByteKnight\DataAccess\obj\Debug\DataAccess.pdb
+H:\NewByteKnight\DataAccess\bin\Debug\DataAccess.dll.config
+H:\NewByteKnight\DataAccess\bin\Debug\DataAccess.dll
+H:\NewByteKnight\DataAccess\bin\Debug\DataAccess.pdb
+H:\NewByteKnight\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+H:\NewByteKnight\DataAccess\obj\Debug\DataAccess.dll
+H:\NewByteKnight\DataAccess\obj\Debug\DataAccess.pdb
+H:\AUVMissionPlanning\DataAccess\bin\Debug\DataAccess.dll.config
+H:\AUVMissionPlanning\DataAccess\bin\Debug\DataAccess.dll
+H:\AUVMissionPlanning\DataAccess\bin\Debug\DataAccess.pdb
+H:\AUVMissionPlanning\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+H:\AUVMissionPlanning\DataAccess\obj\Debug\DataAccess.dll
+H:\AUVMissionPlanning\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DataAccess\obj\Debug\DataAccess.pdb

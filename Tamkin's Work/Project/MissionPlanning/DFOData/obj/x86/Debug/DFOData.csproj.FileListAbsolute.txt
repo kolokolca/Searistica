@@ -1,0 +1,36 @@
+H:\MissionPlanning\DFOData\bin\Debug\DFOData.exe
+H:\MissionPlanning\DFOData\bin\Debug\DFOData.pdb
+H:\MissionPlanning\DFOData\bin\Debug\Business.dll
+H:\MissionPlanning\DFOData\bin\Debug\DataAccess.dll
+H:\MissionPlanning\DFOData\bin\Debug\ServiceContracts.dll
+H:\MissionPlanning\DFOData\bin\Debug\Business.pdb
+H:\MissionPlanning\DFOData\bin\Debug\DataAccess.pdb
+H:\MissionPlanning\DFOData\bin\Debug\ServiceContracts.pdb
+H:\MissionPlanning\DFOData\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\MissionPlanning\DFOData\obj\x86\Debug\DFOData.exe
+H:\MissionPlanning\DFOData\obj\x86\Debug\DFOData.pdb
+H:\MissionPlanning\DFOData\bin\Debug\DFOData.exe.config
+H:\AUVMissionPlanning\DFOData\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\AUVMissionPlanning\DFOData\obj\x86\Debug\DFOData.pdb
+H:\AUVMissionPlanning\DFOData\bin\Debug\DFOData.exe.config
+H:\AUVMissionPlanning\DFOData\bin\Debug\DFOData.exe
+H:\AUVMissionPlanning\DFOData\bin\Debug\DFOData.pdb
+H:\AUVMissionPlanning\DFOData\bin\Debug\Business.dll
+H:\AUVMissionPlanning\DFOData\bin\Debug\DataAccess.dll
+H:\AUVMissionPlanning\DFOData\bin\Debug\ServiceContracts.dll
+H:\AUVMissionPlanning\DFOData\bin\Debug\Business.pdb
+H:\AUVMissionPlanning\DFOData\bin\Debug\DataAccess.pdb
+H:\AUVMissionPlanning\DFOData\bin\Debug\ServiceContracts.pdb
+H:\AUVMissionPlanning\DFOData\obj\x86\Debug\DFOData.exe
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\bin\Debug\DFOData.exe.config
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\obj\x86\Debug\DFOData.exe
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\obj\x86\Debug\DFOData.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\bin\Debug\DFOData.exe
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\bin\Debug\DFOData.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\bin\Debug\Business.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\bin\Debug\DataAccess.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\bin\Debug\ServiceContracts.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\bin\Debug\Business.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\bin\Debug\DataAccess.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\bin\Debug\ServiceContracts.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DFOData\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,570 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:App.Config" caret="480" fromTop="3" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:Mapper.cs" caret="615" fromTop="19" />
+      <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:Problem.cs" caret="0" fromTop="0" />
+      <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:ScoreBoardData.cs" caret="0" fromTop="0" />
+      <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:SolvedProblem.cs" caret="0" fromTop="0" />
+      <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:TeamScore.cs" caret="0" fromTop="0" />
+      <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:UnSolvedProblem.cs" caret="142" fromTop="6" />
+      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:IUnitOfWork.cs" caret="0" fromTop="0" />
+      <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:Response.cs" caret="142" fromTop="6" />
+      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:ByteKnight.Designer.cs" caret="2126" fromTop="16" />
+      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:ByteknightEntitiesEx.cs" caret="107" fromTop="5" />
+      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:UnitOfWork.cs" caret="307" fromTop="13" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="3973" fromTop="73" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Web.config" caret="622" fromTop="11" />
+      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:App.config" caret="487" fromTop="4" />
+      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="276" fromTop="14" />
+      <File id="893932F6-5F82-4C17-B4AD-643DB1E44C05/f:Repository.cs" caret="5881" fromTop="15" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:RepositoryContainer.cs" caret="296" fromTop="9" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:parsedVelocity.txt" caret="700" fromTop="31" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:paresedXY.txt" caret="0" fromTop="0" />
+      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:Repository.cs" caret="4650" fromTop="24" />
+      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:IRepository.cs" caret="1633" fromTop="19" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9455" fromTop="21" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10535" fromTop="15" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10535" fromTop="23" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10535" fromTop="18" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="4036" fromTop="18" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10147" fromTop="34" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="4151" fromTop="7" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10296" fromTop="38" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10147" fromTop="30" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9836" fromTop="24" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="510" fromTop="21" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="245" fromTop="5" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="382" fromTop="11" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="6350" fromTop="32" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="6281" fromTop="15" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9836" fromTop="10" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="6845" fromTop="18" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="6475" fromTop="17" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9725" fromTop="33" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="5059" fromTop="24" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="5152" fromTop="20" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10488" fromTop="31" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="6291" fromTop="32" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="4965" fromTop="8" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9712" fromTop="14" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9667" fromTop="23" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10094" fromTop="22" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9646" fromTop="31" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="8691" fromTop="27" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="7914" fromTop="12" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9807" fromTop="34" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="AspCodeCompletionContext">
+      <Item value="Jquery" priority="6" />
+      <Item value="div" priority="48" />
+      <Item value="class" priority="28" />
+      <Item value="display-none" priority="13" />
+      <Item value="id" priority="34" />
+      <Item value="divScoreBoard" priority="6" />
+      <Item value="style" priority="35" />
+      <Item value="display" priority="15" />
+      <Item value="none" priority="9" />
+      <Item value="asp" priority="20" />
+      <Item value="fieldset" priority="6" />
+      <Item value="input" priority="6" />
+      <Item value="type" priority="6" />
+      <Item value="text" priority="6" />
+      <Item value="container" priority="13" />
+      <Item value="runat" priority="13" />
+      <Item value="server" priority="13" />
+      <Item value="button" priority="14" />
+      <Item value="inline-block" priority="9" />
+      <Item value="ClientIDMode" priority="6" />
+      <Item value="table" priority="6" />
+      <Item value="tr" priority="6" />
+      <Item value="td" priority="20" />
+      <Item value="color" priority="7" />
+      <Item value="orangered" priority="9" />
+      <Item value="Button`0" priority="6" />
+      <Item value="asp:Button" priority="6" />
+      <Item value="Text" priority="6" />
+      <Item value="Click" priority="6" />
+      <Item value="font-family" priority="7" />
+      <Item value="font-size" priority="13" />
+      <Item value="span" priority="21" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContext">
+      <Item value="alert" priority="32" />
+      <Item value="getDataFromService" priority="10" />
+      <Item value="null" priority="98" />
+      <Item value="function" priority="98" />
+      <Item value="debugger" priority="252" />
+      <Item value="new" priority="21" />
+      <Item value="Object" priority="10" />
+      <Item value="var" priority="252" />
+      <Item value="ScoreBoardTab" priority="21" />
+      <Item value="$" priority="79" />
+      <Item value="return" priority="109" />
+      <Item value="templateHtml" priority="21" />
+      <Item value="submitScore" priority="10" />
+      <Item value="if" priority="98" />
+      <Item value="link" priority="21" />
+      <Item value="postDataToService" priority="10" />
+      <Item value="param" priority="10" />
+      <Item value="tab" priority="98" />
+      <Item value="data" priority="54" />
+      <Item value="else" priority="10" />
+      <Item value="msgDiv" priority="21" />
+      <Item value="_submitScoreTab" priority="10" />
+      <Item value="msgDetail" priority="10" />
+      <Item value="this" priority="10" />
+      <Item value="false" priority="10" />
+      <Item value="name" priority="32" />
+      <Item value="element" priority="10" />
+      <Item value="showGlobalLoading" priority="10" />
+      <Item value="tabContent" priority="10" />
+      <Item value="response" priority="21" />
+      <Item value="div" priority="10" />
+      <Item value="for" priority="10" />
+      <Item value="solvedProblems" priority="9" />
+      <Item value="html" priority="32" />
+      <Item value="solvedProblem" priority="10" />
+      <Item value="callback" priority="21" />
+      <Item value="scoreBoadContainer" priority="10" />
+      <Item value="with" priority="10" />
+      <Item value="window" priority="10" />
+      <Item value="_scorBoardTab" priority="10" />
+      <Item value="pos" priority="10" />
+      <Item value="width" priority="10" />
+      <Item value="height" priority="10" />
+      <Item value="mainContainer" priority="10" />
+      <Item value="submitScorePanel" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="CssCodeCompletionContext">
+      <Item value="color" priority="54" />
+      <Item value="black" priority="20" />
+      <Item value="yellowgreen" priority="5" />
+      <Item value="font-size" priority="43" />
+      <Item value="darkgrey" priority="5" />
+      <Item value="display" priority="19" />
+      <Item value="inline-block" priority="8" />
+      <Item value="padding" priority="35" />
+      <Item value="none" priority="6" />
+      <Item value="header" priority="9" />
+      <Item value="font-weight" priority="17" />
+      <Item value="bold" priority="20" />
+      <Item value="font-family" priority="6" />
+      <Item value="fantasy" priority="4" />
+      <Item value="margin" priority="23" />
+      <Item value="coral" priority="4" />
+      <Item value="block" priority="6" />
+      <Item value="width" priority="29" />
+      <Item value="background-color" priority="17" />
+      <Item value="khaki" priority="4" />
+      <Item value="lavender" priority="5" />
+      <Item value="lightsteelblue" priority="5" />
+      <Item value="medium" priority="4" />
+      <Item value="ui-icon-key" priority="4" />
+      <Item value="orange" priority="11" />
+      <Item value="orangered" priority="15" />
+      <Item value="ui-icon-signal" priority="9" />
+      <Item value="red" priority="6" />
+      <Item value="font-style" priority="11" />
+      <Item value="divSubmitScoreContent" priority="9" />
+      <Item value="a" priority="5" />
+      <Item value="gainsboro" priority="5" />
+      <Item value="brown" priority="13" />
+      <Item value="jqgrid-rownum" priority="4" />
+      <Item value="height" priority="11" />
+      <Item value="border-bottom" priority="11" />
+      <Item value="solid" priority="6" />
+      <Item value="lightgrey" priority="6" />
+      <Item value="cell1" priority="4" />
+      <Item value="text-decoration" priority="5" />
+      <Item value="text-decoration-line" priority="5" />
+      <Item value="lightyellow" priority="6" />
+      <Item value="text-align" priority="5" />
+      <Item value="center" priority="6" />
+      <Item value="wheat" priority="5" />
+      <Item value="italic" priority="4" />
+      <Item value="border" priority="5" />
+      <Item value="lightgray" priority="6" />
+      <Item value="olivedrab" priority="6" />
+      <Item value="olive" priority="6" />
+      <Item value="top" priority="5" />
+      <Item value="left" priority="5" />
+      <Item value="grey" priority="6" />
+      <Item value="tableHeader" priority="4" />
+      <Item value="inherit" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="return" priority="671" />
+      <Item value="byteknightEntities`0" priority="31" />
+      <Item value="public" priority="190" />
+      <Item value="void" priority="223" />
+      <Item value="string" priority="477" />
+      <Item value="null" priority="287" />
+      <Item value="new" priority="833" />
+      <Item value="Response" priority="59" />
+      <Item value="var" priority="1183" />
+      <Item value="ScoreBoardData" priority="57" />
+      <Item value="ScoreBoardData`0" priority="31" />
+      <Item value="prop" priority="63" />
+      <Item value="List" priority="279" />
+      <Item value="Problem`0" priority="302" />
+      <Item value="ServiceContracts" priority="31" />
+      <Item value="SubmittedSolution`0" priority="26" />
+      <Item value="s" priority="127" />
+      <Item value="p" priority="449" />
+      <Item value="allProblems" priority="63" />
+      <Item value="SubmittedProblem`0" priority="53" />
+      <Item value="if" priority="191" />
+      <Item value="submittedProblems" priority="63" />
+      <Item value="unslovedProblemIds" priority="63" />
+      <Item value="Problem" priority="90" />
+      <Item value="UriHostNameType`0" priority="31" />
+      <Item value="Name" priority="63" />
+      <Item value="data" priority="95" />
+      <Item value="Mapper`0" priority="31" />
+      <Item value="IQueryable`0" priority="63" />
+      <Item value="IEnumerable" priority="31" />
+      <Item value="response" priority="671" />
+      <Item value="true" priority="321" />
+      <Item value="false" priority="320" />
+      <Item value="UnSolved`0" priority="159" />
+      <Item value="UnSolved" priority="86" />
+      <Item value="unsolvedData" priority="31" />
+      <Item value="int" priority="286" />
+      <Item value="problemId" priority="319" />
+      <Item value="key" priority="63" />
+      <Item value="out" priority="63" />
+      <Item value="else" priority="95" />
+      <Item value="SubmittedProblem" priority="28" />
+      <Item value="submittedProblem" priority="223" />
+      <Item value="DateTime`0" priority="95" />
+      <Item value="dateTimeWithFormat" priority="63" />
+      <Item value="dateTime" priority="31" />
+      <Item value="CultureInfo" priority="28" />
+      <Item value="DateTimeStyles`0" priority="31" />
+      <Item value="CultureInfo`0" priority="31" />
+      <Item value="RepositoryContainer`0" priority="31" />
+      <Item value="DataAccess" priority="218" />
+      <Item value="work" priority="63" />
+      <Item value="problemRepository" priority="31" />
+      <Item value="problem" priority="90" />
+      <Item value="Response&lt;string&gt;" priority="28" />
+      <Item value="Success" priority="31" />
+      <Item value="private" priority="127" />
+      <Item value="bool" priority="63" />
+      <Item value="submittedProblemsRepository" priority="95" />
+      <Item value="sp" priority="159" />
+      <Item value="teamId" priority="191" />
+      <Item value="DBNull`0" priority="31" />
+      <Item value="IsAlreadySubmitted`0" priority="31" />
+      <Item value="ctor" priority="127" />
+      <Item value="Problems" priority="31" />
+      <Item value="List&lt;Problem&gt;" priority="28" />
+      <Item value="Data" priority="31" />
+      <Item value="Team`0" priority="91" />
+      <Item value="ArgIterator`0" priority="31" />
+      <Item value="teamRepository" priority="127" />
+      <Item value="t" priority="255" />
+      <Item value="team" priority="31" />
+      <Item value="teams" priority="31" />
+      <Item value="foreach" priority="287" />
+      <Item value="score" priority="31" />
+      <Item value="lastSubmittedProblem" priority="31" />
+      <Item value="lastSubmittedProblems" priority="63" />
+      <Item value="lsp" priority="31" />
+      <Item value="TeamScore" priority="28" />
+      <Item value="teamScore" priority="159" />
+      <Item value="lastSubmitionByATeam" priority="64" />
+      <Item value="position" priority="31" />
+      <Item value="TeamsOrderByScore" priority="31" />
+      <Item value="List&lt;TeamScore&gt;" priority="28" />
+      <Item value="DataMember" priority="95" />
+      <Item value="solvedProblem" priority="63" />
+      <Item value="SolvedProblems" priority="31" />
+      <Item value="List&lt;SolvedProblem&gt;" priority="28" />
+      <Item value="formCookie" priority="31" />
+      <Item value="teamName" priority="31" />
+      <Item value="StateHelper`0" priority="31" />
+      <Item value="unslovedProblem" priority="98" />
+      <Item value="Id" priority="32" />
+      <Item value="DataContract" priority="31" />
+      <Item value="TeamProblemSolutionKey`0" priority="26" />
+      <Item value="dbSolution" priority="31" />
+      <Item value="dfoDataRepository" priority="158" />
+      <Item value="d" priority="95" />
+      <Item value="Console`0" priority="255" />
+      <Item value="Boolean`0" priority="31" />
+      <Item value="dfOdata" priority="31" />
+      <Item value="DeletePreviousData`0" priority="31" />
+      <Item value="InsertNewData`0" priority="31" />
+      <Item value="float" priority="63" />
+      <Item value="Math`0" priority="31" />
+      <Item value="double" priority="63" />
+      <Item value="try" priority="31" />
+      <Item value="exception" priority="32" />
+      <Item value="Exception" priority="28" />
+      <Item value="offset" priority="127" />
+      <Item value="from" priority="31" />
+      <Item value="ByteknightEntitiesEx`0" priority="31" />
+      <Item value="ByteKnightContext`0" priority="31" />
+      <Item value="this" priority="63" />
+      <Item value="Context" priority="63" />
+      <Item value="params" priority="31" />
+      <Item value="object" priority="31" />
+      <Item value="parameters" priority="31" />
+      <Item value="cellX" priority="63" />
+      <Item value="DFOdata`0" priority="166" />
+      <Item value="sqlCommand" priority="63" />
+      <Item value="DFOdata" priority="31" />
+      <Item value="File`0" priority="95" />
+      <Item value="dfoDatas" priority="31" />
+      <Item value="dfoData" priority="95" />
+      <Item value="w" priority="31" />
+      <Item value="filePath" priority="31" />
+      <Item value="UCompSum" priority="31" />
+      <Item value="cellY" priority="31" />
+      <Item value="selectedPointsTxtFile" priority="31" />
+      <Item value="StreamWriter`0" priority="31" />
+      <Item value="wr2" priority="63" />
+      <Item value="dfoDataPoint" priority="63" />
+      <Item value="class" priority="30" />
+      <Item value="x" priority="31" />
+      <Item value="y" priority="95" />
+      <Item value="Y" priority="31" />
+      <Item value="Cell`0" priority="159" />
+      <Item value="adjacentCells" priority="95" />
+      <Item value="currentCell" priority="31" />
+      <Item value="Offset" priority="31" />
+      <Item value="GetAdjacentCells`0" priority="31" />
+      <Item value="Cell" priority="57" />
+      <Item value="adjacentCell" priority="95" />
+      <Item value="totalDataPoint" priority="31" />
+      <Item value="cell" priority="95" />
+      <Item value="startCell" priority="31" />
+      <Item value="wr1" priority="31" />
+      <Item value="for" priority="63" />
+      <Item value="factor" priority="63" />
+      <Item value="GetFactorForNthLayer`0" priority="31" />
+      <Item value="nLayer" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.Web.WebMessageBodyStyle">
+      <Item value="Wrapped" priority="54" />
+      <Item value="Bare" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContextQualified">
+      <Item value="asd" priority="8" />
+      <Item value="show" priority="37" />
+      <Item value="empty" priority="9" />
+      <Item value="attr" priority="8" />
+      <Item value="replace" priority="8" />
+      <Item value="parent" priority="8" />
+      <Item value="find" priority="8" />
+      <Item value="bindSubmitButtons" priority="8" />
+      <Item value="live" priority="9" />
+      <Item value="hide" priority="35" />
+      <Item value="html" priority="64" />
+      <Item value="clearElements" priority="17" />
+      <Item value="addClass" priority="9" />
+      <Item value="children" priority="47" />
+      <Item value="length" priority="17" />
+      <Item value="toString" priority="8" />
+      <Item value="substr" priority="8" />
+      <Item value="position" priority="18" />
+      <Item value="left" priority="16" />
+      <Item value="showLoading" priority="26" />
+      <Item value="remove" priority="18" />
+      <Item value="join" priority="8" />
+      <Item value="setTimer" priority="8" />
+      <Item value="clearTimer" priority="8" />
+      <Item value="clearIntervalId" priority="26" />
+      <Item value="clearInterval" priority="8" />
+      <Item value="hideLoading" priority="8" />
+      <Item value="appendTo" priority="9" />
+      <Item value="getHmlTemplate1" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DataAccess.IRepository`1">
+      <Item value="Filter`0" priority="296" />
+      <Item value="All`0" priority="53" />
+      <Item value="Add`0" priority="26" />
+      <Item value="Update`0" priority="26" />
+      <Item value="Delete`0" priority="53" />
+      <Item value="RemoveAll`0" priority="26" />
+      <Item value="Remove`0" priority="26" />
+      <Item value="ExecuteCommand`0" priority="26" />
+      <Item value="ExecuteCommand`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DataAccess.SubmittedSolution">
+      <Item value="TeamId" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="Select`2" priority="163" />
+      <Item value="ToList`1" priority="80" />
+      <Item value="Intersect`1" priority="26" />
+      <Item value="Where`1" priority="54" />
+      <Item value="Contains`1" priority="54" />
+      <Item value="Any`1" priority="27" />
+      <Item value="FirstOrDefault`1" priority="134" />
+      <Item value="OrderBy`2" priority="53" />
+      <Item value="OrderByDescending`2" priority="80" />
+      <Item value="Distinct`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DataAccess.Problem">
+      <Item value="Id" priority="299" />
+      <Item value="Name" priority="190" />
+      <Item value="SolutionKey" priority="26" />
+      <Item value="Point" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DataAccess.SubmittedProblem">
+      <Item value="Id" priority="26" />
+      <Item value="Problem" priority="107" />
+      <Item value="ProblemId" priority="80" />
+      <Item value="TeamId" priority="80" />
+      <Item value="Time" priority="161" />
+      <Item value="Team" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Business.Mapper">
+      <Item value="ToDataTransferObject`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ServiceContracts.Response`1">
+      <Item value="Data" priority="161" />
+      <Item value="Success" priority="107" />
+      <Item value="ErrorMessage" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Contains`0" priority="26" />
+      <Item value="Count" priority="53" />
+      <Item value="Add`0" priority="107" />
+      <Item value="OrderByDescending`2" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="TryParse`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="54" />
+      <Item value="Today" priority="26" />
+      <Item value="ParseExact`0" priority="26" />
+      <Item value="Parse`0" priority="53" />
+      <Item value="TryParseExact`0" priority="26" />
+      <Item value="TryParse`0" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Ticks" priority="26" />
+      <Item value="ToUniversalTime`0" priority="27" />
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DataAccess.UnitOfWork">
+      <Item value="SaveChanges`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.DateTimeStyles">
+      <Item value="None" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.CultureInfo">
+      <Item value="InvariantCulture" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Business.RepositoryContainer">
+      <Item value="GetRepository`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ServiceContracts.UnSolved">
+      <Item value="Problems" priority="53" />
+      <Item value="Count" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DataAccess.Team">
+      <Item value="Id" priority="135" />
+      <Item value="Score" priority="161" />
+      <Item value="Name" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IOrderedQueryable`1">
+      <Item value="Select`2" priority="53" />
+      <Item value="ToDictionary`2" priority="26" />
+      <Item value="ToList`1" priority="49" />
+      <Item value="Where`1" priority="27" />
+      <Item value="Last`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IOrderedEnumerable`1">
+      <Item value="ToList`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="Sleep`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NewByteKnight.Common.StateHelper">
+      <Item value="TeamId" priority="81" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.HtmlControls.HtmlInputText">
+      <Item value="Value" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Trim`0" priority="80" />
+      <Item value="ToLower`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.HtmlControls.HtmlGenericControl">
+      <Item value="Visible" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DataAccess.TeamProblemSolutionKey">
+      <Item value="TeamId" priority="26" />
+      <Item value="ProblemId" priority="26" />
+      <Item value="SolutionKey" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DataAccess.DFOdata">
+      <Item value="Id" priority="26" />
+      <Item value="X" priority="134" />
+      <Item value="Y" priority="26" />
+      <Item value="U" priority="54" />
+      <Item value="V" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="Write`0" priority="134" />
+      <Item value="WriteLine`0" priority="53" />
+      <Item value="ReadLine`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="107" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Pow`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DataAccess.ByteknightEntitiesEx">
+      <Item value="ExecuteStoreCommand`0" priority="53" />
+      <Item value="ExecuteStoreQuery`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectResult`1">
+      <Item value="ToList`1" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamWriter">
+      <Item value="Close`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Exists`0" priority="26" />
+      <Item value="Delete`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Business.DFOdata.Cell">
+      <Item value="X" priority="161" />
+      <Item value="Y" priority="135" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>
