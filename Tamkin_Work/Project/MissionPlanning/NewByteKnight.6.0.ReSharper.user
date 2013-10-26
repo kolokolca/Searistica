@@ -10,7 +10,6 @@
       <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:UnSolvedProblem.cs" caret="142" fromTop="6" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:IUnitOfWork.cs" caret="0" fromTop="0" />
       <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:Response.cs" caret="142" fromTop="6" />
-      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:ByteKnight.Designer.cs" caret="2126" fromTop="16" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:ByteknightEntitiesEx.cs" caret="107" fromTop="5" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:UnitOfWork.cs" caret="307" fromTop="13" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="3973" fromTop="73" />
@@ -20,41 +19,47 @@
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:parsedVelocity.txt" caret="700" fromTop="31" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:paresedXY.txt" caret="0" fromTop="0" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:Repository.cs" caret="4650" fromTop="24" />
-      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:IRepository.cs" caret="1633" fromTop="19" />
-      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="248" fromTop="13" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="12460" fromTop="20" />
+      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:IRepository.cs" caret="1594" fromTop="26" />
+      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:ByteKnight.Designer.cs" caret="39710" fromTop="25" />
+      <File id="28F44458-AB84-4E51-8917-AEAF1FB03B50/f:Repository.cs" caret="5881" fromTop="15" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:cellMeanVector.txt" caret="0" fromTop="0" />
+      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="252" fromTop="13" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:NaNPoints.txt" caret="0" fromTop="0" />
+      <File id="28F44458-AB84-4E51-8917-AEAF1FB03B50/f:Program.cs" caret="1873" fromTop="19" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:GridCell.cs" caret="54" fromTop="2" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="7953" fromTop="9" />
     </RecentFiles>
     <RecentEdits>
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="362" fromTop="11" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="6337" fromTop="32" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="6268" fromTop="15" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14543" fromTop="10" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="6832" fromTop="18" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="6462" fromTop="17" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="5046" fromTop="24" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="5139" fromTop="20" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15195" fromTop="31" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="6278" fromTop="32" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="4952" fromTop="8" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9633" fromTop="31" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="8678" fromTop="27" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="7901" fromTop="12" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14514" fromTop="34" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="1646" fromTop="16" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="115" fromTop="1" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="4055" fromTop="15" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9671" fromTop="51" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14426" fromTop="51" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="12122" fromTop="44" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14888" fromTop="38" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10604" fromTop="20" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10604" fromTop="20" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10527" fromTop="15" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9882" fromTop="6" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10604" fromTop="18" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10948" fromTop="20" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="12775" fromTop="27" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="12460" fromTop="20" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="27" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="10" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="37" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="10" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="11" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="17" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="48" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="22" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14072" fromTop="32" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10431" fromTop="20" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="11824" fromTop="48" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9610" fromTop="19" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9206" fromTop="20" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14368" fromTop="11" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="4595" fromTop="30" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14736" fromTop="19" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="8756" fromTop="7" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="8984" fromTop="19" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="11868" fromTop="22" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10319" fromTop="15" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="11414" fromTop="20" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="48" fromTop="1" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="217" fromTop="9" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:GridCell.cs" caret="54" fromTop="2" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="4597" fromTop="24" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="8422" fromTop="21" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9141" fromTop="15" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="11861" fromTop="26" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14280" fromTop="17" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15025" fromTop="19" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
@@ -197,19 +202,19 @@
       <Item value="inherit" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="return" priority="671" />
+      <Item value="return" priority="703" />
       <Item value="byteknightEntities`0" priority="31" />
-      <Item value="public" priority="190" />
-      <Item value="void" priority="223" />
-      <Item value="string" priority="509" />
-      <Item value="null" priority="287" />
-      <Item value="new" priority="897" />
+      <Item value="public" priority="222" />
+      <Item value="void" priority="255" />
+      <Item value="string" priority="605" />
+      <Item value="null" priority="319" />
+      <Item value="new" priority="993" />
       <Item value="Response" priority="59" />
-      <Item value="var" priority="1247" />
+      <Item value="var" priority="1471" />
       <Item value="ScoreBoardData" priority="57" />
       <Item value="ScoreBoardData`0" priority="31" />
       <Item value="prop" priority="63" />
-      <Item value="List" priority="308" />
+      <Item value="List" priority="340" />
       <Item value="Problem`0" priority="302" />
       <Item value="ServiceContracts" priority="31" />
       <Item value="SubmittedSolution`0" priority="26" />
@@ -217,7 +222,7 @@
       <Item value="p" priority="449" />
       <Item value="allProblems" priority="63" />
       <Item value="SubmittedProblem`0" priority="53" />
-      <Item value="if" priority="191" />
+      <Item value="if" priority="287" />
       <Item value="submittedProblems" priority="63" />
       <Item value="unslovedProblemIds" priority="63" />
       <Item value="Problem" priority="90" />
@@ -237,23 +242,23 @@
       <Item value="problemId" priority="319" />
       <Item value="key" priority="63" />
       <Item value="out" priority="63" />
-      <Item value="else" priority="95" />
+      <Item value="else" priority="127" />
       <Item value="SubmittedProblem" priority="28" />
       <Item value="submittedProblem" priority="223" />
-      <Item value="DateTime`0" priority="95" />
+      <Item value="DateTime`0" priority="127" />
       <Item value="dateTimeWithFormat" priority="63" />
       <Item value="dateTime" priority="31" />
       <Item value="CultureInfo" priority="28" />
       <Item value="DateTimeStyles`0" priority="31" />
       <Item value="CultureInfo`0" priority="31" />
       <Item value="RepositoryContainer`0" priority="31" />
-      <Item value="DataAccess" priority="218" />
+      <Item value="DataAccess" priority="250" />
       <Item value="work" priority="63" />
       <Item value="problemRepository" priority="31" />
       <Item value="problem" priority="90" />
       <Item value="Response&lt;string&gt;" priority="28" />
       <Item value="Success" priority="31" />
-      <Item value="private" priority="127" />
+      <Item value="private" priority="159" />
       <Item value="bool" priority="63" />
       <Item value="submittedProblemsRepository" priority="95" />
       <Item value="sp" priority="159" />
@@ -295,17 +300,17 @@
       <Item value="dbSolution" priority="31" />
       <Item value="dfoDataRepository" priority="158" />
       <Item value="d" priority="95" />
-      <Item value="Console`0" priority="319" />
+      <Item value="Console`0" priority="415" />
       <Item value="Boolean`0" priority="31" />
       <Item value="dfOdata" priority="31" />
       <Item value="DeletePreviousData`0" priority="31" />
       <Item value="InsertNewData`0" priority="31" />
       <Item value="float" priority="63" />
       <Item value="Math`0" priority="31" />
-      <Item value="double" priority="95" />
+      <Item value="double" priority="159" />
       <Item value="try" priority="31" />
       <Item value="exception" priority="32" />
-      <Item value="Exception" priority="28" />
+      <Item value="Exception" priority="57" />
       <Item value="offset" priority="127" />
       <Item value="from" priority="31" />
       <Item value="ByteknightEntitiesEx`0" priority="31" />
@@ -328,32 +333,50 @@
       <Item value="cellY" priority="31" />
       <Item value="selectedPointsTxtFile" priority="31" />
       <Item value="StreamWriter`0" priority="31" />
-      <Item value="wr2" priority="63" />
+      <Item value="wr2" priority="95" />
       <Item value="dfoDataPoint" priority="63" />
       <Item value="class" priority="30" />
       <Item value="x" priority="63" />
       <Item value="y" priority="159" />
       <Item value="Y" priority="31" />
       <Item value="Cell`0" priority="191" />
-      <Item value="adjacentCells" priority="127" />
+      <Item value="adjacentCells" priority="159" />
       <Item value="currentCell" priority="31" />
       <Item value="Offset" priority="31" />
       <Item value="GetAdjacentCells`0" priority="31" />
-      <Item value="Cell" priority="86" />
+      <Item value="Cell" priority="115" />
       <Item value="adjacentCell" priority="159" />
       <Item value="totalDataPoint" priority="31" />
       <Item value="cell" priority="95" />
       <Item value="startCell" priority="31" />
-      <Item value="wr1" priority="31" />
-      <Item value="for" priority="95" />
+      <Item value="wr1" priority="63" />
+      <Item value="for" priority="159" />
       <Item value="factor" priority="63" />
       <Item value="GetFactorForNthLayer`0" priority="31" />
       <Item value="nLayer" priority="31" />
       <Item value="minX" priority="63" />
-      <Item value="maxX" priority="63" />
+      <Item value="maxX" priority="95" />
       <Item value="maxY" priority="31" />
       <Item value="break" priority="31" />
       <Item value="minY" priority="31" />
+      <Item value="uComp" priority="63" />
+      <Item value="vComp" priority="31" />
+      <Item value="Double`0" priority="31" />
+      <Item value="EntryPointNotFoundException" priority="28" />
+      <Item value="Rect`0" priority="95" />
+      <Item value="GetRectArea`0" priority="31" />
+      <Item value="rectArea" priority="191" />
+      <Item value="RectArea`0" priority="26" />
+      <Item value="throw" priority="31" />
+      <Item value="i" priority="63" />
+      <Item value="distanceBetween2AdjacentCell" priority="31" />
+      <Item value="HalfOfEachCellArea" priority="31" />
+      <Item value="cellCenterStr" priority="63" />
+      <Item value="const" priority="31" />
+      <Item value="counter" priority="31" />
+      <Item value="diff" priority="31" />
+      <Item value="wr3" priority="63" />
+      <Item value="nanCellStr" priority="63" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.ServiceModel.Web.WebMessageBodyStyle">
       <Item value="Wrapped" priority="54" />
@@ -440,15 +463,16 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="Contains`0" priority="26" />
-      <Item value="Count" priority="53" />
+      <Item value="Count" priority="80" />
       <Item value="Add`0" priority="134" />
       <Item value="OrderByDescending`2" priority="26" />
+      <Item value="ElementAt`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Int32">
       <Item value="TryParse`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
-      <Item value="Now" priority="54" />
+      <Item value="Now" priority="81" />
       <Item value="Today" priority="26" />
       <Item value="ParseExact`0" priority="26" />
       <Item value="Parse`0" priority="53" />
@@ -523,12 +547,12 @@
       <Item value="V" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="Write`0" priority="134" />
+      <Item value="Write`0" priority="215" />
       <Item value="WriteLine`0" priority="80" />
       <Item value="ReadLine`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
-      <Item value="Format`0" priority="134" />
+      <Item value="Format`0" priority="215" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Math">
       <Item value="Pow`0" priority="26" />
@@ -542,6 +566,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.StreamWriter">
       <Item value="Close`0" priority="53" />
+      <Item value="Write`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.IO.File">
       <Item value="Exists`0" priority="26" />
@@ -550,6 +575,15 @@
     <ItemStatistics item="Qualified:Business.DFOdata.Cell">
       <Item value="X" priority="188" />
       <Item value="Y" priority="135" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Double">
+      <Item value="NaN" priority="26" />
+      <Item value="IsNaN`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DataAccess.RectArea">
+      <Item value="MinX" priority="26" />
+      <Item value="MaxX" priority="53" />
+      <Item value="MinY" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>

@@ -7,17 +7,6 @@ using DataAccess;
 
 namespace Business.DFOdata
 {
-    public class Cell
-    {
-        public Cell(double x, double y)
-        {
-            X = x;
-            Y = y;
-        }
-        public double X { get; set; }
-        public double Y { get; set; }
-    }
-
     public class DFOdataProcessor
     {
         protected double HalfOfEachCellArea { get; set; }
@@ -126,6 +115,14 @@ namespace Business.DFOdata
             return File.AppendText(filePathForMathLab);
         }
 
+        private StreamWriter GetFileWriterForNaNPoints()
+        {
+            var selectedPointsTxtFile = GetDataFolderPath();
+            var filePathForMathLab = selectedPointsTxtFile + "\\NaNPoints.txt";
+            if (File.Exists(filePathForMathLab)) File.Delete(filePathForMathLab);
+            return File.AppendText(filePathForMathLab);
+        }
+
         private StreamWriter GetFileWriterForCellMeanVector()
         {
             var selectedPointsTxtFile = GetDataFolderPath();
@@ -143,25 +140,26 @@ namespace Business.DFOdata
             }
             return factor;
         }
-        public List<Cell> GetNthSurroundingCellsFrom(Cell fixedCenterCell, int n)
+
+        public List<GridCell> GetNthSurroundingCellsFrom(GridCell fixedCenterCell, int n)
         {
             var factor = GetFactorForNthLayer(n);
-            var adjacentCells = new List<Cell>
+            var adjacentCells = new List<GridCell>
                                     {
-                                        new Cell(0, fixedCenterCell.Y + factor * HalfOfEachCellArea),
-                                        new Cell(fixedCenterCell.X - factor * HalfOfEachCellArea, fixedCenterCell.Y +  factor * HalfOfEachCellArea),
-                                        new Cell(fixedCenterCell.X - factor * HalfOfEachCellArea, 0),
-                                        new Cell(fixedCenterCell.X - factor * HalfOfEachCellArea, fixedCenterCell.Y - factor * HalfOfEachCellArea),
-                                        new Cell(0, fixedCenterCell.Y - factor * HalfOfEachCellArea),
-                                        new Cell(fixedCenterCell.X + factor * HalfOfEachCellArea, fixedCenterCell.Y - factor * HalfOfEachCellArea),
-                                        new Cell(fixedCenterCell.X + factor * HalfOfEachCellArea, 0),
-                                        new Cell(fixedCenterCell.X + factor * HalfOfEachCellArea, fixedCenterCell.Y + factor * HalfOfEachCellArea)
+                                        new GridCell(0, fixedCenterCell.Y + factor * HalfOfEachCellArea),
+                                        new GridCell(fixedCenterCell.X - factor * HalfOfEachCellArea, fixedCenterCell.Y +  factor * HalfOfEachCellArea),
+                                        new GridCell(fixedCenterCell.X - factor * HalfOfEachCellArea, 0),
+                                        new GridCell(fixedCenterCell.X - factor * HalfOfEachCellArea, fixedCenterCell.Y - factor * HalfOfEachCellArea),
+                                        new GridCell(0, fixedCenterCell.Y - factor * HalfOfEachCellArea),
+                                        new GridCell(fixedCenterCell.X + factor * HalfOfEachCellArea, fixedCenterCell.Y - factor * HalfOfEachCellArea),
+                                        new GridCell(fixedCenterCell.X + factor * HalfOfEachCellArea, 0),
+                                        new GridCell(fixedCenterCell.X + factor * HalfOfEachCellArea, fixedCenterCell.Y + factor * HalfOfEachCellArea)
                                     };
 
             return adjacentCells;
-        } 
+        }
 
-        public List<Cell> GetNthSurroundingCellsFrom3(Cell fixedCenterCell, int n)
+        public List<GridCell> GetNthSurroundingCellsFromCenterCell(GridCell fixedCenterCell, int n)
         {
             var factor = GetFactorForNthLayer(n);
             double distanceBetweenNthTireCellsAndCenterCell = factor * HalfOfEachCellArea;
@@ -171,41 +169,112 @@ namespace Business.DFOdata
             var maxY = fixedCenterCell.Y + distanceBetweenNthTireCellsAndCenterCell;
             var minY = fixedCenterCell.Y - distanceBetweenNthTireCellsAndCenterCell;
 
-            var adjacentCells = new List<Cell>();
+            var adjacentCells = new List<GridCell>();
             //First and Lat Row
             for (double x = minX; x <= maxX; x = x + distanceBetween2AdjacentCell)
             {
-                adjacentCells.Add(new Cell(x, maxY));
-                adjacentCells.Add(new Cell(x, minY));
+                adjacentCells.Add(new GridCell(x, maxY));
+                adjacentCells.Add(new GridCell(x, minY));
             }
             //First and last Column
             for (double y = minY + distanceBetween2AdjacentCell; y <= maxY - distanceBetween2AdjacentCell; y = y + distanceBetween2AdjacentCell)
             {
-                adjacentCells.Add(new Cell(minX, y));
-                adjacentCells.Add(new Cell(maxX, y));
+                adjacentCells.Add(new GridCell(minX, y));
+                adjacentCells.Add(new GridCell(maxX, y));
             }
 
             return adjacentCells;
-        } 
+        }
 
-        private void GetMeanVectorAndSelectedPointsFor3(Cell fixedCenterCell, StreamWriter wr1, StreamWriter wr2, UnitOfWork work)
+        public RectArea GetRectArea(IRepository<DataAccess.DFOdata> dfoDataRepository)
+        {
+            const string sqlQuery = "select max(X) as MaxX, min(X) as MinX, max(Y) as MaxY, min(Y) as MinY from dbo.DFOdata";
+            var rectArea = dfoDataRepository.ExecuteCommand<RectArea>(sqlQuery);
+            if (rectArea == null)
+                throw new Exception("Can't get the rect area !!");
+            return rectArea.ElementAt(0);
+        }
+
+        private void GetMeanVectorAndSelectedPoints(StreamWriter wr1, StreamWriter wr2, StreamWriter wr3, UnitOfWork work)
         {
             var dfoDataRepository = RepositoryContainer.GetRepository<DataAccess.DFOdata>(work);
-            for (int nLayer = 1; nLayer <= 60; nLayer++)
+            //BySpiralFasion(wr1, wr2, dfoDataRepository);
+            ByGridFasion(wr1, wr2, wr3, dfoDataRepository);
+        }
+
+        private void ByGridFasion(StreamWriter wr1, StreamWriter wr2, StreamWriter wr3, IRepository<DataAccess.DFOdata> dfoDataRepository)
+        {
+            Console.Write("Processing ..\n");
+            var rectArea = GetRectArea(dfoDataRepository);
+            var selectedPointsStr = "";
+            var cellCenterStr = "";
+            //var nanCellStr = "";
+
+            var startTime = DateTime.Now;
+            double distanceBetween2AdjacentCellCenterPoint = 2 * HalfOfEachCellArea;
+            for (var i = rectArea.MinX; i <= rectArea.MaxX; i = i + distanceBetween2AdjacentCellCenterPoint)
             {
-                var adjacentCells = GetNthSurroundingCellsFrom3(fixedCenterCell, nLayer);
+                for (var j = rectArea.MinY; j <= rectArea.MaxY; j = j + distanceBetween2AdjacentCellCenterPoint)
+                {
+                    var adjacentCell = new GridCell(i, j);
+                    var sqlQuery = string.Format("Select * from DFOdata where X >= {0} and X <= {1} and Y >= {2} and Y <= {3}",
+                                                 adjacentCell.X - HalfOfEachCellArea,
+                                                 adjacentCell.X + HalfOfEachCellArea,
+                                                 adjacentCell.Y - HalfOfEachCellArea,
+                                                 adjacentCell.Y + HalfOfEachCellArea);
+                    var dfoDataPoints = dfoDataRepository.ExecuteCommand<DataAccess.DFOdata>(sqlQuery);
+                    var uCompSum = 0.0;
+                    var vCompSum = 0.0;
+                    
+                    foreach (var dfoDataPoint in dfoDataPoints)
+                    {
+                        selectedPointsStr += string.Format("{0},{1},{2},{3}\n", dfoDataPoint.X, dfoDataPoint.Y, dfoDataPoint.U, dfoDataPoint.V);
+                        wr1.WriteLine("{0},{1},{2},{3}", dfoDataPoint.X, dfoDataPoint.Y, dfoDataPoint.U, dfoDataPoint.V);
+                        uCompSum += dfoDataPoint.U;
+                        vCompSum += dfoDataPoint.V;
+                    }
+                    var totalDataPoint = dfoDataPoints.Count;
+                    double uComp = uCompSum / totalDataPoint;
+                    double vComp = vCompSum / totalDataPoint;
+                    if (!Double.IsNaN(uComp) && !Double.IsNaN(vComp))
+                    {
+                        cellCenterStr += string.Format("{0},{1},{2},{3}\n", adjacentCell.X, adjacentCell.Y, uComp, vComp);
+                    }
+                    //else
+                    //{
+                    //    nanCellStr += string.Format("{0},{1},{2},{3}\n", adjacentCell.X, adjacentCell.Y, uComp, vComp);
+                    //}
+                    //Console.Write("Total {0} poins for cell {1},{2}.\n", totalDataPoint, adjacentCell.X, adjacentCell.Y);
+                }
+            }
+            
+            wr1.Write(selectedPointsStr);
+            wr2.Write(cellCenterStr);
+            //wr3.Write(nanCellStr);
+
+            var currentTime = DateTime.Now;
+            var diff = currentTime.Subtract(startTime).TotalSeconds;
+            Console.Write("Done..\n Timing: {0}",diff);
+        }
+
+        private void BySpiralFasion(StreamWriter wr1, StreamWriter wr2, IRepository<DataAccess.DFOdata> dfoDataRepository)
+        {
+            var fixedCenterCell = new GridCell(0.0, 0.0);
+            for (int nLayer = 1; nLayer <= 55; nLayer++)
+            {
+                var adjacentCells = GetNthSurroundingCellsFromCenterCell(fixedCenterCell, nLayer);
                 foreach (var adjacentCell in adjacentCells)
                 {
-                    Console.WriteLine(string.Format("{0},{1}",adjacentCell.X, adjacentCell.Y));
+                    Console.WriteLine(string.Format("{0},{1}", adjacentCell.X, adjacentCell.Y));
                 }
                 Console.Write(string.Format("Toal adjacent: {0}\n", adjacentCells.Count));
                 foreach (var adjacentCell in adjacentCells)
                 {
                     var sqlQuery = string.Format("Select * from DFOdata where X >= {0} and X <= {1} and Y >= {2} and Y <= {3}",
-                                                                                adjacentCell.X - HalfOfEachCellArea,
-                                                                                adjacentCell.X + HalfOfEachCellArea,
-                                                                                adjacentCell.Y - HalfOfEachCellArea,
-                                                                                adjacentCell.Y + HalfOfEachCellArea);
+                                                 adjacentCell.X - HalfOfEachCellArea,
+                                                 adjacentCell.X + HalfOfEachCellArea,
+                                                 adjacentCell.Y - HalfOfEachCellArea,
+                                                 adjacentCell.Y + HalfOfEachCellArea);
                     var dfoDataPoints = dfoDataRepository.ExecuteCommand<DataAccess.DFOdata>(sqlQuery);
                     var uCompSum = 0.0;
                     var vCompSum = 0.0;
@@ -218,33 +287,27 @@ namespace Business.DFOdata
                     var totalDataPoint = dfoDataPoints.Count;
                     double uComp = uCompSum / totalDataPoint;
                     double vComp = vCompSum / totalDataPoint;
-                    if (!Double.IsNaN(uComp) && !Double.IsNaN(vComp))
-                    {
-                        wr2.WriteLine("{0},{1},{2},{3}", adjacentCell.X, adjacentCell.Y, uComp, vComp);
-                    }
-                    Console.Write("Total {0} poins for cell {1},{2}.\n", totalDataPoint, adjacentCell.X, adjacentCell.Y);
+                    //if (!Double.IsNaN(uComp) && !Double.IsNaN(vComp))
+                    //{
+                    wr2.WriteLine("{0},{1},{2},{3}", adjacentCell.X, adjacentCell.Y, uComp, vComp);
+                    //}
+                    //Console.Write("Total {0} poins for cell {1},{2}.\n", totalDataPoint, adjacentCell.X, adjacentCell.Y);
                 }
                 Console.WriteLine("--------------------\n");
-
-
             }
-
-
         }
-
 
         private void GenerateGrid()
         {
-            HalfOfEachCellArea = 1 * Math.Pow(10, 4);          
+            HalfOfEachCellArea = 0.5 * Math.Pow(10, 4);
             try
             {
                 var wr1 = GetFileWriterForSelectedPoints();
                 var wr2 = GetFileWriterForCellMeanVector();
+                var wr3 = GetFileWriterForNaNPoints();
                 using (var work = new UnitOfWork())
                 {
-                    var fixedCenterCell = new Cell(0.0, 0.0);
-                    GetMeanVectorAndSelectedPointsFor3(fixedCenterCell, wr1, wr2, work);
-
+                    GetMeanVectorAndSelectedPoints(wr1, wr2, wr3, work);
                 }
                 wr1.Close();
                 wr2.Close();
@@ -257,9 +320,6 @@ namespace Business.DFOdata
             Console.ReadLine();
         }
 
-        
-
-       
     }
 
 

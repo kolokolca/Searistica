@@ -22,3 +22,9 @@ C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlannin
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DataAccess\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\DataAccess\obj\Debug\DataAccess.pdb

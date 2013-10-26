@@ -18,3 +18,8 @@ C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlannin
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\ServiceContracts\obj\Debug\ServiceContracts.dll
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\MissionPlanning\ServiceContracts\obj\Debug\ServiceContracts.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\ServiceContracts\bin\Debug\ServiceContracts.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\ServiceContracts\bin\Debug\ServiceContracts.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\ServiceContracts\obj\Debug\ServiceContracts.dll
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\ServiceContracts\obj\Debug\ServiceContracts.pdb

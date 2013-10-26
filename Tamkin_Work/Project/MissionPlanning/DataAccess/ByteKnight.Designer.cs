@@ -1088,5 +1088,137 @@ namespace DataAccess
     }
 
     #endregion
+    #region ComplexTypes
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmComplexTypeAttribute(NamespaceName="byteknightModel", Name="RectArea")]
+    [DataContractAttribute(IsReference=true)]
+    [Serializable()]
+    public partial class RectArea : ComplexObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new RectArea object.
+        /// </summary>
+        /// <param name="maxX">Initial value of the MaxX property.</param>
+        /// <param name="minX">Initial value of the MinX property.</param>
+        /// <param name="maxY">Initial value of the MaxY property.</param>
+        /// <param name="minY">Initial value of the MinY property.</param>
+        public static RectArea CreateRectArea(global::System.Double maxX, global::System.Double minX, global::System.Double maxY, global::System.Double minY)
+        {
+            RectArea rectArea = new RectArea();
+            rectArea.MaxX = maxX;
+            rectArea.MinX = minX;
+            rectArea.MaxY = maxY;
+            rectArea.MinY = minY;
+            return rectArea;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double MaxX
+        {
+            get
+            {
+                return _MaxX;
+            }
+            set
+            {
+                OnMaxXChanging(value);
+                ReportPropertyChanging("MaxX");
+                _MaxX = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MaxX");
+                OnMaxXChanged();
+            }
+        }
+        private global::System.Double _MaxX;
+        partial void OnMaxXChanging(global::System.Double value);
+        partial void OnMaxXChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double MinX
+        {
+            get
+            {
+                return _MinX;
+            }
+            set
+            {
+                OnMinXChanging(value);
+                ReportPropertyChanging("MinX");
+                _MinX = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MinX");
+                OnMinXChanged();
+            }
+        }
+        private global::System.Double _MinX;
+        partial void OnMinXChanging(global::System.Double value);
+        partial void OnMinXChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double MaxY
+        {
+            get
+            {
+                return _MaxY;
+            }
+            set
+            {
+                OnMaxYChanging(value);
+                ReportPropertyChanging("MaxY");
+                _MaxY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MaxY");
+                OnMaxYChanged();
+            }
+        }
+        private global::System.Double _MaxY;
+        partial void OnMaxYChanging(global::System.Double value);
+        partial void OnMaxYChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double MinY
+        {
+            get
+            {
+                return _MinY;
+            }
+            set
+            {
+                OnMinYChanging(value);
+                ReportPropertyChanging("MinY");
+                _MinY = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MinY");
+                OnMinYChanged();
+            }
+        }
+        private global::System.Double _MinY;
+        partial void OnMinYChanging(global::System.Double value);
+        partial void OnMinYChanged();
+
+        #endregion
+    }
+
+    #endregion
     
 }

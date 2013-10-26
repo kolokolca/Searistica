@@ -123,4 +123,10 @@
     <Property Type="Double" Name="V" Nullable="false" />
     <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
+  <ComplexType Name="RectArea">
+    <Property Type="Double" Name="MaxX" Nullable="false" />
+    <Property Type="Double" Name="MinX" Nullable="false" />
+    <Property Type="Double" Name="MaxY" Nullable="false" />
+    <Property Type="Double" Name="MinY" Nullable="false" />
+  </ComplexType>
 </Schema>
