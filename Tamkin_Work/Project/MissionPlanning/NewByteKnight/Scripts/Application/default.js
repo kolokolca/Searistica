@@ -25,13 +25,11 @@ var LoadData = function () {
             //if (cell.selectedCell == null) {
             var selectedCell = new Path.Circle({
                 center: cell.position,
-                radius: 4
+                radius: 8
             });
             selectedCell.strokeColor = '#0000FF';
             selectedCell.strokeWidth = 2;
             selectedCell.fillColor = '#04B404';
-            //selectedCell.isSelected = true;
-            //cell.selectedCell = selectedCell;
             selectedCell.onClick = function (event) {
                 this.remove();
                 //context.handleCellClick(this);
@@ -44,7 +42,7 @@ var LoadData = function () {
             this.drawSelectedCellAt(cell);
         },
         drawCenterPoints: function (cellVectors) {
-            var scale = 8;
+            var scale = 30;
             var viewPortCenterX = $(window).width() / 2;
             var viewPortCenterY = $(window).height() / 2;
             var shiftX = viewPortCenterX - scale * this.dimension.MaxX / 2;
@@ -60,14 +58,23 @@ var LoadData = function () {
             //            var path = new Path.Rectangle(rectangle);
             //            path.fillColor = '#e9e9ff';
             //            path.selected = true;
+            debugger;
+            var extraHeight = 450;
+            var offset = 20;
+            var scaleX = parseInt(($(window).width() / 1.8) / this.dimension.MaxX, 10) ;
+            var scaleY = parseInt(($(window).height() + extraHeight) / this.dimension.MaxY, 10);
+
+            var contentDiv = $(".content");
+            var size = new Size(contentDiv.width(), contentDiv.height() + extraHeight);
+            project.view.viewSize = size;
 
 
             for (var index in cellVectors) {
                 //var v = paperScope.view;
                 var cellVector = cellVectors[index];
-                var cell = new Path.Circle(new Point(cellVector.X * scale + shiftX, cellVector.Y * scale + shiftY), 2);
+                var cell = new Path.Circle(new Point(cellVector.X * scaleX + offset, cellVector.Y * scaleY + offset), 4);
                 cell.strokeColor = 'black';
-                cell.fillColor = '#D8D8D8';
+                cell.fillColor = '#424242';
                 //cell.opacity = 0.1;
                 var context = this;
                 cell.onClick = function (event) {
@@ -149,24 +156,28 @@ var LoadData = function () {
 ////        project.activeLayer.addChild(hitResult.item);
 //}
 
+function setProjectViewSize(size) {
+    
+}
+
 $(function () {
     debugger;
+    
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
-    $(".content").width(windowWidth - 15);
-    $(".content").height(windowHeight);
 
-    $(".nano").width(windowWidth - 15);
+    var marginForScrollbar = 20;
+    $(".nano").width(windowWidth - marginForScrollbar);
     $(".nano").height(windowHeight);
     $(".nano").nanoScroller();
+    
+    var contentDiv = $(".content");
+    contentDiv.width(windowWidth - marginForScrollbar);
+    contentDiv.height(windowHeight);
 
-    var viewPortCenterX = (windowWidth - 15) / 2;
-    var viewPortCenterY = $(window).height() / 2;
-
+    var viewPortCenterX = contentDiv.width() / 2;
+    var viewPortCenterY = contentDiv.height() / 2;
     $("#loading").offset({ top: viewPortCenterY, left: viewPortCenterX });
-
-    var size = new Size($(window).width(), $(window).height());
-    project.view.viewSize = size;
 
     $("#loadData").click(function () {
         $("#loading").show();
