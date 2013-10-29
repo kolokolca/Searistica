@@ -10,9 +10,9 @@ function GradientDescentFinal(learningRate)
     Y =  xy(:,3);    
     figure;
     scale = 2;
-    %quiver(X,Y,U,V, scale, 'MarkerFaceColor','c', 'MarkerEdgeColor','c')   
+    quiver(X,Y,U,V, scale, 'MarkerFaceColor','c', 'MarkerEdgeColor','c')   
     hold on    
-    
+    figure;
     %for selected points of a cell
     xy = csvread('selectedPoints.txt');
     sX =  xy(:,1);
@@ -24,7 +24,7 @@ function GradientDescentFinal(learningRate)
     %quiver(X,Y,U,V, scale)
     
      %Reading NaN point
-    xy = csvread('NaNPoints.txt');
+    %xy = csvread('NaNPoints.txt');
     nX =  xy(:,1);
     nY =  xy(:,2);
     %scatter(nX,nY,4,'O', 'MarkerEdgeColor','r','MarkerFaceColor','r', 'LineWidth', 0.1)
@@ -46,12 +46,6 @@ function GradientDescentFinal(learningRate)
     %scatter(cX,cY,4,'O', 'MarkerEdgeColor','g','MarkerFaceColor','g', 'LineWidth', 1)
     scatter(cX,cY,4,'O', 'MarkerEdgeColor','g','MarkerFaceColor','g', 'LineWidth', 1)
     quiver(cX,cY,cU,cV, 2, 'MarkerFaceColor','g', 'MarkerEdgeColor','g')
-    
-   
-    
-    maxX = max(X)
-    minY = min(Y)
-    scatter(maxX,minY,4,'O', 'MarkerEdgeColor','k','MarkerFaceColor','k', 'LineWidth', 1)
     
     
 end

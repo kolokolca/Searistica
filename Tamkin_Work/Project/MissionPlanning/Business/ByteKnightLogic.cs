@@ -229,5 +229,52 @@ namespace Business
             }
 
         }
+
+        public Response<Dimension> GetCurrentDataDimension()
+        {
+            var response = new Response<Dimension>();
+            try
+            {
+                using (var work = new UnitOfWork())
+                {
+                    var cellRepository = RepositoryContainer.GetRepository<Cell>(work);
+                    const string sqlQuery = "select max(X) as MaxX, min(X) as MinX, max(Y) as MaxY, min(Y) as MinY from Cells";
+                    var dimension = cellRepository.ExecuteCommand<Dimension>(sqlQuery);
+                    response.Data = dimension.ElementAt(0);
+                    return response;
+                }
+
+            }
+            catch (Exception)
+            {
+                response.Success = false;
+                response.ErrorMessage = "failed";
+                return response;
+            }
+        }
+
+        public Response<List<CellVector>> GetAllCellVector()
+        {
+            //Thread.Sleep(2000);
+            var response = new Response<List<CellVector>>();
+            try
+            {
+                using (var work = new UnitOfWork())
+                {
+                    var cellRepository = RepositoryContainer.GetRepository<Cell>(work);
+                    const string sqlQuery = "select X,Y,U,V from Cells";
+                    var cellVectors = cellRepository.ExecuteCommand<CellVector>(sqlQuery);
+                    response.Data = cellVectors;
+                    return response;
+                }
+
+            }
+            catch (Exception)
+            {
+                response.Success = false;
+                response.ErrorMessage = "failed";
+                return response;
+            }
+        }
     }
 }

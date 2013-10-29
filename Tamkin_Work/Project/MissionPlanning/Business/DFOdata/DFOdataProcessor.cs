@@ -208,15 +208,17 @@ namespace Business.DFOdata
             var rectArea = GetRectArea(dfoDataRepository);
             var selectedPointsStr = "";
             var cellCenterStr = "";
-            //var nanCellStr = "";
-
+            var nanCellStr = "";
+            var insertStatement = "Insert into dbo.Cells(X,Y,U,V) ";
+            var totalCell = 0;
             var startTime = DateTime.Now;
             double distanceBetween2AdjacentCellCenterPoint = 2 * HalfOfEachCellArea;
-            for (var i = rectArea.MinX; i <= rectArea.MaxX; i = i + distanceBetween2AdjacentCellCenterPoint)
+
+            for (double y = rectArea.MaxY, i = 0.0; y >= rectArea.MinY; y = y - distanceBetween2AdjacentCellCenterPoint, i ++)
             {
-                for (var j = rectArea.MinY; j <= rectArea.MaxY; j = j + distanceBetween2AdjacentCellCenterPoint)
+                for (double x = rectArea.MinX, j = 0.0; x <= rectArea.MaxX; x = x + distanceBetween2AdjacentCellCenterPoint, j ++)
                 {
-                    var adjacentCell = new GridCell(i, j);
+                    var adjacentCell = new GridCell(x,y);
                     var sqlQuery = string.Format("Select * from DFOdata where X >= {0} and X <= {1} and Y >= {2} and Y <= {3}",
                                                  adjacentCell.X - HalfOfEachCellArea,
                                                  adjacentCell.X + HalfOfEachCellArea,
@@ -239,15 +241,33 @@ namespace Business.DFOdata
                     if (!Double.IsNaN(uComp) && !Double.IsNaN(vComp))
                     {
                         cellCenterStr += string.Format("{0},{1},{2},{3}\n", adjacentCell.X, adjacentCell.Y, uComp, vComp);
+                        var cellX = Convert.ToInt32(i);
+                        var cellY = Convert.ToInt32(j);
+
+                        if (totalCell == 0)
+                            insertStatement += string.Format("SELECT {0}, {1}, {2}, {3}", cellY , cellX, uComp, vComp);
+                        else
+                            insertStatement += string.Format("UNION ALL SELECT {0}, {1}, {2}, {3}", cellY, cellX, uComp, vComp);
+                        totalCell++;
+                        Console.Write(string.Format("{0} {1}\n", i, j));
                     }
                     //else
                     //{
                     //    nanCellStr += string.Format("{0},{1},{2},{3}\n", adjacentCell.X, adjacentCell.Y, uComp, vComp);
                     //}
                     //Console.Write("Total {0} poins for cell {1},{2}.\n", totalDataPoint, adjacentCell.X, adjacentCell.Y);
+                    
+                    
                 }
+                //if(Convert.ToInt32(i) == 1)
+                //{
+                //    break;
+                //}
+                
             }
             
+            dfoDataRepository.ExecuteCommandDirectly(insertStatement);
+
             wr1.Write(selectedPointsStr);
             wr2.Write(cellCenterStr);
             //wr3.Write(nanCellStr);
@@ -299,7 +319,7 @@ namespace Business.DFOdata
 
         private void GenerateGrid()
         {
-            HalfOfEachCellArea = 0.5 * Math.Pow(10, 4);
+            HalfOfEachCellArea = 1 * Math.Pow(10, 4);
             try
             {
                 var wr1 = GetFileWriterForSelectedPoints();
@@ -321,6 +341,5 @@ namespace Business.DFOdata
         }
 
     }
-
 
 }

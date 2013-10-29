@@ -29,6 +29,16 @@ namespace NewByteKnight.Service
             return new ByteKnightLogic().GetTeamName(StateHelper.TeamId);
         }
 
+        public Response<Dimension> GetCurrentDataDimension()
+        {
+            return new ByteKnightLogic().GetCurrentDataDimension();
+        }
+
+        public Response<List<CellVector>> GetAllCellVector()
+        {
+            return new ByteKnightLogic().GetAllCellVector();
+        }
+
         public Response<UnSolved> GetUnsolavedProblem()
         {
             return new ByteKnightLogic().GetUnsolavedProblem(StateHelper.TeamId);

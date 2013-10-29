@@ -152,6 +152,22 @@ namespace DataAccess
             }
         }
         private ObjectSet<DFOdata> _DFOdatas;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<Cell> Cells
+        {
+            get
+            {
+                if ((_Cells == null))
+                {
+                    _Cells = base.CreateObjectSet<Cell>("Cells");
+                }
+                return _Cells;
+            }
+        }
+        private ObjectSet<Cell> _Cells;
 
         #endregion
         #region AddTo Methods
@@ -195,6 +211,14 @@ namespace DataAccess
         {
             base.AddObject("DFOdatas", dFOdata);
         }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the Cells EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToCells(Cell cell)
+        {
+            base.AddObject("Cells", cell);
+        }
 
         #endregion
     }
@@ -203,6 +227,177 @@ namespace DataAccess
     #endregion
     
     #region Entities
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="byteknightModel", Name="Cell")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class Cell : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new Cell object.
+        /// </summary>
+        /// <param name="x">Initial value of the X property.</param>
+        /// <param name="y">Initial value of the Y property.</param>
+        /// <param name="u">Initial value of the U property.</param>
+        /// <param name="v">Initial value of the V property.</param>
+        /// <param name="id">Initial value of the Id property.</param>
+        public static Cell CreateCell(global::System.Int32 x, global::System.Int32 y, global::System.Double u, global::System.Double v, global::System.Int32 id)
+        {
+            Cell cell = new Cell();
+            cell.X = x;
+            cell.Y = y;
+            cell.U = u;
+            cell.V = v;
+            cell.Id = id;
+            return cell;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 X
+        {
+            get
+            {
+                return _X;
+            }
+            set
+            {
+                if (_X != value)
+                {
+                    OnXChanging(value);
+                    ReportPropertyChanging("X");
+                    _X = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("X");
+                    OnXChanged();
+                }
+            }
+        }
+        private global::System.Int32 _X;
+        partial void OnXChanging(global::System.Int32 value);
+        partial void OnXChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Y
+        {
+            get
+            {
+                return _Y;
+            }
+            set
+            {
+                if (_Y != value)
+                {
+                    OnYChanging(value);
+                    ReportPropertyChanging("Y");
+                    _Y = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Y");
+                    OnYChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Y;
+        partial void OnYChanging(global::System.Int32 value);
+        partial void OnYChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double U
+        {
+            get
+            {
+                return _U;
+            }
+            set
+            {
+                if (_U != value)
+                {
+                    OnUChanging(value);
+                    ReportPropertyChanging("U");
+                    _U = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("U");
+                    OnUChanged();
+                }
+            }
+        }
+        private global::System.Double _U;
+        partial void OnUChanging(global::System.Double value);
+        partial void OnUChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double V
+        {
+            get
+            {
+                return _V;
+            }
+            set
+            {
+                if (_V != value)
+                {
+                    OnVChanging(value);
+                    ReportPropertyChanging("V");
+                    _V = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("V");
+                    OnVChanged();
+                }
+            }
+        }
+        private global::System.Double _V;
+        partial void OnVChanging(global::System.Double value);
+        partial void OnVChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+
+        #endregion
+    
+    }
     
     /// <summary>
     /// No Metadata Documentation available.

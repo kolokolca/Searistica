@@ -50,5 +50,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Cells">
+      <EntityTypeMapping TypeName="byteknightModel.Cell">
+        <MappingFragment StoreEntitySet="Cells">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="V" ColumnName="V" />
+          <ScalarProperty Name="U" ColumnName="U" />
+          <ScalarProperty Name="Y" ColumnName="Y" />
+          <ScalarProperty Name="X" ColumnName="X" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

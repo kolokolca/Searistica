@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="byteknightModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
   <EntityContainer Name="byteknightModelStoreContainer">
+    <EntitySet Name="Cells" EntityType="byteknightModel.Store.Cells" store:Type="Tables" store:Schema="dbo" store:Name="Cells">
+      <DefiningQuery>SELECT 
+      [Cells].[X] AS [X], 
+      [Cells].[Y] AS [Y], 
+      [Cells].[U] AS [U], 
+      [Cells].[V] AS [V], 
+      [Cells].[Id] AS [Id]
+      FROM [dbo].[Cells] AS [Cells]</DefiningQuery>
+    </EntitySet>
     <EntitySet Name="DFOdata" EntityType="byteknightModel.Store.DFOdata" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Problem" EntityType="byteknightModel.Store.Problem" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="SubmittedProblem" EntityType="byteknightModel.Store.SubmittedProblem" store:Type="Tables" Schema="dbo" />
@@ -23,6 +32,23 @@
       <End Role="TeamProblemSolutionKey" EntitySet="TeamProblemSolutionKey" />
     </AssociationSet>
   </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'byteknight.dbo.Cells' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Cells">
+    <Key>
+      <PropertyRef Name="X" />
+      <PropertyRef Name="Y" />
+      <PropertyRef Name="U" />
+      <PropertyRef Name="V" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="X" Type="int" Nullable="false" />
+    <Property Name="Y" Type="int" Nullable="false" />
+    <Property Name="U" Type="float" Nullable="false" />
+    <Property Name="V" Type="float" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
   <EntityType Name="DFOdata">
     <Key>
       <PropertyRef Name="Id" />

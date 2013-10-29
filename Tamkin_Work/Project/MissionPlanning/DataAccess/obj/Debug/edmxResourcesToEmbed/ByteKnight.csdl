@@ -22,6 +22,7 @@
       <End Role="TeamProblemSolutionKey" EntitySet="TeamProblemSolutionKeys" />
     </AssociationSet>
     <EntitySet Name="DFOdatas" EntityType="byteknightModel.DFOdata" />
+    <EntitySet Name="Cells" EntityType="byteknightModel.Cell" />
   </EntityContainer>
   <EntityType Name="SubmittedProblem">
     <Key>
@@ -129,4 +130,18 @@
     <Property Type="Double" Name="MaxY" Nullable="false" />
     <Property Type="Double" Name="MinY" Nullable="false" />
   </ComplexType>
+  <EntityType Name="Cell">
+    <Key>
+      <PropertyRef Name="X" />
+      <PropertyRef Name="Y" />
+      <PropertyRef Name="U" />
+      <PropertyRef Name="V" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="X" Nullable="false" />
+    <Property Type="Int32" Name="Y" Nullable="false" />
+    <Property Type="Double" Name="U" Nullable="false" />
+    <Property Type="Double" Name="V" Nullable="false" />
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
 </Schema>

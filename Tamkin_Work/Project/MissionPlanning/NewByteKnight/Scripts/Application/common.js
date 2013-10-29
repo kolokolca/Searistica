@@ -34,6 +34,7 @@ function getServiceUrl(methodName) {
 };
 
 function serviceFailed(result) {
+    debugger;
     alert('Service call failed: ' + result.status + '' + result.statusText);
 }
 
