@@ -21,45 +21,46 @@
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:Repository.cs" caret="4650" fromTop="24" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:IRepository.cs" caret="1594" fromTop="26" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:ByteKnight.Designer.cs" caret="39710" fromTop="25" />
-      <File id="28F44458-AB84-4E51-8917-AEAF1FB03B50/f:Repository.cs" caret="5881" fromTop="15" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:cellMeanVector.txt" caret="0" fromTop="0" />
       <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="252" fromTop="13" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:NaNPoints.txt" caret="0" fromTop="0" />
-      <File id="28F44458-AB84-4E51-8917-AEAF1FB03B50/f:Program.cs" caret="1873" fromTop="19" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:GridCell.cs" caret="54" fromTop="2" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="7953" fromTop="9" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="5409" fromTop="30" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="98" fromTop="0" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="708" fromTop="10" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="1637" fromTop="6" />
     </RecentFiles>
     <RecentEdits>
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="27" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="10" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="37" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="10" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="11" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="17" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="48" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15033" fromTop="22" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14072" fromTop="32" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10431" fromTop="20" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="11824" fromTop="48" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9610" fromTop="19" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9206" fromTop="20" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14368" fromTop="11" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="4595" fromTop="30" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14736" fromTop="19" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="8756" fromTop="7" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="8984" fromTop="19" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="11868" fromTop="22" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="10319" fromTop="15" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="11414" fromTop="20" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="48" fromTop="1" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="217" fromTop="9" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:GridCell.cs" caret="54" fromTop="2" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="4597" fromTop="24" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="8422" fromTop="21" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="9141" fromTop="15" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="11861" fromTop="26" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="14280" fromTop="17" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15025" fromTop="19" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="5574" fromTop="25" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6337" fromTop="38" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6398" fromTop="36" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6344" fromTop="23" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1604" fromTop="29" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1719" fromTop="32" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="918" fromTop="25" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="41" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="27" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="41" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="20" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="32" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="21" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="8" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="21" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="13" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="24" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="9" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="1064" fromTop="14" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="708" fromTop="10" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="34" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="1906" fromTop="10" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="39" fromTop="0" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="1854" fromTop="0" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3223" fromTop="30" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="32798" fromTop="52" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="1041" fromTop="0" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="1429" fromTop="17" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="98" fromTop="0" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="1637" fromTop="6" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
@@ -101,11 +102,11 @@
       <Item value="alert" priority="32" />
       <Item value="getDataFromService" priority="10" />
       <Item value="null" priority="98" />
-      <Item value="function" priority="98" />
-      <Item value="debugger" priority="252" />
-      <Item value="new" priority="21" />
+      <Item value="function" priority="109" />
+      <Item value="debugger" priority="296" />
+      <Item value="new" priority="32" />
       <Item value="Object" priority="10" />
-      <Item value="var" priority="252" />
+      <Item value="var" priority="318" />
       <Item value="ScoreBoardTab" priority="21" />
       <Item value="$" priority="79" />
       <Item value="return" priority="109" />
@@ -143,6 +144,11 @@
       <Item value="height" priority="10" />
       <Item value="mainContainer" priority="10" />
       <Item value="submitScorePanel" priority="10" />
+      <Item value="parseInt" priority="21" />
+      <Item value="marginForScrollbar" priority="21" />
+      <Item value="offset" priority="21" />
+      <Item value="paper" priority="10" />
+      <Item value="console" priority="10" />
     </ItemStatistics>
     <ItemStatistics item="CssCodeCompletionContext">
       <Item value="color" priority="54" />
@@ -151,7 +157,7 @@
       <Item value="font-size" priority="43" />
       <Item value="darkgrey" priority="5" />
       <Item value="display" priority="19" />
-      <Item value="inline-block" priority="8" />
+      <Item value="inline-block" priority="13" />
       <Item value="padding" priority="35" />
       <Item value="none" priority="6" />
       <Item value="header" priority="9" />
@@ -412,6 +418,10 @@
       <Item value="hideLoading" priority="8" />
       <Item value="appendTo" priority="9" />
       <Item value="getHmlTemplate1" priority="8" />
+      <Item value="height" priority="7" />
+      <Item value="width" priority="7" />
+      <Item value="point" priority="7" />
+      <Item value="log" priority="8" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DataAccess.IRepository`1">
       <Item value="Filter`0" priority="296" />

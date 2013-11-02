@@ -58,6 +58,8 @@
     <Content Include="Global.asax" />
     <Content Include="images\382.GIF" />
     <Content Include="images\ani_loading_small.gif" />
+    <Content Include="images\close.png" />
+    <Content Include="images\loading.GIF" />
     <Content Include="Scripts\Application\common.js" />
     <Content Include="Scripts\Application\default.js" />
     <Content Include="Scripts\Jquery\jquery-1.6.2-vsdoc.js" />
@@ -65,6 +67,7 @@
     <Content Include="Scripts\Jquery\jquery-1.6.2.min.js" />
     <Content Include="Scripts\Jquery\jquery-ui-1.8.16.custom.min.js" />
     <Content Include="Scripts\Jquery\jquery.tmpl.min.js" />
+    <Content Include="Scripts\Plugins\JqPlum\jquery.jsPlumb-1.5.3-min.js" />
     <Content Include="Scripts\Plugins\jquery.jqGrid-4.2.0\css\ellipsis-xbl.xml" />
     <Content Include="Scripts\Plugins\jquery.jqGrid-4.2.0\css\ui.jqgrid.css" />
     <Content Include="Scripts\Plugins\jquery.jqGrid-4.2.0\js\Changes.txt" />
@@ -124,7 +127,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Scripts\Plugins\naoScroll\jquery.nanoscroller.js" />
     <Content Include="Scripts\Plugins\paperjs-v0.9.9\dist\paper-core.js" />
     <Content Include="Scripts\Plugins\paperjs-v0.9.9\dist\paper-core.min.js" />
     <Content Include="Scripts\Plugins\paperjs-v0.9.9\dist\paper-full.js" />
