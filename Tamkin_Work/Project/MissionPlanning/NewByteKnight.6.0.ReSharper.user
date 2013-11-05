@@ -12,7 +12,6 @@
       <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:Response.cs" caret="142" fromTop="6" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:ByteknightEntitiesEx.cs" caret="107" fromTop="5" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:UnitOfWork.cs" caret="307" fromTop="13" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="3973" fromTop="73" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Web.config" caret="622" fromTop="11" />
       <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:App.config" caret="487" fromTop="4" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:RepositoryContainer.cs" caret="296" fromTop="9" />
@@ -24,56 +23,59 @@
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:cellMeanVector.txt" caret="0" fromTop="0" />
       <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="252" fromTop="13" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:NaNPoints.txt" caret="0" fromTop="0" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:GridCell.cs" caret="54" fromTop="2" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="11479" fromTop="29" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="5409" fromTop="30" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="98" fromTop="0" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="708" fromTop="10" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="1637" fromTop="6" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Site.Master" caret="0" fromTop="0" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:nanoscroller.css" caret="561" fromTop="4" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="2840" fromTop="35" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:GridCell.cs" caret="54" fromTop="2" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1892" fromTop="31" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="4623" fromTop="13" />
     </RecentFiles>
     <RecentEdits>
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="5574" fromTop="25" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6337" fromTop="38" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6398" fromTop="36" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6344" fromTop="23" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1604" fromTop="29" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1719" fromTop="32" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="918" fromTop="25" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="41" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="27" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="41" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="20" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="32" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3483" fromTop="21" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="8" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="21" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="13" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="24" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="9" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="1064" fromTop="14" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="708" fromTop="10" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3479" fromTop="34" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="1906" fromTop="10" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="39" fromTop="0" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="1854" fromTop="0" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3223" fromTop="30" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="32798" fromTop="52" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="1041" fromTop="0" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="1429" fromTop="17" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="98" fromTop="0" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="1637" fromTop="6" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="11800" fromTop="28" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2043" fromTop="7" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2043" fromTop="5" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="11800" fromTop="25" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="11794" fromTop="19" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1400" fromTop="29" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="4944" fromTop="15" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6244" fromTop="31" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="9694" fromTop="19" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="4536" fromTop="52" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="2709" fromTop="48" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="2319" fromTop="24" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="2840" fromTop="35" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="9694" fromTop="17" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6195" fromTop="23" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2051" fromTop="46" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2073" fromTop="30" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2073" fromTop="24" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1190" fromTop="14" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1356" fromTop="16" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="4944" fromTop="8" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="4944" fromTop="12" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="4944" fromTop="23" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2061" fromTop="25" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="11544" fromTop="12" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="4118" fromTop="7" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="9647" fromTop="15" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6117" fromTop="19" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="5972" fromTop="12" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="4623" fromTop="13" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="AspCodeCompletionContext">
       <Item value="Jquery" priority="6" />
-      <Item value="div" priority="48" />
-      <Item value="class" priority="28" />
+      <Item value="div" priority="76" />
+      <Item value="class" priority="52" />
       <Item value="display-none" priority="13" />
-      <Item value="id" priority="34" />
+      <Item value="id" priority="63" />
       <Item value="divScoreBoard" priority="6" />
-      <Item value="style" priority="35" />
-      <Item value="display" priority="15" />
-      <Item value="none" priority="9" />
+      <Item value="style" priority="70" />
+      <Item value="display" priority="23" />
+      <Item value="none" priority="19" />
       <Item value="asp" priority="20" />
       <Item value="fieldset" priority="6" />
       <Item value="input" priority="6" />
@@ -82,7 +84,7 @@
       <Item value="container" priority="13" />
       <Item value="runat" priority="13" />
       <Item value="server" priority="13" />
-      <Item value="button" priority="14" />
+      <Item value="button" priority="21" />
       <Item value="inline-block" priority="9" />
       <Item value="ClientIDMode" priority="6" />
       <Item value="table" priority="6" />
@@ -97,33 +99,37 @@
       <Item value="font-family" priority="7" />
       <Item value="font-size" priority="13" />
       <Item value="span" priority="21" />
+      <Item value="background" priority="7" />
+      <Item value="wheat" priority="9" />
+      <Item value="width" priority="21" />
+      <Item value="z-index" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="JavaScriptSpecificContext">
-      <Item value="alert" priority="32" />
+      <Item value="alert" priority="76" />
       <Item value="getDataFromService" priority="10" />
       <Item value="null" priority="98" />
-      <Item value="function" priority="109" />
-      <Item value="debugger" priority="296" />
-      <Item value="new" priority="32" />
+      <Item value="function" priority="208" />
+      <Item value="debugger" priority="359" />
+      <Item value="new" priority="65" />
       <Item value="Object" priority="10" />
-      <Item value="var" priority="318" />
+      <Item value="var" priority="494" />
       <Item value="ScoreBoardTab" priority="21" />
-      <Item value="$" priority="79" />
-      <Item value="return" priority="109" />
+      <Item value="$" priority="119" />
+      <Item value="return" priority="175" />
       <Item value="templateHtml" priority="21" />
       <Item value="submitScore" priority="10" />
-      <Item value="if" priority="98" />
+      <Item value="if" priority="131" />
       <Item value="link" priority="21" />
       <Item value="postDataToService" priority="10" />
       <Item value="param" priority="10" />
       <Item value="tab" priority="98" />
-      <Item value="data" priority="54" />
+      <Item value="data" priority="65" />
       <Item value="else" priority="10" />
       <Item value="msgDiv" priority="21" />
       <Item value="_submitScoreTab" priority="10" />
       <Item value="msgDetail" priority="10" />
       <Item value="this" priority="10" />
-      <Item value="false" priority="10" />
+      <Item value="false" priority="21" />
       <Item value="name" priority="32" />
       <Item value="element" priority="10" />
       <Item value="showGlobalLoading" priority="10" />
@@ -144,32 +150,42 @@
       <Item value="height" priority="10" />
       <Item value="mainContainer" priority="10" />
       <Item value="submitScorePanel" priority="10" />
-      <Item value="parseInt" priority="21" />
+      <Item value="parseInt" priority="32" />
       <Item value="marginForScrollbar" priority="21" />
       <Item value="offset" priority="21" />
       <Item value="paper" priority="10" />
       <Item value="console" priority="10" />
+      <Item value="context" priority="21" />
+      <Item value="initializeCanvasView" priority="10" />
+      <Item value="initializeMenuContainer" priority="10" />
+      <Item value="handleMenuClick" priority="10" />
+      <Item value="MozillaSideBar" priority="10" />
+      <Item value="fun" priority="10" />
+      <Item value="grapViewer" priority="10" />
+      <Item value="obj" priority="10" />
+      <Item value="GraphViewer" priority="7" />
+      <Item value="true" priority="10" />
     </ItemStatistics>
     <ItemStatistics item="CssCodeCompletionContext">
       <Item value="color" priority="54" />
       <Item value="black" priority="20" />
       <Item value="yellowgreen" priority="5" />
-      <Item value="font-size" priority="43" />
+      <Item value="font-size" priority="55" />
       <Item value="darkgrey" priority="5" />
-      <Item value="display" priority="19" />
+      <Item value="display" priority="32" />
       <Item value="inline-block" priority="13" />
       <Item value="padding" priority="35" />
-      <Item value="none" priority="6" />
+      <Item value="none" priority="22" />
       <Item value="header" priority="9" />
       <Item value="font-weight" priority="17" />
       <Item value="bold" priority="20" />
       <Item value="font-family" priority="6" />
       <Item value="fantasy" priority="4" />
-      <Item value="margin" priority="23" />
+      <Item value="margin" priority="33" />
       <Item value="coral" priority="4" />
       <Item value="block" priority="6" />
-      <Item value="width" priority="29" />
-      <Item value="background-color" priority="17" />
+      <Item value="width" priority="44" />
+      <Item value="background-color" priority="23" />
       <Item value="khaki" priority="4" />
       <Item value="lavender" priority="5" />
       <Item value="lightsteelblue" priority="5" />
@@ -183,9 +199,9 @@
       <Item value="divSubmitScoreContent" priority="9" />
       <Item value="a" priority="5" />
       <Item value="gainsboro" priority="5" />
-      <Item value="brown" priority="13" />
+      <Item value="brown" priority="20" />
       <Item value="jqgrid-rownum" priority="4" />
-      <Item value="height" priority="11" />
+      <Item value="height" priority="17" />
       <Item value="border-bottom" priority="11" />
       <Item value="solid" priority="6" />
       <Item value="lightgrey" priority="6" />
@@ -195,9 +211,9 @@
       <Item value="lightyellow" priority="6" />
       <Item value="text-align" priority="5" />
       <Item value="center" priority="6" />
-      <Item value="wheat" priority="5" />
+      <Item value="wheat" priority="7" />
       <Item value="italic" priority="4" />
-      <Item value="border" priority="5" />
+      <Item value="border" priority="11" />
       <Item value="lightgray" priority="6" />
       <Item value="olivedrab" priority="6" />
       <Item value="olive" priority="6" />
@@ -206,6 +222,25 @@
       <Item value="grey" priority="6" />
       <Item value="tableHeader" priority="4" />
       <Item value="inherit" priority="6" />
+      <Item value="padding-top" priority="3" />
+      <Item value="background" priority="0" />
+      <Item value="white" priority="4" />
+      <Item value="menuIteam" priority="4" />
+      <Item value="menuContainer" priority="10" />
+      <Item value="border-left" priority="5" />
+      <Item value="options" priority="4" />
+      <Item value="menuhover" priority="4" />
+      <Item value="dataLoading" priority="4" />
+      <Item value="graphViewer" priority="4" />
+      <Item value="z-index" priority="6" />
+      <Item value="position" priority="17" />
+      <Item value="fixed" priority="6" />
+      <Item value="closeImg" priority="4" />
+      <Item value="float" priority="5" />
+      <Item value="right" priority="6" />
+      <Item value="relative" priority="6" />
+      <Item value="cursor" priority="5" />
+      <Item value="pointer" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="CSharpCodeCompletionContext">
       <Item value="return" priority="703" />
@@ -390,7 +425,7 @@
     </ItemStatistics>
     <ItemStatistics item="JavaScriptSpecificContextQualified">
       <Item value="asd" priority="8" />
-      <Item value="show" priority="37" />
+      <Item value="show" priority="61" />
       <Item value="empty" priority="9" />
       <Item value="attr" priority="8" />
       <Item value="replace" priority="8" />
@@ -398,7 +433,7 @@
       <Item value="find" priority="8" />
       <Item value="bindSubmitButtons" priority="8" />
       <Item value="live" priority="9" />
-      <Item value="hide" priority="35" />
+      <Item value="hide" priority="43" />
       <Item value="html" priority="64" />
       <Item value="clearElements" priority="17" />
       <Item value="addClass" priority="9" />
@@ -414,14 +449,16 @@
       <Item value="setTimer" priority="8" />
       <Item value="clearTimer" priority="8" />
       <Item value="clearIntervalId" priority="26" />
-      <Item value="clearInterval" priority="8" />
+      <Item value="clearInterval" priority="16" />
       <Item value="hideLoading" priority="8" />
       <Item value="appendTo" priority="9" />
       <Item value="getHmlTemplate1" priority="8" />
-      <Item value="height" priority="7" />
-      <Item value="width" priority="7" />
+      <Item value="height" priority="64" />
+      <Item value="width" priority="64" />
       <Item value="point" priority="7" />
       <Item value="log" priority="8" />
+      <Item value="mouseleave" priority="7" />
+      <Item value="view" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DataAccess.IRepository`1">
       <Item value="Filter`0" priority="296" />

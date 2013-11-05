@@ -1,8 +1,27 @@
 ﻿var graphViewerObj = null;
+var dataVisualizer = null;
+var obj = null;
 
-var LoadData = function () {
+var DataVisualizer = function () {
     var obj = {
         dimension: null,
+        selectedPoints: new Array(),
+        getAreaOfSelectedPoints: function () {
+            var area = { minX: screen.width, minY: screen.height, maxX: 0, maxY: 0 };
+
+            for (var index in this.selectedPoints) {
+                var selectedPoint = this.selectedPoints[index];
+
+                if (selectedPoint.X < area.minX) area.minX = selectedPoint.X;
+                if (selectedPoint.Y < area.minY) area.minY = selectedPoint.Y;
+
+                if (selectedPoint.X > area.maxX) area.maxX = selectedPoint.X;
+                if (selectedPoint.Y > area.maxY) area.maxY = selectedPoint.Y;
+
+            }
+            debugger;
+            return area;
+        },
         load: function () {
             var scope = this;
             getDataFromService("GetCurrentDataDimension", null, function (response, textStatus, jqXHR, context) {
@@ -75,9 +94,11 @@ var LoadData = function () {
                 cell.fillColor = '#424242';
                 cell.cellVectorX = cellVector.X;
                 cell.cellVectorY = cellVector.Y;
+                cell.originalPosition = { X: cellVector.X, Y: cellVector.Y };
                 //cell.opacity = 0.1;
                 //cell.visible = false;
                 cell.onClick = function (event) {
+                    context.selectedPoints.push(this.originalPosition);
                     context.handleCellClick(this);
                 };
             }
@@ -95,19 +116,33 @@ var LoadData = function () {
 
 var GraphViewer = function () {
     var obj = {
-        positionCalculatedBefore: false,
-        view: function () {
+        clearIntervalId: null,
+        createNode: function (id) {
+            var html = "<div class='w' id='n" + id + "'>" +
+                     id + "</div>";
+            return $(html);
+        },
+        createGraphNodes: function (grapViewerWindow) {
+            debugger;
+            var area = dataVisualizer.getAreaOfSelectedPoints();
+            var rowColumnGap = 5;
+            var width = area.maxX - area.minX + rowColumnGap;
+            var height = area.maxY - area.minY + rowColumnGap;
+            var graphViewerWindow = $(".graphViewerWindow");
+            var containerOffset = 100;
+            var widthFactor = parseInt((graphViewerWindow.width() - containerOffset) / width, 10);
+            var heightFactor = parseInt((graphViewerWindow.height() - containerOffset) / height, 10);
 
-            var grapViewerWindow = $('<div></div>');
-            var graphViewerContent = $('.graphViewerContent');
-            grapViewerWindow.addClass('graphViewerWindow');
-            grapViewerWindow.html(graphViewerContent.html());
-            grapViewerWindow.appendTo($('body,html'));
-
-            //            if (this.positionCalculatedBefore) {
-            //                grapViewer.show();
-            //                return;
-            //            }
+            for (var index in dataVisualizer.selectedPoints) {
+                var selectedPoint = dataVisualizer.selectedPoints[index];
+                var nodeName = parseInt(index, 10) + 1;
+                var nodeDiv = this.createNode(nodeName);
+                nodeDiv.css('left', ((selectedPoint.X - area.minX) * widthFactor) + rowColumnGap * widthFactor / 2 + containerOffset / 2);
+                nodeDiv.css('top', ((selectedPoint.Y - area.minY) * heightFactor) + rowColumnGap * heightFactor / 2 + containerOffset / 2);
+                nodeDiv.appendTo(grapViewerWindow);
+            }
+        },
+        setPosition: function (grapViewerWindow) {
 
             var menuContainer = $('#menuContainer');
             var viewPort = {
@@ -127,8 +162,17 @@ var GraphViewer = function () {
             var halfHeight = viewPort.centerY - percentOfHeightGap;
             var halfWidth = viewPort.centerX - percentOfWidthGap;
 
-            grapViewerWindow.height(halfHeight * 2);
-            grapViewerWindow.width(halfWidth * 2);
+            var height = halfHeight * 2;
+            var width = halfWidth * 2;
+
+            grapViewerWindow.height(height);
+            grapViewerWindow.width(width);
+
+            var loading = $("#graphLoading");
+            var loadingImgW = parseInt(loading.css('width').replace("px", ""), 10);
+
+            loading.offset({ top: 25 , left: width / 2 - (loadingImgW / 2) });
+            loading.show();
 
             var closeicon = $('.closeImg');
             closeicon.click(function () {
@@ -137,13 +181,122 @@ var GraphViewer = function () {
 
             });
 
+        },
+        startGraphGeneration: function (grapViewerWindow, level, jsPlumbInstance) {
+            var context = this;
+            if (context.clearIntervalId == null)
+                context.clearIntervalId = window.setInterval(function () {
+                    context.generateGraph(grapViewerWindow, context, level, jsPlumbInstance);
+                }, 1000 * 1);
+        },
+        clearTimer: function () {
+            if (this.clearIntervalId) {
+                window.clearInterval(obj.clearIntervalId);
+                this.clearIntervalId = null;
+            }
+        },
+        getLoadingImage: function () {
+            var img = " <img class='graphLoading' src='images/294_1.gif' id='graphLoading' />";
+            return $(img);
+        },
+        getCloseImage: function () {
+            var img = " <img class='closeImg' src='images/close.png' style='z-index: 130;' id='Img1' />";
+            return $(img);
+        },
+
+        view: function () {
+
+            var grapViewerWindow = $('<div></div>');
+            grapViewerWindow.addClass('graphViewerWindow');
+
+            this.getCloseImage().appendTo(grapViewerWindow);
+            this.getLoadingImage().appendTo(grapViewerWindow);
+
+            grapViewerWindow.appendTo($('body'));
+            this.setPosition(grapViewerWindow);
+
             grapViewerWindow.draggable();
             grapViewerWindow.show();
-            this.positionCalculatedBefore = true;
+
+            this.createGraphNodes(grapViewerWindow);
+            var jsPlumbInstance = jsPlumb.getInstance({
+                Endpoint: ["Dot", { radius: 2}],
+                HoverPaintStyle: { strokeStyle: "#1e8151", lineWidth: 2 },
+                ConnectionOverlays: [
+                                        ["Arrow", {
+                                            location: 1,
+                                            id: "arrow",
+                                            length: 10,
+                                            foldback: 0.8
+                                        }],
+                                        ["Label",
+                                            {
+                                                id: "label",
+                                                cssClass: "aLabel"
+                                            }]
+                                ]
+            });
+
+            this.startGraphGeneration(grapViewerWindow, 1, jsPlumbInstance);
+
+        },
+        generateGraph: function (grapViewerWindow, context, level, jsPlumbInstance) {
+
+            context.clearTimer();
+
+            jsPlumb.Defaults.Container = grapViewerWindow;
+            var windows = $(".w");
+            jsPlumbInstance.draggable(windows, {
+                containment: $('.graphViewerWindow')
+            });
+
+            jsPlumbInstance.bind("connection", function (info) {
+                var params = info.connection.getParameters();
+                info.connection.getOverlay("label").setLabel(params.cost.toString());
+            });
+
+
+            jsPlumbInstance.doWhileSuspended(function () {
+
+                jsPlumbInstance.makeSource(windows, {
+                    isSource: false,
+                    anchor: "Continuous",
+                    connector: ["Straight"],
+                    connectorStyle: { strokeStyle: "#585858", lineWidth: 1, outlineColor: "transparent", outlineWidth: 4 },
+                    maxConnections: 1,
+                    onMaxConnections: function (info, e) {
+                        //alert("Maximum connections (" + info.maxConnections + ") reached");
+                        return false;
+                    },
+                    ReattachConnections: false,
+                    ConnectionsDetachable: false
+                });
+
+                var i = level;
+                for (var j = 1; j <= dataVisualizer.selectedPoints.length; j++) {
+                    if (i == j) continue;
+                    var s = "n" + i;
+                    var t = "n" + j;
+                    var randomCost = Math.floor((Math.random() * 20) + 1);
+                    jsPlumbInstance.connect({ source: s, target: t, parameters: { "cost": randomCost} });
+                }
+
+            });
+
+            if (level == dataVisualizer.selectedPoints.length) {
+                var loading = $("#graphLoading");
+                loading.hide();
+            }
+            else {
+                var nextLevel = level + 1;
+                this.startGraphGeneration(grapViewerWindow, nextLevel, jsPlumbInstance);
+            }
+
         }
     };
     return obj;
 };
+
 
 
 function initializeCanvasView() {
@@ -194,26 +347,21 @@ function handleMenuClick() {
         $("#loading").show();
         project.activeLayer.remove();
         project.activeLayer = new paper.Layer();
-        new LoadData().load();
+        dataVisualizer = new DataVisualizer();
+        dataVisualizer.load();
 
     });
     $("#randGraph").click(function () {
-        debugger;
         graphViewerObj.view();
     });
 }
+
 $(function () {
     graphViewerObj = new GraphViewer();
-
     initializeCanvasView();
     initializeMenuContainer();
     handleMenuClick();
     initializeLoadingIamges();
-
-    jsPlumb.bind("ready", function () {
-        alert(1);
-    });
-
 });
 
     
