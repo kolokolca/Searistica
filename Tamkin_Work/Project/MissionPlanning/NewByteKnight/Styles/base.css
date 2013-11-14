@@ -8,63 +8,119 @@ body
     background: url(../images/pageBackPattern.gif);
     color:#666;
 }
-.menu{
-    width: 100%;
-    background:transparent url(../images/menubarBackStrip.gif) repeat-x 0 0; 
-	overflow:hidden
-	}
-	
- .menu ul{ margin: 0; padding: 0; float: left; padding: 0 0 0 15px;}
- 
-.menu ul li{ display: inline;}
- 
-.menu ul li a{
-	margin-right:20px;
-    float: left;
-	text-decoration: none;
-    padding-top: 10.5px; 
-    font-weight:bold;
-    font-size: 25;
-    color:gray;    
-}
-	
-.menu ul li a.active{ 
-	font-weight:bold; 
-	color:#82ceec;
-	/* background:transparent url(../images/activeMenuArrow.gif) no-repeat center bottom } */
-    background: transparent url(../images/mainMenuBack.gif) repeat-x right 0px;
-	border-bottom: 1px solid black;
-	 
-	 }
-	
-.menu ul li a.active:hover { color:#82ceec; } 
- 
-.menu ul li a:hover, .menu ul li .current{ color:darkgrey;}
 
-#container { overflow:hidden; padding:10px; background:transparent url(../images/pageContainerBack.gif) repeat-y 0 0;}
-
-#container #pageRight { width:245px;  }
-
-#container #pageRight .htsusGlobalCodeBlock {
-	border:0px;
-	border-bottom:1px solid #bbb;
-	padding:0px 0px 10px 0px;
-	font:bold 12px Tahoma, Geneva, sans-serif;
-}
-
-.menuIteam {
+.menuIteam{
     font: 16px Tahoma;
     padding: 10px;
     padding-left: 20px;
     border-bottom: 1px solid #1C1C1C;
-    cursor: pointer;
     margin-left: 15px;
     margin-right: 15px;
     
 }
 
-.menuIteam:hover {
-    color: #FAFAFA;
+.subMenuIteam{
+    font: 16px Tahoma;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.tahoma15 {
+    font: 15px Tahoma;
+}
+.projectNameTitle {
+    margin-top: 8px;
+    margin-left: 10px;
+    font-family: 'Prosto One', cursive;
+    font-size: 14px;
+}
+.projectNameOKbtn {
+    background-color: #424242;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    margin-left: 10px;
+    width: 35px;
+    color: #D8D8D8;
+    font: 15px Tahoma;
+    text-align: center;
+    height: 20px;
+    cursor: pointer;
+    
+}
+.projectNameContainer {
+    margin: 10px;
+    margin-top: 16px;
+}
+
+.menuIteam:hover{
+    color: #A4A4A4;
+}
+
+.subMenuIteam:hover {
+    color: #FAFAFA;      
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.projectCreationWindow {
+    background: rgba(42,42,42, 0.92);
+    z-index: 150;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+     box-shadow: 0.5px 0.5px 10px #585858;
+    position: fixed;
+    width: 350px;
+    height: 120px;
+    left: 0;
+    top: 0;
+}
+
+#statusWindowContent {
+    display: none;
+    z-index: 130;
+}
+
+.statusWindow {
+    background: rgba(42,42,42, 0.92);
+    z-index: 150;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0.5px 0.5px 10px #585858;
+    position: fixed;
+    width: 325px;
+    height: 120px;
+    left: 0;
+    top: 0;
+    text-align: center
+}
+#statusText {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 35px;
+}
+
+.statusLoading {
+    display: block;
+    margin-top: 12px;
+    margin-left: 75px;    
+}
+ #projectCreationWindowContent {
+     display: none
+ }
+
+.projectCreationWindow .closeImg {
+    width: 18px;
+    height: 18px;
+}
+.statusWindow .closeImg {
+    width: 18px;
+    height: 18px;
 }
 
 .options {
@@ -97,30 +153,114 @@ body
     position: fixed; 
     width: 50px; 
     height: 50px;
-    z-index: 100; 
+    z-index: 145; 
     display: none
 }
 
 .graphLoading {
-    position: relative; 
-    width: 150px; 
-    height: 15px;
-    z-index: 110;
-    display: none;
+    width: 125px; 
+    height: 12px;
+    z-index: 145;
+    position: absolute;
 }
 
 .graphViewerWindow {
     background: rgba(42,42,42, 0.92);
-    z-index: 100;
-    position: fixed;
+    z-index: 120;
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
      box-shadow: 0.5px 0.5px 10px #585858;
     display: none;
-    cursor: move;
+    position: fixed;
 }
 
+
+.statusContainer {
+     background-color: rgba(28,28,28, 0.2);
+     height: 200px;
+    margin-left: 35px;
+    margin-right: 35px;
+     -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 1px 1px 4px black;    
+    background-repeat: no-repeat;
+    
+}
+
+.statusbarBackImage {
+    float: right;
+    height: 100%;
+    position: absolute;
+    left: 155px;
+}
+.statusbar {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 140;
+}
+.statusBarText1 
+{
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 41px;
+    margin: 0 0 0 50px;
+    opacity: 0.85;
+    padding-top: 35px;
+    font-family: 'Antic Slab', serif;    
+    color: white;
+}
+.statusBarText2 {
+    color: #A6A6A6;
+    font-family: 'statusBarText3';
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    margin-left: 50px;
+    margin-top: 12px;
+}
+.statusBarText3 {
+    color: #A6A6A6;
+    font-family: 'Average Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.graphContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.runSolverText {
+    padding: 10px;
+    text-align: center;
+}
+.runSolverBtn 
+{
+    display: none;
+    width: 120px;
+    height: 45px;
+    z-index: 130;
+     -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #2E2E2E;
+    border: 1px solid #585858;
+    color: white;
+    font-family: Tahoma, cursive;
+    font-size: 15px;
+    
+}
 .closeImg {
     width: 22px;
     height: 22px;
@@ -128,29 +268,91 @@ body
     float: right;
     position: relative;
     cursor: pointer;
-   
+    display: inline-block;
+    z-index: 145;
 }
 
 
+#graphViewerContent {
+    display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+#nodeCount {
+    display: inline-block;
+    color: #0080FF;
+     opacity: 0.4;
+}
+#edgeCount {
+    display: inline-block;
+    color: #01DF01;
+     opacity: 0.4;
+}
+#timer {
+    display: inline-block;
+    color: #FF4000;
+    opacity: 0.4;
+}
 
 
 #demo {
 	margin-top:5em;
 }
 
+.solverLoadingDiv {
+
+float: right;
+
+}
+.solverLoading {
+        width: 80px;
+height: 80px;
+margin-top: 50px;
+margin-right: 45px;
+}
+
+.solverName {
+    color: #0080FF;
+    opacity: 0.6;
+    font-family: 'Prosto One', cursive;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: -15px;   
+}
+
+
+.cell {
+    width: 5px;
+    height: 5px;
+    border: 1px solid red;
+    border-radius: 50% 50% 50% 50%;
+    z-index: 111;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #424242;
+    border-color: #1C1C1C;
+    cursor: pointer;
+}
+
+.cell:hover {
+     opacity: 0.6;
+     border: 2px solid orangered;
+    width: 10px;
+    height: 10px;
+    z-index: 110;
+}
+
+.selectedCell {
+    opacity: 0.6;
+    border: 2px solid #FA8258;
+    background-color: #04B404;
+    width: 6px;
+    height: 6px;
+    z-index: 110;
+}
+
+
+/* jqplum*/
 .w { 
 	width:10px;
 	height: 10px;

@@ -56,11 +56,17 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\285.GIF" />
+    <Content Include="images\294_2.GIF" />
+    <Content Include="images\294_1.GIF" />
     <Content Include="images\382.GIF" />
     <Content Include="images\ani_loading_small.gif" />
     <Content Include="images\close.png" />
+    <Content Include="images\home-header-checkins.png" />
     <Content Include="images\loading.GIF" />
+    <Content Include="images\statusback.png" />
     <Content Include="Scripts\Application\common.js" />
+    <Content Include="Scripts\Application\DataVisualizer.js" />
     <Content Include="Scripts\Application\default.js" />
     <Content Include="Scripts\Jquery\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\Jquery\jquery-1.6.2.js" />

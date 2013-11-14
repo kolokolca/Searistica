@@ -19,15 +19,6 @@ namespace NewByteKnight.Service
     
     public class Service : IService
     {
-        public Response<ScoreBoardData> GetSoreBoardData()
-        {
-            return new ByteKnightLogic().GetSoreBoardData();
-        }
-
-        public Response<string> GetTeamName()
-        {
-            return new ByteKnightLogic().GetTeamName(StateHelper.TeamId);
-        }
 
         public Response<Dimension> GetCurrentDataDimension()
         {
@@ -39,14 +30,34 @@ namespace NewByteKnight.Service
             return new ByteKnightLogic().GetAllCellVector();
         }
 
-        public Response<UnSolved> GetUnsolavedProblem()
+        public Response<string> GenerateEncoding(string encodingType, string projectName, string costMatrixFileName)
         {
-            return new ByteKnightLogic().GetUnsolavedProblem(StateHelper.TeamId);
+            return new ByteKnightLogic().GenerateEncoding(encodingType, projectName, costMatrixFileName);
         }
 
-        public Response<string> SubmitProblem(string problemId, string key)
+        public Response<List<CellVector>> DecodeSolverResult(string encodingType, string projectName, string solverResultFileName)
         {
-            return new ByteKnightLogic().SubmitProblem(problemId, key, StateHelper.TeamId);
+            return new ByteKnightLogic().DecodeSolverResult(encodingType, projectName, solverResultFileName);
+        }
+
+        public Response<bool> CreateNewProject(string projectName)
+        {
+            return new ByteKnightLogic().CreateNewProject(projectName);
+        }
+
+        public Response<bool> SaveSelectedPoints(List<CellVector> selectedPoints, string projectName)
+        {
+            return new ByteKnightLogic().SaveSelectedPoints(selectedPoints, projectName);
+        }
+
+        public Response<bool> GenerateRandomCostGraph(string projectName, int numberOfNodes)
+        {
+            return new ByteKnightLogic().GenerateRandomCostGraph(projectName, numberOfNodes);
+        }
+
+        public Response<string> RunSolver(string projectName, string encodingType, string encodingFilename)
+        {
+            return new ByteKnightLogic().RunSolver(projectName, encodingType, encodingFilename);
         }
     }
 }

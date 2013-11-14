@@ -8,3 +8,8 @@ C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\CSharpSolverRu
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\CSharpSolverRunner\CSharpSolverRunner\bin\Debug\CSharpSolverRunner.exe
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\CSharpSolverRunner\CSharpSolverRunner\bin\Debug\CSharpSolverRunner.pdb
 C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin's Work\Project\CSharpSolverRunner\CSharpSolverRunner\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\CSharpSolverRunner\CSharpSolverRunner\obj\x86\Debug\CSharpSolverRunner.exe
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\CSharpSolverRunner\CSharpSolverRunner\obj\x86\Debug\CSharpSolverRunner.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\CSharpSolverRunner\CSharpSolverRunner\bin\Debug\CSharpSolverRunner.exe
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\CSharpSolverRunner\CSharpSolverRunner\bin\Debug\CSharpSolverRunner.pdb
+C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\CSharpSolverRunner\CSharpSolverRunner\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -35,9 +35,11 @@ namespace CSharpSolverRunner
             var param = "/c "+"java -jar " + bdir + "sat4j-pb.jar " + bdir + "generatedForVideoTutorial.opb > c:\\myou.txt";
             var processStartInfo = new ProcessStartInfo(@"cmd.exe", param)
             {
-                UseShellExecute = false,
+                UseShellExecute = true,
                 RedirectStandardOutput = false,
-                RedirectStandardInput = false
+                RedirectStandardInput = false,
+                CreateNoWindow = false,
+                WindowStyle = ProcessWindowStyle.Minimized
             };
            
             _cmdExe = new Process { StartInfo = processStartInfo, EnableRaisingEvents = true };
