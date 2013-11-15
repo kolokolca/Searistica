@@ -50,9 +50,14 @@ namespace NewByteKnight.Service
             return new ByteKnightLogic().SaveSelectedPoints(selectedPoints, projectName);
         }
 
-        public Response<bool> GenerateRandomCostGraph(string projectName, int numberOfNodes)
+        public Response<string> GenerateRandomCostGraph(string projectName, int numberOfNodes)
         {
             return new ByteKnightLogic().GenerateRandomCostGraph(projectName, numberOfNodes);
+        }
+
+        public Response<string> GenerateEuclideanDistanceCostGraph(string projectName, int numberOfNodes)
+        {
+            return new ByteKnightLogic().GenerateEuclideanDistanceCostGraph(projectName, numberOfNodes);
         }
 
         public Response<string> RunSolver(string projectName, string encodingType, string encodingFilename)

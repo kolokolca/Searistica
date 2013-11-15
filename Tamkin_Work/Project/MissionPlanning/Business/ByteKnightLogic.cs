@@ -91,21 +91,31 @@ namespace Business
 
         public Response<bool> CreateNewProject(string projectName)
         {
+            Thread.Sleep(2500);
             return UtilityFunctions.CreaNewProject(projectName);
         }
 
         public Response<bool> SaveSelectedPoints(List<CellVector> selectedPoints, string projectName)
         {
+            Thread.Sleep(2500);
             return UtilityFunctions.SaveSelectedPoints(selectedPoints, projectName);
         }
 
-        public Response<bool> GenerateRandomCostGraph(string projectName, int numberOfNodes)
+        public Response<string> GenerateRandomCostGraph(string projectName, int numberOfNodes)
         {
+            Thread.Sleep(2500);
             return UtilityFunctions.GenerateRandomCostMatrix(projectName, numberOfNodes);
+        }
+
+        public Response<string> GenerateEuclideanDistanceCostGraph(string projectName, int numberOfNodes)
+        {
+            Thread.Sleep(2500);
+            return UtilityFunctions.GenerateEuclideanDistanceCostGraph(projectName, numberOfNodes);
         }
 
         public Response<string> GenerateEncoding(string encodingType, string projectName, string costMatrixFileName)
         {
+            Thread.Sleep(2500);
             var response = new Response<string> {Success = true};
             if(encodingType  == "PB")
             {
@@ -126,7 +136,7 @@ namespace Business
 
         public Response<List<CellVector>> DecodeSolverResult(string encodingType, string projectName, string solverResultFileName)
         {
-
+            Thread.Sleep(2500);
             var response = new Response<List<CellVector>> { Success = true };
             if (encodingType == "PB")
             {

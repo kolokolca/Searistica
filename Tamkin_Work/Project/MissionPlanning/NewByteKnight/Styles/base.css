@@ -132,7 +132,7 @@ body
     margin-bottom: 10px;
     border-bottom: 1px solid #FE2E2E;
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 #menuContainer {
@@ -343,7 +343,7 @@ margin-right: 45px;
 }
 
 .selectedCell {
-    opacity: 0.6;
+    opacity: 0.8;
     border: 2px solid #FA8258;
     background-color: #04B404;
     width: 6px;

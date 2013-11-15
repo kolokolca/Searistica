@@ -14,7 +14,7 @@ namespace Business
         {
             return "E:\\MissionPlanningTempData";
         }
-        
+
         public static string GetPythonCodesDir()
         {
             var basedir = AppDomain.CurrentDomain.BaseDirectory;
@@ -56,7 +56,7 @@ namespace Business
                 return response;
             }
             var selectedPointsFile = projectFolder + "\\selectedPoints.txt";
-            if(File.Exists(selectedPointsFile)) File.Delete(selectedPointsFile);
+            if (File.Exists(selectedPointsFile)) File.Delete(selectedPointsFile);
 
             var file = new StreamWriter(selectedPointsFile);
             foreach (var selectedPoint in selectedPoints)
@@ -69,24 +69,33 @@ namespace Business
             return response;
         }
 
-        public static Response<bool> GenerateRandomCostMatrix(string projectName, int numberOfNodes)
+        public static Response<string> GenerateRandomCostMatrix(string projectName, int numberOfNodes)
         {
-            var response = new Response<bool>();
-            var projectFolderPath = GetProjectFolder(projectName);
-            if (Directory.Exists(projectFolderPath) == false)
+            var response = new Response<string>();
+            try
             {
-                response.Data = false;
-                response.ErrorMessage = string.Format("Projecr '{0}' folder notfound !.", projectName);
+                var projectFolderPath = GetProjectFolder(projectName);
+                if (Directory.Exists(projectFolderPath) == false)
+                {
+                    response.Success = false;
+                    response.ErrorMessage = string.Format("Projecr '{0}' folder notfound !.", projectName);
+                    return response;
+                }
+
+                var costMatrixFilePath = WriteRandomCostMatrix(projectFolderPath, numberOfNodes);
+                response.Data = Path.GetFileNameWithoutExtension(costMatrixFilePath);
+                response.Success = true;
+                return response;
+            }
+            catch(Exception ex)
+            {
+                response.Success = false;
                 return response;
             }
 
-            WriteRandomCostMatrix(projectFolderPath, numberOfNodes);
-            response.Data = true;
-            return response;
-
         }
 
-        private static void WriteRandomCostMatrix(string projectFolderPath, int numberOfNodes)
+        private static string WriteRandomCostMatrix(string projectFolderPath, int numberOfNodes)
         {
             string costMatrixFilePath = projectFolderPath + "\\RandomCostMatrix.txt";
             if (File.Exists(costMatrixFilePath))
@@ -94,7 +103,7 @@ namespace Business
 
             var file = new StreamWriter(costMatrixFilePath);
             file.WriteLine(numberOfNodes);
-            
+
             var random = new Random();
             for (int i = 1; i <= numberOfNodes; i++)
             {
@@ -120,7 +129,71 @@ namespace Business
 
             file.Close();
 
+            return costMatrixFilePath;
         }
 
+        public static Response<string> GenerateEuclideanDistanceCostGraph(string projectName, int numberOfNodes)
+        {
+            var response = new Response<string>(){Success = true};
+            try
+            {
+                var selectedPointsFilePath = GetProjectFolder(projectName) + "\\selectedPoints.txt";
+                var selectedPoints = new List<CellVector>();
+                using (var reader = File.OpenText(selectedPointsFilePath))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        var xy = line.Split(',');
+                        var x = int.Parse(xy[0]);
+                        var y = int.Parse(xy[1]);
+                        selectedPoints.Add(new CellVector() {X = x, Y = y});
+                    }
+                }
+
+                var costMatrixFilePath = GetProjectFolder(projectName) + "\\EuclideanDistanceCostmatrix.txt";
+                var file = new StreamWriter(costMatrixFilePath);
+                file.WriteLine(selectedPoints.Count);
+
+                foreach (var selectedPointI in selectedPoints)
+                {
+                    var oneLine = "";
+                    var j = 1;
+                    foreach (var selectedPointJ in selectedPoints)
+                    {
+                        if (selectedPointI.X == selectedPointJ.X && selectedPointI.Y == selectedPointJ.Y)
+                        {
+                            if (j == selectedPoints.Count)
+                                oneLine += "0";
+                            else
+                                oneLine += "0,";
+                        }
+                        else
+                        {
+                            var dis = Math.Pow(selectedPointI.X - selectedPointJ.X, 2) +
+                                      Math.Pow(selectedPointI.Y - selectedPointJ.Y, 2);
+                            int cost = Convert.ToInt32(Math.Sqrt(dis));
+
+                            if (j == selectedPoints.Count) oneLine += cost;
+                            else
+                                oneLine += cost + ",";
+                        }
+                        j++;
+                    }
+                    file.WriteLine(oneLine);
+                }
+
+                file.Close();
+                response.Data = Path.GetFileNameWithoutExtension(costMatrixFilePath);
+            }
+            catch(Exception ex)
+            {
+                response.Success = false;
+                return response;
+            }
+            
+            return response;
+        }
+        
     }
 }

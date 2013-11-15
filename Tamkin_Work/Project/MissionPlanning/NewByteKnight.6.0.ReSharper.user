@@ -1,8 +1,6 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:Response.cs" caret="142" fromTop="6" />
-      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:ByteknightEntitiesEx.cs" caret="107" fromTop="5" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:UnitOfWork.cs" caret="307" fromTop="13" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Web.config" caret="622" fromTop="11" />
       <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:App.config" caret="487" fromTop="4" />
@@ -18,51 +16,53 @@
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:GridCell.cs" caret="54" fromTop="2" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:Mapper.cs" caret="135" fromTop="6" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:Solver/f:decodedResult.txt" caret="3662" fromTop="42" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="2512" fromTop="28" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15249" fromTop="188" />
       <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="282" fromTop="14" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="4124" fromTop="27" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="17722" fromTop="21" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:SolverRunner.cs" caret="2793" fromTop="29" />
       <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:CellVector.cs" caret="107" fromTop="5" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Site.Master" caret="888" fromTop="13" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:SolverRunner.cs" caret="6496" fromTop="32" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Account/f:Login.aspx.cs" caret="147" fromTop="7" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:PsuedoBooleanEncoding.cs" caret="4106" fromTop="37" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1783" fromTop="23" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="4232" fromTop="22" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:IService.cs" caret="2149" fromTop="19" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:Service.svc.cs" caret="2171" fromTop="19" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="2348" fromTop="12" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="15249" fromTop="188" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:common.js" caret="1052" fromTop="23" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="11459" fromTop="0" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="424" fromTop="18" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:Service.svc.cs" caret="1634" fromTop="38" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:IService.cs" caret="156" fromTop="6" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Site.Master" caret="888" fromTop="13" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="6790" fromTop="18" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="14055" fromTop="10" />
     </RecentFiles>
     <RecentEdits>
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="19587" fromTop="19" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="19717" fromTop="18" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="19966" fromTop="28" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="4489" fromTop="16" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6772" fromTop="28" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6381" fromTop="23" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="5815" fromTop="42" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="5503" fromTop="20" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="603" fromTop="13" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6067" fromTop="22" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6290" fromTop="27" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="14663" fromTop="16" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="15081" fromTop="23" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="5924" fromTop="43" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="8134" fromTop="25" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="2512" fromTop="28" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="549" fromTop="12" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="1297" fromTop="25" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="981" fromTop="14" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1875" fromTop="32" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="19769" fromTop="27" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="17343" fromTop="16" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="831" fromTop="20" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="12634" fromTop="38" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:Service.svc.cs" caret="1586" fromTop="37" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="871" fromTop="27" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="642" fromTop="21" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="17722" fromTop="21" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:IService.cs" caret="1879" fromTop="36" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:IService.cs" caret="1691" fromTop="32" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="7240" fromTop="33" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="7240" fromTop="45" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="7240" fromTop="44" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="7240" fromTop="38" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="7240" fromTop="22" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="7240" fromTop="19" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="4099" fromTop="10" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="5606" fromTop="16" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="7395" fromTop="29" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="7226" fromTop="23" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="3855" fromTop="7" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="3353" fromTop="15" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="3540" fromTop="16" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="4757" fromTop="30" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="3353" fromTop="11" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="3479" fromTop="29" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3033" fromTop="30" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2066" fromTop="29" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="2644" fromTop="26" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1163" fromTop="11" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1530" fromTop="18" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="2515" fromTop="6" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3328" fromTop="16" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="39037" fromTop="16" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="3859" fromTop="25" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="4100" fromTop="30" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:Service.svc.cs" caret="2298" fromTop="21" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:IService.cs" caret="2149" fromTop="19" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="6790" fromTop="18" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="14055" fromTop="10" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
@@ -112,17 +112,17 @@
       <Item value="pointer" priority="9" />
     </ItemStatistics>
     <ItemStatistics item="JavaScriptSpecificContext">
-      <Item value="alert" priority="238" />
+      <Item value="alert" priority="249" />
       <Item value="getDataFromService" priority="10" />
-      <Item value="null" priority="142" />
-      <Item value="function" priority="436" />
-      <Item value="debugger" priority="502" />
-      <Item value="new" priority="120" />
+      <Item value="null" priority="153" />
+      <Item value="function" priority="480" />
+      <Item value="debugger" priority="557" />
+      <Item value="new" priority="131" />
       <Item value="Object" priority="10" />
-      <Item value="var" priority="1242" />
+      <Item value="var" priority="1308" />
       <Item value="ScoreBoardTab" priority="21" />
-      <Item value="$" priority="259" />
-      <Item value="return" priority="307" />
+      <Item value="$" priority="269" />
+      <Item value="return" priority="318" />
       <Item value="templateHtml" priority="21" />
       <Item value="submitScore" priority="10" />
       <Item value="if" priority="208" />
@@ -135,15 +135,15 @@
       <Item value="msgDiv" priority="21" />
       <Item value="_submitScoreTab" priority="10" />
       <Item value="msgDetail" priority="10" />
-      <Item value="this" priority="263" />
-      <Item value="false" priority="120" />
+      <Item value="this" priority="285" />
+      <Item value="false" priority="131" />
       <Item value="name" priority="32" />
       <Item value="element" priority="10" />
       <Item value="showGlobalLoading" priority="10" />
       <Item value="tabContent" priority="10" />
-      <Item value="response" priority="43" />
+      <Item value="response" priority="54" />
       <Item value="div" priority="10" />
-      <Item value="for" priority="54" />
+      <Item value="for" priority="65" />
       <Item value="solvedProblems" priority="9" />
       <Item value="html" priority="32" />
       <Item value="solvedProblem" priority="10" />
@@ -157,21 +157,21 @@
       <Item value="height" priority="70" />
       <Item value="mainContainer" priority="10" />
       <Item value="submitScorePanel" priority="10" />
-      <Item value="parseInt" priority="76" />
+      <Item value="parseInt" priority="98" />
       <Item value="marginForScrollbar" priority="21" />
-      <Item value="offset" priority="21" />
+      <Item value="offset" priority="32" />
       <Item value="paper" priority="10" />
       <Item value="console" priority="10" />
       <Item value="context" priority="76" />
-      <Item value="initializeCanvasView" priority="10" />
+      <Item value="initializeCanvasView" priority="21" />
       <Item value="initializeMenuContainer" priority="10" />
       <Item value="handleMenuClick" priority="10" />
       <Item value="MozillaSideBar" priority="10" />
       <Item value="fun" priority="32" />
       <Item value="grapViewer" priority="10" />
-      <Item value="obj" priority="54" />
+      <Item value="obj" priority="120" />
       <Item value="GraphViewer" priority="18" />
-      <Item value="true" priority="21" />
+      <Item value="true" priority="32" />
       <Item value="params" priority="21" />
       <Item value="cell" priority="65" />
       <Item value="DataVisualizer" priority="21" />
@@ -186,7 +186,7 @@
       <Item value="border" priority="21" />
       <Item value="heightFactor" priority="10" />
       <Item value="noseSize" priority="10" />
-      <Item value="nodeDiv" priority="10" />
+      <Item value="nodeDiv" priority="21" />
       <Item value="x" priority="43" />
       <Item value="y" priority="32" />
       <Item value="nodeName" priority="21" />
@@ -214,10 +214,20 @@
       <Item value="ctx" priority="8" />
       <Item value="c" priority="32" />
       <Item value="keys" priority="7" />
-      <Item value="_globalDataVisualizer" priority="21" />
-      <Item value="in" priority="8" />
+      <Item value="_globalDataVisualizer" priority="40" />
+      <Item value="in" priority="26" />
       <Item value="points" priority="10" />
       <Item value="point" priority="21" />
+      <Item value="Math" priority="10" />
+      <Item value="totalNodes" priority="21" />
+      <Item value="HTMLIsIndexElement" priority="43" />
+      <Item value="tourPoints" priority="43" />
+      <Item value="scaleX" priority="10" />
+      <Item value="scaleY" priority="10" />
+      <Item value="TourViewer" priority="10" />
+      <Item value="tourPoint" priority="10" />
+      <Item value="sId" priority="21" />
+      <Item value="_createProject" priority="10" />
     </ItemStatistics>
     <ItemStatistics item="CssCodeCompletionContext">
       <Item value="color" priority="114" />
@@ -319,19 +329,19 @@
       <Item value="cell" priority="9" />
     </ItemStatistics>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="return" priority="927" />
+      <Item value="return" priority="1087" />
       <Item value="byteknightEntities`0" priority="31" />
       <Item value="public" priority="509" />
       <Item value="void" priority="383" />
-      <Item value="string" priority="828" />
-      <Item value="null" priority="383" />
-      <Item value="new" priority="1121" />
-      <Item value="Response" priority="123" />
-      <Item value="var" priority="1919" />
+      <Item value="string" priority="1372" />
+      <Item value="null" priority="415" />
+      <Item value="new" priority="1249" />
+      <Item value="Response" priority="152" />
+      <Item value="var" priority="2271" />
       <Item value="ScoreBoardData" priority="57" />
       <Item value="ScoreBoardData`0" priority="31" />
       <Item value="prop" priority="63" />
-      <Item value="List" priority="340" />
+      <Item value="List" priority="561" />
       <Item value="Problem`0" priority="302" />
       <Item value="ServiceContracts" priority="31" />
       <Item value="SubmittedSolution`0" priority="26" />
@@ -339,7 +349,7 @@
       <Item value="p" priority="449" />
       <Item value="allProblems" priority="63" />
       <Item value="SubmittedProblem`0" priority="53" />
-      <Item value="if" priority="447" />
+      <Item value="if" priority="511" />
       <Item value="submittedProblems" priority="63" />
       <Item value="unslovedProblemIds" priority="63" />
       <Item value="Problem" priority="90" />
@@ -349,17 +359,17 @@
       <Item value="Mapper`0" priority="31" />
       <Item value="IQueryable`0" priority="63" />
       <Item value="IEnumerable" priority="31" />
-      <Item value="response" priority="927" />
-      <Item value="true" priority="452" />
-      <Item value="false" priority="484" />
+      <Item value="response" priority="1215" />
+      <Item value="true" priority="485" />
+      <Item value="false" priority="548" />
       <Item value="UnSolved`0" priority="159" />
       <Item value="UnSolved" priority="86" />
       <Item value="unsolvedData" priority="31" />
-      <Item value="int" priority="318" />
+      <Item value="int" priority="382" />
       <Item value="problemId" priority="319" />
       <Item value="key" priority="63" />
       <Item value="out" priority="63" />
-      <Item value="else" priority="191" />
+      <Item value="else" priority="255" />
       <Item value="SubmittedProblem" priority="28" />
       <Item value="submittedProblem" priority="223" />
       <Item value="DateTime`0" priority="127" />
@@ -374,8 +384,8 @@
       <Item value="problemRepository" priority="31" />
       <Item value="problem" priority="90" />
       <Item value="Response&lt;string&gt;" priority="28" />
-      <Item value="Success" priority="31" />
-      <Item value="private" priority="159" />
+      <Item value="Success" priority="58" />
+      <Item value="private" priority="191" />
       <Item value="bool" priority="223" />
       <Item value="submittedProblemsRepository" priority="95" />
       <Item value="sp" priority="159" />
@@ -392,7 +402,7 @@
       <Item value="t" priority="255" />
       <Item value="team" priority="31" />
       <Item value="teams" priority="31" />
-      <Item value="foreach" priority="319" />
+      <Item value="foreach" priority="383" />
       <Item value="score" priority="31" />
       <Item value="lastSubmittedProblem" priority="31" />
       <Item value="lastSubmittedProblems" priority="63" />
@@ -423,9 +433,9 @@
       <Item value="DeletePreviousData`0" priority="31" />
       <Item value="InsertNewData`0" priority="31" />
       <Item value="float" priority="63" />
-      <Item value="Math`0" priority="31" />
+      <Item value="Math`0" priority="95" />
       <Item value="double" priority="159" />
-      <Item value="try" priority="31" />
+      <Item value="try" priority="95" />
       <Item value="exception" priority="32" />
       <Item value="Exception" priority="57" />
       <Item value="offset" priority="127" />
@@ -453,9 +463,9 @@
       <Item value="wr2" priority="95" />
       <Item value="dfoDataPoint" priority="63" />
       <Item value="class" priority="62" />
-      <Item value="x" priority="63" />
-      <Item value="y" priority="159" />
-      <Item value="Y" priority="31" />
+      <Item value="x" priority="96" />
+      <Item value="y" priority="192" />
+      <Item value="Y" priority="64" />
       <Item value="Cell`0" priority="191" />
       <Item value="adjacentCells" priority="159" />
       <Item value="currentCell" priority="31" />
@@ -498,28 +508,51 @@
       <Item value="outputFileName" priority="31" />
       <Item value="_cmdExe" priority="31" />
       <Item value="SolverRunner`0" priority="31" />
-      <Item value="outputFilePath" priority="95" />
+      <Item value="outputFilePath" priority="159" />
       <Item value="FileStyleUriParser`0" priority="31" />
       <Item value="solverDir" priority="63" />
       <Item value="GetSolverDir`0" priority="31" />
-      <Item value="costMatrixFilePath" priority="95" />
+      <Item value="costMatrixFilePath" priority="191" />
       <Item value="numberOfNodes" priority="94" />
-      <Item value="file" priority="63" />
-      <Item value="line" priority="95" />
+      <Item value="file" priority="95" />
+      <Item value="line" priority="127" />
       <Item value="Random" priority="28" />
-      <Item value="j" priority="31" />
+      <Item value="j" priority="95" />
       <Item value="solverName" priority="31" />
       <Item value="solverRunner" priority="95" />
       <Item value="Tuple`0" priority="65" />
       <Item value="CreateNoWindow" priority="55" />
-      <Item value="selectedPoints" priority="31" />
-      <Item value="projectName" priority="127" />
+      <Item value="selectedPoints" priority="63" />
+      <Item value="projectName" priority="159" />
       <Item value="static" priority="63" />
-      <Item value="UtilityFunctions`0" priority="63" />
+      <Item value="UtilityFunctions`0" priority="95" />
       <Item value="missionDataFolder" priority="63" />
       <Item value="projectFolder" priority="31" />
       <Item value="Directory`0" priority="31" />
       <Item value="OperationContract" priority="31" />
+      <Item value="Path`0" priority="127" />
+      <Item value="resultFilepath" priority="31" />
+      <Item value="CellVector`0" priority="222" />
+      <Item value="xyuv" priority="63" />
+      <Item value="CellVector" priority="28" />
+      <Item value="X" priority="31" />
+      <Item value="U" priority="32" />
+      <Item value="u" priority="32" />
+      <Item value="V" priority="32" />
+      <Item value="tours" priority="31" />
+      <Item value="GetTour`0" priority="31" />
+      <Item value="outputFilenamepath" priority="31" />
+      <Item value="Thread`0" priority="63" />
+      <Item value="List&lt;CellVector&gt;" priority="28" />
+      <Item value="selectedPointJ" priority="159" />
+      <Item value="selectedPointI" priority="63" />
+      <Item value="continue" priority="31" />
+      <Item value="oneLine" priority="127" />
+      <Item value="cost" priority="31" />
+      <Item value="dis" priority="31" />
+      <Item value="catch" priority="63" />
+      <Item value="Exception`0" priority="63" />
+      <Item value="Convert`0" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.ServiceModel.Web.WebMessageBodyStyle">
       <Item value="Wrapped" priority="54" />
@@ -535,7 +568,7 @@
       <Item value="find" priority="17" />
       <Item value="bindSubmitButtons" priority="8" />
       <Item value="live" priority="9" />
-      <Item value="hide" priority="51" />
+      <Item value="hide" priority="59" />
       <Item value="html" priority="64" />
       <Item value="clearElements" priority="17" />
       <Item value="addClass" priority="17" />
@@ -560,7 +593,7 @@
       <Item value="point" priority="7" />
       <Item value="log" priority="8" />
       <Item value="mouseleave" priority="7" />
-      <Item value="view" priority="7" />
+      <Item value="view" priority="16" />
       <Item value="cost" priority="8" />
       <Item value="push" priority="27" />
       <Item value="minX" priority="44" />
@@ -580,10 +613,20 @@
       <Item value="createNewCell" priority="15" />
       <Item value="hasClass" priority="7" />
       <Item value="removeClass" priority="7" />
-      <Item value="totalSelectedPoints" priority="7" />
+      <Item value="totalSelectedPoints" priority="15" />
       <Item value="text json" priority="7" />
       <Item value="val" priority="7" />
       <Item value="getSelectedPoints" priority="7" />
+      <Item value="pow" priority="8" />
+      <Item value="decodeSolverResult" priority="8" />
+      <Item value="checkForSolverResult" priority="8" />
+      <Item value="ScallingProperties" priority="9" />
+      <Item value="getShiftedXPointOf" priority="8" />
+      <Item value="setScallingProperties" priority="8" />
+      <Item value="offset" priority="8" />
+      <Item value="draggable" priority="7" />
+      <Item value="showStatus" priority="7" />
+      <Item value="currentProjectName" priority="8" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DataAccess.IRepository`1">
       <Item value="Filter`0" priority="296" />
@@ -629,19 +672,20 @@
       <Item value="ToDataTransferObject`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ServiceContracts.Response`1">
-      <Item value="Data" priority="215" />
-      <Item value="Success" priority="107" />
+      <Item value="Data" priority="350" />
+      <Item value="Success" priority="218" />
       <Item value="ErrorMessage" priority="134" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="Contains`0" priority="26" />
-      <Item value="Count" priority="80" />
-      <Item value="Add`0" priority="134" />
+      <Item value="Count" priority="134" />
+      <Item value="Add`0" priority="161" />
       <Item value="OrderByDescending`2" priority="26" />
       <Item value="ElementAt`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Int32">
-      <Item value="TryParse`0" priority="26" />
+      <Item value="TryParse`0" priority="53" />
+      <Item value="Parse`0" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
       <Item value="Now" priority="81" />
@@ -688,7 +732,7 @@
       <Item value="ToList`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Threading.Thread">
-      <Item value="Sleep`0" priority="26" />
+      <Item value="Sleep`0" priority="80" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NewByteKnight.Common.StateHelper">
       <Item value="TeamId" priority="81" />
@@ -699,6 +743,8 @@
     <ItemStatistics item="Qualified:System.String">
       <Item value="Trim`0" priority="80" />
       <Item value="ToLower`0" priority="53" />
+      <Item value="ToString`0" priority="26" />
+      <Item value="Split`0" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.UI.HtmlControls.HtmlGenericControl">
       <Item value="Visible" priority="26" />
@@ -724,10 +770,11 @@
       <Item value="ReadLine`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
-      <Item value="Format`0" priority="242" />
+      <Item value="Format`0" priority="269" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Math">
-      <Item value="Pow`0" priority="26" />
+      <Item value="Pow`0" priority="53" />
+      <Item value="Sqrt`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DataAccess.ByteknightEntitiesEx">
       <Item value="ExecuteStoreCommand`0" priority="53" />
@@ -737,7 +784,7 @@
       <Item value="ToList`1" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.StreamWriter">
-      <Item value="Close`0" priority="53" />
+      <Item value="Close`0" priority="80" />
       <Item value="Write`0" priority="53" />
       <Item value="WriteLine`0" priority="26" />
     </ItemStatistics>
@@ -776,9 +823,27 @@
     <ItemStatistics item="Qualified:@Business.UtilityFunctions">
       <Item value="GetMissionDataFolder`0" priority="26" />
       <Item value="CreaNewProject`0" priority="26" />
+      <Item value="GetProjectFolder`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.IO.Directory">
       <Item value="CreateDirectory`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetFileName`0" priority="53" />
+      <Item value="GetFileNameWithoutExtension`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Business.PsuedoBooleanEncoding">
+      <Item value="Decoding`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ServiceContracts.CellVector">
+      <Item value="X" priority="107" />
+      <Item value="Y" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt32`0" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>

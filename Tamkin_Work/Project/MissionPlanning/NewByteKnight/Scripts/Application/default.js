@@ -20,6 +20,7 @@ var DataVisualizer = function () {
         totalSelectedPoints: 0,
         ScallingProperties: null,
         getAreaOfSelectedPoints: function () {
+            debugger;
             var area = { minX: screen.width, minY: screen.height, maxX: 0, maxY: 0 };
             for (var index in this.selectedPoints) {
                 var selectedPoint = this.selectedPoints[index];
@@ -61,11 +62,10 @@ var DataVisualizer = function () {
                     _utilityFunctions.showStatus(response.ErrorMessage, true, false);
                     return;
                 }
-                obj.generateRandomCostGraph();
+                _utilityFunctions.showStatus("' " + _createProject.currentProjectName + " ' project created.",true,false);
             }, scope);
         },
         generateRandomCostGraph: function () {
-
             _utilityFunctions.showStatus("Generating random cost graph.");
             var paramValue = {
                 numberOfNodes: obj.totalSelectedPoints,
@@ -74,11 +74,28 @@ var DataVisualizer = function () {
             postDataToService('GenerateRandomCostGraph', paramValue, function (response, status, xhr, scope) {
                 _utilityFunctions.hideStatusWindow();
                 response = response.GenerateRandomCostGraphResult;
-                if (response.Data == false) {
+                if (response.Success == false) {
                     _utilityFunctions.showStatus(response.ErrorMessage, true, false);
                     return;
                 }
                 _utilityFunctions.showStatus("Random cost graph generated.", true, false);
+            }, scope);
+        },
+        generateEuclideanCostGraph: function () {
+
+            _utilityFunctions.showStatus("Generating euclidean cost graph.");
+            var paramValue = {
+                numberOfNodes: obj.totalSelectedPoints,
+                projectName: _createProject.currentProjectName
+            };
+            postDataToService('GenerateEuclideanDistanceCostGraph', paramValue, function (response, status, xhr, scope) {
+                _utilityFunctions.hideStatusWindow();
+                response = response.GenerateEuclideanDistanceCostGraphResult;
+                if (response.Success == false) {
+                    _utilityFunctions.showStatus(response.ErrorMessage, true, false);
+                    return;
+                }
+                _utilityFunctions.showStatus("Euclidean cost graph generated.", true, false);
             }, scope);
         },
         load: function () {
@@ -184,7 +201,7 @@ var DataVisualizer = function () {
                     var c = $(this);
                     var x = c.attr('x');
                     var y = c.attr('y');
-                    var cellPos = { X: x, Y: y };
+                    var cellPos = { X: parseInt(x, 10), Y: parseInt(y, 10) };
                     var key = x + "_" + y;
 
                     if (c.hasClass('selectedCell')) {
@@ -264,42 +281,29 @@ var DataVisualizer = function () {
         },
         drawTour: function (tourPoints) {
             debugger;
-            for (index in tourPoints) {
-                var tourPoint = tourPoints[index];
+            //            for (index in tourPoints) {
+            //                var tourPoint = tourPoints[index];
+            //                var vectorStart = new paper.Point(obj.getShiftedXPointOf(tourPoint.X), obj.getShiftedYPointOf(tourPoint.Y));
+            //                var vectorEnd = new paper.Point(obj.getShiftedXPointOf(tourPoint.U), obj.getShiftedYPointOf(tourPoint.V));
 
-//                var myPath = new Path();
-//                myPath.strokeWidth = 3;
-//                myPath.strokeColor = '#FF0000';
-//                myPath.add(new paper.Point(obj.getShiftedXPointOf(tourPoint.X), obj.getShiftedYPointOf(tourPoint.Y)));
-//                myPath.add(new paper.Point(obj.getShiftedXPointOf(tourPoint.U), obj.getShiftedYPointOf(tourPoint.V)));
+            //                var vector = vectorEnd - vectorStart;
+            //                var arrowVector = vector.normalize(20);
+            //                var end = vectorStart + vector;
+            //                var vectorItem = new paper.Group([
+            //		                            new paper.Path([vectorStart, end]),
+            //		                            new paper.Path([end + arrowVector.rotate(135), end, end + arrowVector.rotate(-135)])
+            //                                 ]);
+            //                vectorItem.strokeWidth = 3;
+            //                vectorItem.strokeColor = '#FF0000';
 
-//                var cellXY = new paper.Point(obj.getShiftedXPointOf(tourPoint.U), obj.getShiftedYPointOf(tourPoint.V));
-//                var cell = new paper.Path.Circle(cellXY, 10);
-//                cell.strokeColor = '#1C1C1C';
-//                cell.strokeWidth = 8;
-//                cell.fillColor = '#424242';
-
-
-                var vectorStart = new paper.Point(obj.getShiftedXPointOf(tourPoint.X), obj.getShiftedYPointOf(tourPoint.Y));
-                var vectorEnd = new paper.Point(obj.getShiftedXPointOf(tourPoint.U), obj.getShiftedYPointOf(tourPoint.V));
-
-                var vector = vectorEnd - vectorStart;
-                var arrowVector = vector.normalize(20);
-                var end = vectorStart + vector;
-                var vectorItem = new paper.Group([
-		                            new paper.Path([vectorStart, end]),
-		                            new paper.Path([end + arrowVector.rotate(135), end, end + arrowVector.rotate(-135)])
-                                 ]);
-                vectorItem.strokeWidth = 3;
-                vectorItem.strokeColor = '#FF0000';
-
-            }
+            //            }
+            new TourViewer().view(tourPoints);
         },
         generateEncoding: function () {
             var paramValue = {
                 encodingType: 'PB',
                 projectName: _createProject.currentProjectName,
-                costMatrixFileName: 'RandomCostMatrix'
+                costMatrixFileName: 'EuclideanDistanceCostmatrix'
             };
 
             _utilityFunctions.showStatus("Generating encoding.");
@@ -524,6 +528,206 @@ var GraphViewer = function () {
     return obj;
 };
 
+var TourViewer = function () {
+    var obj = {
+
+        clearIntervalId: null,
+        createNode: function (id) {
+            var html = "<div class='w' id='n" + id + "'>" +
+                     id + "</div>";
+            return $(html);
+        },
+        createGraphNodes: function (graphViewerWindow, tourPoints) {
+            var area = _globalDataVisualizer.getAreaOfSelectedPoints();
+            var rowColumnGap = 3;
+            var width = area.maxX - area.minX + rowColumnGap;
+            var height = area.maxY - area.minY + rowColumnGap;
+            var containerOffset = 70;
+            var widthFactor = parseInt((graphViewerWindow.width() - containerOffset) / width, 10);
+            var heightFactor = parseInt((graphViewerWindow.height() - containerOffset) / height, 10);
+            var gaphContainer = graphViewerWindow.find('.graphContainer');
+            var nodeName = 0;
+            for (var index in tourPoints) {
+                var tourPoint = tourPoints[index];
+
+                nodeName += 1;
+                tourPoint.id = tourPoints;
+
+                var nodeDiv = this.createNode(nodeName);
+                nodeDiv.css('left', ((tourPoint.X - area.minX) * widthFactor) + rowColumnGap * widthFactor / 2 + containerOffset / 2);
+                nodeDiv.css('top', ((tourPoint.Y - area.minY) * heightFactor) + rowColumnGap * heightFactor / 2 + containerOffset / 2);
+                nodeDiv.attr('nid', tourPoint.X + "_" + tourPoint.Y);
+                nodeDiv.appendTo(gaphContainer);
+            }
+        },
+        setPosition: function (graphViewerWindow) {
+
+            var menuContainer = $('#menuContainer');
+            var viewPort = {
+                width: screen.width - menuContainer.width(),
+                height: screen.height,
+                centerX: (screen.width - menuContainer.width()) / 2,
+                centerY: screen.height / 2
+            };
+
+            var percentOfWidthGap = viewPort.width * 10 / 100;
+            var percentOfHeightGap = viewPort.height * 7 / 100;
+
+            graphViewerWindow.offset({
+                top: percentOfHeightGap,
+                left: percentOfWidthGap
+            });
+
+            var halfHeight = viewPort.centerY - percentOfHeightGap;
+            var halfWidth = viewPort.centerX - percentOfWidthGap;
+
+            var height = halfHeight * 2;
+            var width = halfWidth * 2;
+
+            graphViewerWindow.height(height);
+            graphViewerWindow.width(width);
+
+            var loading = graphViewerWindow.find("#graphLoading");
+            var loadingImgW = 125;
+
+            loading.show();
+            loading.offset({ top: 25, left: width / 2 - (loadingImgW / 2) });
+
+
+            var closeicon = graphViewerWindow.find('.closeImg');
+            closeicon.click(function () {
+                obj.handleClose();
+            });
+
+        },
+        handleClose: function () {
+            var view = $(".graphViewerWindow");
+            view.remove();
+        },
+        startGraphGeneration: function (grapViewerWindow, level, jsPlumbInstance) {
+            var context = this;
+            if (context.clearIntervalId == null)
+                context.clearIntervalId = window.setInterval(function () {
+                    context.generateGraph(grapViewerWindow, context, level, jsPlumbInstance);
+                }, 1000 * 1);
+        },
+        clearTimer: function () {
+            if (this.clearIntervalId) {
+                window.clearInterval(obj.clearIntervalId);
+                this.clearIntervalId = null;
+            }
+        },
+        showRunSolverButton: function () {
+            var graphViewerWindow = $('.graphViewerWindow');
+            graphViewerWindow.draggable();
+
+            var button = graphViewerWindow.find('.runSolverBtn');
+            button.appendTo(graphViewerWindow);
+
+            button.offset({ top: graphViewerWindow.height() - 60, left: graphViewerWindow.width() - 135 });
+            button.show();
+
+            button.click(function () {
+                alert('Run solver !');
+                obj.runSolverOnSever();
+            });
+        },
+        createGraphViewerWindow: function () {
+            var graphViewerWindow = $("<div class='graphViewerWindow'></div>");
+            graphViewerWindow.html(this.getGraphViewerWindowContent());
+            this.setPosition(graphViewerWindow);
+            graphViewerWindow.appendTo($('body'));
+            return graphViewerWindow;
+        },
+        getGraphViewerWindowContent: function () {
+            var content = $("#graphViewerContent").html();
+            return content;
+        },
+        view: function (tourPoints) {
+
+            var grapViewerWindow = this.createGraphViewerWindow();
+            grapViewerWindow.show();
+            grapViewerWindow.draggable();
+            
+            this.createGraphNodes(grapViewerWindow, tourPoints);
+
+            var jsPlumbInstance = jsPlumb.getInstance({
+                Endpoint: ["Dot", { radius: 2}],
+                HoverPaintStyle: { strokeStyle: "#1e8151", lineWidth: 2 },
+                ConnectionOverlays: [
+                                        ["Arrow", {
+                                            location: 1,
+                                            id: "arrow",
+                                            length: 10,
+                                            foldback: 0.8
+                                        }],
+                                        ["Label",
+                                            {
+                                                id: "label",
+                                                cssClass: "aLabel"
+                                            }]
+                                ]
+            });
+
+            debugger;
+            this.generateGraph(grapViewerWindow, this, tourPoints, jsPlumbInstance);
+
+        },
+        runSolverOnSever: function () {
+            getDataFromService("RunSolverOnServer", null, function (response, textStatus, jqXHR, context) {
+                debugger;
+            }, this, false);
+        },
+        generateGraph: function (grapViewerWindow, context, tourPoints, jsPlumbInstance) {
+
+            jsPlumb.Defaults.Container = grapViewerWindow.find('.graphContainer');
+
+            var windows = $(".w");
+
+            jsPlumbInstance.draggable(windows, {
+                containment: $('.graphViewerWindow')
+            });
+
+            jsPlumbInstance.bind("connection", function (info) {
+                var params = info.connection.getParameters();
+                info.connection.getOverlay("label").setLabel(params.cost.toString());
+            });
+
+            jsPlumbInstance.doWhileSuspended(function () {
+                debugger;
+                jsPlumbInstance.makeSource(windows, {
+                    isSource: false,
+                    anchor: "Continuous",
+                    connector: ["StateMachine", { curviness: 20}],
+                    connectorStyle: { strokeStyle: "#585858", lineWidth: 1, outlineColor: "transparent", outlineWidth: 4 },
+                    maxConnections: 1,
+                    onMaxConnections: function (info, e) {
+                        //alert("Maximum connections (" + info.maxConnections + ") reached");
+                        return false;
+                    },
+                    ReattachConnections: false,
+                    ConnectionsDetachable: false
+                });
+
+
+                for (index in tourPoints) {
+                    var tourPoint = tourPoints[index];
+                    var sId = tourPoint.X + "_" + tourPoint.Y;
+                    var tId = tourPoint.U + "_" + tourPoint.V;
+
+                    var s = $(".w[nid =" + sId + "]");
+                    var t = $(".w[nid =" + tId + "]");
+
+                    jsPlumbInstance.connect({ source: s, target: t, parameters: { "cost": 1} });
+                }
+
+                grapViewerWindow.find('.graphLoading').hide();
+            });
+        }
+    };
+    return obj;
+};
+
 var CreateProject = function () {
 
     var obj = {
@@ -737,6 +941,12 @@ function handleMenuClick() {
         //_utilityFunctions.showStatus("Generating random cost function graph.");
     });
     $("#randGraph").click(function () {
+        _globalDataVisualizer.generateRandomCostGraph()();
+    });
+    $("#edGraph").click(function () {
+        _globalDataVisualizer.generateEuclideanCostGraph()();
+    });
+    $("#createNewProject").click(function () {
         _createProject.showWindow();
     });
     $("#runSolver").click(function () {
