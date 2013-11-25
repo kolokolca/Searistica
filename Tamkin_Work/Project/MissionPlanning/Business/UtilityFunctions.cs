@@ -194,6 +194,20 @@ namespace Business
             
             return response;
         }
-        
+
+        public static void SetStartEndForPathPlanning(List<CellVector> startEndPoints)
+        {
+            const string startEndTextFilePath = @"C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\PythonCodes\PathPlanning\StartEndPoint.txt";
+            if(File.Exists(startEndTextFilePath))
+            {
+                File.Delete(startEndTextFilePath);
+            }
+            var file = new StreamWriter(startEndTextFilePath);
+            foreach (var startEndPoint in startEndPoints)
+            {
+                file.WriteLine(string.Format("{0},{1}", startEndPoint.X, startEndPoint.Y));
+            }
+            file.Close();
+        }
     }
 }

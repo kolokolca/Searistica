@@ -10,7 +10,7 @@ body
 }
 
 .menuIteam{
-    font: 16px Tahoma;
+    font: 15px Tahoma;
     padding: 10px;
     padding-left: 20px;
     border-bottom: 1px solid #1C1C1C;
@@ -20,7 +20,7 @@ body
 }
 
 .subMenuIteam{
-    font: 16px Tahoma;
+    font: 15px Tahoma;
     padding: 10px;
     cursor: pointer;
     margin-left: 20px;
@@ -332,6 +332,7 @@ margin-right: 45px;
     background-color: #424242;
     border-color: #1C1C1C;
     cursor: pointer;
+    opacity: 0.2;
 }
 
 .cell:hover {
@@ -351,6 +352,14 @@ margin-right: 45px;
     z-index: 110;
 }
 
+.pathCell {
+    opacity: 0.8;
+    border: 1px solid red;
+    background-color: orangered;
+    width: 4px;
+    height: 4px;
+    z-index: 100;
+}
 
 /* jqplum*/
 .w { 

@@ -60,6 +60,16 @@ namespace NewByteKnight.Service
             return new ByteKnightLogic().GenerateEuclideanDistanceCostGraph(projectName, numberOfNodes);
         }
 
+        public Response<bool> SetStartEndForPathPlanning(List<CellVector> startEndPoints)
+        {
+            return new ByteKnightLogic().SetStartEndForPathPlanning(startEndPoints);
+        }
+
+        public Response<List<CellVector>> ShowPath()
+        {
+            return new ByteKnightLogic().ShowPath();
+        }
+
         public Response<string> RunSolver(string projectName, string encodingType, string encodingFilename)
         {
             return new ByteKnightLogic().RunSolver(projectName, encodingType, encodingFilename);

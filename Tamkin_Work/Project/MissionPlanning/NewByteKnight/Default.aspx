@@ -15,28 +15,49 @@
     <div id="menuContainer">
         <div id="options" class="options">
             Options</div>
-        <div id="loadData" class="menuIteam" style="cursor: pointer">
-            1. Load Ocean Current Data</div>
+        <div id="loadDataOption" class="menuIteam">
+            1. Load Ocean Current Data
+            <div id="loadData" class="subMenuIteam">
+                Visualize Stored Ocean Current Data</div>
+            <div id="Div3" class="subMenuIteam">
+                Upload Ocean Current Data</div>
+        </div>
         <div id="selectPoint" class="menuIteam">
-            2. Select Points to Be Visited
-            <div id="selectRandomPoint" class="subMenuIteam">
-                Select Random Number Of Points</div>
+            2. Select Points to be visited
+            <%--<div id="selectRandomPoint" class="subMenuIteam">
+                Select Random Number Of Points</div>--%>
             <div id="selectPointManually" class="subMenuIteam">
-                Select Points Manually</div>
+                Select Way Points</div>
+            <div id="loadStoredPoints" class="subMenuIteam">
+                Load Stored Way Points</div>
         </div>
         <div id="createNewProject" class="menuIteam" style="cursor: pointer">
             3. Create a new project</div>
         <div id="generateGraph" class="menuIteam">
-            4. Generate Fully Connected Graph
-            <div id="randGraph" class="subMenuIteam">
-                Random Cost Graph</div>
+            4. Generate Complete Graph
+            <%--<div id="randGraph" class="subMenuIteam">
+                Random Cost Graph</div>--%>
             <div id="edGraph" class="subMenuIteam">
                 Euclidean Cost Graph</div>
             <div id="Div2" class="subMenuIteam">
-                Graph By Applying Shortest Path Planing</div>
+                Shortest Path Planing Cost Graph</div>
+            <div id="showGraph" class="subMenuIteam">
+                Show Complete Graph</div>
         </div>
-        <div id="runSolver" class="menuIteam" style="cursor: pointer">
-            5. Run Solvers</div>
+        <div id="runSolverOption" class="menuIteam" >
+            5. Run Solvers
+            <div id="runSolver" class="subMenuIteam">
+                Psuedo Boolean Optimization Solver</div>
+            <div id="" class="subMenuIteam">
+                SMT Solver</div>
+        </div>
+        <div id="Div1" class="menuIteam">
+            Path Planning Visualize
+            <div id="setSEpoint" class="subMenuIteam">
+                Set Source - Target point</div>
+            <div id="showPath" class="subMenuIteam">
+                Show Shortest Path</div>
+        </div>
     </div>
     <div id='graphViewerContent'>
         <img alt='' class='closeImg' src='images/close.png' id='Img1' />

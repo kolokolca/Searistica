@@ -154,5 +154,49 @@ namespace Business
             }
             return response;
         }
+
+        public Response<bool> SetStartEndForPathPlanning(List<CellVector> startEndPoints)
+        {
+            Thread.Sleep(2500);
+            var response = new Response<bool> { Success = true };
+            try
+            {
+                UtilityFunctions.SetStartEndForPathPlanning(startEndPoints);
+            }
+            catch(Exception ex)
+            {
+                response.Success = false;
+                response.ErrorMessage = "Error Occured !!";
+            }
+            return response;
+        }
+
+        public Response<List<CellVector>> ShowPath()
+        {
+            var selectedPoints = new List<CellVector>();
+            try
+            {
+                const string filePath = @"C:\Users\Tamkin\Documents\GitHub\Searistica\Tamkin_Work\Project\MissionPlanning\Business\PythonCodes\PathPlanning\path.txt";
+               
+                using (var reader = File.OpenText(filePath))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        var xy = line.Split(',');
+                        var x = int.Parse(xy[0]);
+                        var y = int.Parse(xy[1]);
+                        selectedPoints.Add(new CellVector() { X = x, Y = y });
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return new Response<List<CellVector>>() { Success = false}; 
+                throw;
+            }
+            
+            return  new Response<List<CellVector>>(){ Data = selectedPoints, Success = true}; 
+        }
     }
 }

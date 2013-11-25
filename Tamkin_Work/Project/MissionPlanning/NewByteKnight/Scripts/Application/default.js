@@ -1,7 +1,9 @@
 ﻿
 var _globalDataVisualizer = null;
 var _utilityFunctions = null;
-
+var _createProject = null;
+var _pathPlanningViewer = null;
+var _globalGraphViewerObj = null;
 
 var GraphType = function () {
     var obj = {
@@ -20,7 +22,6 @@ var DataVisualizer = function () {
         totalSelectedPoints: 0,
         ScallingProperties: null,
         getAreaOfSelectedPoints: function () {
-            debugger;
             var area = { minX: screen.width, minY: screen.height, maxX: 0, maxY: 0 };
             for (var index in this.selectedPoints) {
                 var selectedPoint = this.selectedPoints[index];
@@ -35,7 +36,6 @@ var DataVisualizer = function () {
             return area;
         },
         getSelectedPoints: function () {
-            debugger;
             var points = [];
             for (key in this.selectedPoints) {
                 var point = this.selectedPoints[key];
@@ -62,7 +62,7 @@ var DataVisualizer = function () {
                     _utilityFunctions.showStatus(response.ErrorMessage, true, false);
                     return;
                 }
-                _utilityFunctions.showStatus("' " + _createProject.currentProjectName + " ' project created.",true,false);
+                _utilityFunctions.showStatus("' " + _createProject.currentProjectName + " ' project created.", true, false);
             }, scope);
         },
         generateRandomCostGraph: function () {
@@ -83,6 +83,9 @@ var DataVisualizer = function () {
         },
         generateEuclideanCostGraph: function () {
 
+            if (obj.getSelectedPoints() == null) {
+                return;
+            }
             _utilityFunctions.showStatus("Generating euclidean cost graph.");
             var paramValue = {
                 numberOfNodes: obj.totalSelectedPoints,
@@ -101,7 +104,6 @@ var DataVisualizer = function () {
         load: function () {
             var scope = this;
             getDataFromService("GetCurrentDataDimension", null, function (response, textStatus, jqXHR, context) {
-                debugger;
                 context.dimension = response.Data;
                 context.loadCellVector();
             }, scope, false);
@@ -160,12 +162,14 @@ var DataVisualizer = function () {
 
             //var context = this;
             var container = $('#dataVisualize');
-            for (var index in cellVectors) {
+            //alert(cellVectors.length);
 
+            for (var index in cellVectors) {
+                debugger;
                 var cellVector = cellVectors[index];
 
                 var vectorStart = new paper.Point(cellVector.X * scaleX + offset, cellVector.Y * scaleY + offset);
-                var scalingVector = 280;
+                var scalingVector = 500;
                 var vectorEnd = new paper.Point(vectorStart.x + cellVector.U * scalingVector, vectorStart.y + cellVector.V * scalingVector * -1);
 
                 var vector = vectorEnd - vectorStart;
@@ -180,7 +184,7 @@ var DataVisualizer = function () {
 
                 var cellX = cellVector.X * scaleX + offset;
                 var cellY = cellVector.Y * scaleY + offset;
-                var cell = obj.createNewCell(cellX, cellY, cellVector.X, cellVector.Y, container);
+                var cell = obj.createNewCell(cellX, cellY, cellVector, container);
 
                 //                var cellXY = new paper.Point(cellVector.X * scaleX + offset, cellVector.Y * scaleY + offset);
                 //                var cell = new paper.Path.Circle(cellXY, 4);
@@ -217,14 +221,27 @@ var DataVisualizer = function () {
                     //alert(x + ' ' + y);
                 });
 
+                cell.hover(function () {
+                    var c = $(this);
+                    var x = c.attr('x');
+                    var y = c.attr('y');
+                });
             }
             $("#loading").hide();
         },
-        createNewCell: function (x, y, originalX, originalY, container) {
+        createNewCell: function (x, y, cellVector, container) {
+            var originalX = cellVector.X;
+            var originalY = cellVector.Y;
             var cell = $('<div class="cell"></div>');
+            var key = originalX + "," + originalY;
             cell.css({ left: x - 3, top: y - 3 });
+            cell.addClass(originalX + "_" + originalY);
             cell.attr('x', originalX);
             cell.attr('y', originalY);
+            cell.attr('u', cellVector.U);
+            cell.attr('v', cellVector.V);
+
+            cell.attr('title', key);
             cell.appendTo(container);
             return cell;
         },
@@ -280,7 +297,6 @@ var DataVisualizer = function () {
             return y * obj.ScallingProperties.scaleY + obj.ScallingProperties.offset;
         },
         drawTour: function (tourPoints) {
-            debugger;
             //            for (index in tourPoints) {
             //                var tourPoint = tourPoints[index];
             //                var vectorStart = new paper.Point(obj.getShiftedXPointOf(tourPoint.X), obj.getShiftedYPointOf(tourPoint.Y));
@@ -309,7 +325,6 @@ var DataVisualizer = function () {
             _utilityFunctions.showStatus("Generating encoding.");
 
             postDataToService("GenerateEncoding", paramValue, function (response, textStatus, jqXHR, context) {
-                debugger;
                 _utilityFunctions.hideStatusWindow();
                 response = response.GenerateEncodingResult;
                 if (response.Success == false) {
@@ -333,7 +348,6 @@ var GraphViewer = function () {
             return $(html);
         },
         createGraphNodes: function (graphViewerWindow) {
-            debugger;
             var area = _globalDataVisualizer.getAreaOfSelectedPoints();
             var rowColumnGap = 5;
             var width = area.maxX - area.minX + rowColumnGap;
@@ -437,7 +451,6 @@ var GraphViewer = function () {
             return content;
         },
         view: function (graphType) {
-            debugger;
             var grapViewerWindow = this.createGraphViewerWindow();
             grapViewerWindow.show();
 
@@ -466,7 +479,6 @@ var GraphViewer = function () {
         },
         runSolverOnSever: function () {
             getDataFromService("RunSolverOnServer", null, function (response, textStatus, jqXHR, context) {
-                debugger;
             }, this, false);
         },
         generateGraph: function (grapViewerWindow, context, level, jsPlumbInstance) {
@@ -499,7 +511,6 @@ var GraphViewer = function () {
                     ReattachConnections: false,
                     ConnectionsDetachable: false
                 });
-                debugger;
 
                 var i = level;
                 for (var j = 1; j <= _globalDataVisualizer.totalSelectedPoints; j++) {
@@ -516,7 +527,8 @@ var GraphViewer = function () {
                 var view = $(".graphViewerWindow");
                 var loading = view.find("#graphLoading");
                 loading.hide();
-                context.showRunSolverButton();
+                view.draggable();
+                //context.showRunSolverButton();
             }
             else {
                 var nextLevel = level + 1;
@@ -648,7 +660,7 @@ var TourViewer = function () {
             var grapViewerWindow = this.createGraphViewerWindow();
             grapViewerWindow.show();
             grapViewerWindow.draggable();
-            
+
             this.createGraphNodes(grapViewerWindow, tourPoints);
 
             var jsPlumbInstance = jsPlumb.getInstance({
@@ -669,13 +681,12 @@ var TourViewer = function () {
                                 ]
             });
 
-            debugger;
             this.generateGraph(grapViewerWindow, this, tourPoints, jsPlumbInstance);
 
         },
         runSolverOnSever: function () {
             getDataFromService("RunSolverOnServer", null, function (response, textStatus, jqXHR, context) {
-                debugger;
+
             }, this, false);
         },
         generateGraph: function (grapViewerWindow, context, tourPoints, jsPlumbInstance) {
@@ -694,7 +705,7 @@ var TourViewer = function () {
             });
 
             jsPlumbInstance.doWhileSuspended(function () {
-                debugger;
+
                 jsPlumbInstance.makeSource(windows, {
                     isSource: false,
                     anchor: "Continuous",
@@ -710,6 +721,7 @@ var TourViewer = function () {
                 });
 
 
+
                 for (index in tourPoints) {
                     var tourPoint = tourPoints[index];
                     var sId = tourPoint.X + "_" + tourPoint.Y;
@@ -718,7 +730,7 @@ var TourViewer = function () {
                     var s = $(".w[nid =" + sId + "]");
                     var t = $(".w[nid =" + tId + "]");
 
-                    jsPlumbInstance.connect({ source: s, target: t, parameters: { "cost": 1} });
+                    jsPlumbInstance.connect({ source: s, target: t, parameters: { "cost": ""} });
                 }
 
                 grapViewerWindow.find('.graphLoading').hide();
@@ -856,7 +868,7 @@ var UtilityFunctions = function () {
             }
         },
         showStatus: function (message, closeable, showLoading) {
-            debugger;
+
             var currentStatusWindow = $('.statusWindow');
             if (currentStatusWindow)
                 currentStatusWindow.remove();
@@ -934,9 +946,9 @@ function handleMenuClick() {
         _globalDataVisualizer.load();
 
     });
-    //    $("#randGraph").click(function () {
-    //        _globalGraphViewerObj.view();
-    //    });
+    $("#showGraph").click(function () {
+        _globalGraphViewerObj.view();
+    });
     $("#selectPointManually").click(function () {
         //_utilityFunctions.showStatus("Generating random cost function graph.");
     });
@@ -954,12 +966,107 @@ function handleMenuClick() {
         _globalDataVisualizer.generateEncoding();
     });
 
+    $("#setSEpoint").click(function () {
+
+        _pathPlanningViewer.clearView();
+        _pathPlanningViewer.setStartEndPoint();
+    });
+
+    $("#showPath").click(function () {
+        _pathPlanningViewer.showPath();
+    });
+
 }
 
+function PathPlanningViewer(parameters) {
+    var obj = {
+        currentShortesPath: null,
+        clearView: function () {
+            debugger;
+            if (obj.currentShortesPath) {
+                obj.currentShortesPath.remove();
+                obj.currentShortesPath = null;
+                $('.pathCell').removeClass('pathCell');
+                $('.selectedCell').removeClass('selectedCell');
+            }
+        },
+        setStartEndPoint: function () {
+            if (_globalDataVisualizer.getSelectedPoints() == null) {
+                return;
+            }
+            var selectedCells = $('.selectedCell');
+            var points = [];
+            if (selectedCells.length > 2) {
+                _utilityFunctions.showStatus("You must select only 2 points !!", true, false);
+                return;
+            }
+            for (var index = 0; index < selectedCells.length; index++) {
+                var selectedCell = selectedCells[index];
+                var x = $(selectedCell).attr('x');
+                var y = $(selectedCell).attr('y');
+                points.push({ X: parseInt(x, 10), Y: parseInt(y, 10) });
+            }
+
+            var paramValue = {
+                startEndPoints: points
+            };
+
+            _utilityFunctions.showStatus("Saving Start End Points ..");
+            postDataToService('SetStartEndForPathPlanning', paramValue, function (response, status, xhr, scope) {
+                _utilityFunctions.hideStatusWindow();
+                response = response.SetStartEndForPathPlanningResult;
+                if (response.Success == false) {
+                    _utilityFunctions.showStatus(response.ErrorMessage, true, false);
+                    return;
+                }
+                _utilityFunctions.showStatus("Source and Goal has been saved.", true, false);
+            }, scope);
+        },
+        showPath: function () {
+            debugger;
+            _utilityFunctions.showStatus("loading path ..");
+            postDataToService('ShowPath', null, function (response, status, xhr, scope) {
+                debugger;
+                _utilityFunctions.hideStatusWindow();
+                response = response.ShowPathResult;
+                if (response.Success == false) {
+                    _utilityFunctions.showStatus(response.ErrorMessage, true, false);
+                    return;
+                }
+                var segments = [];
+                for (var index in response.Data) {
+                    var pointData = response.Data[index];
+                    var keySelector = "." + pointData.X + "_" + pointData.Y;
+
+                    var cellX = pointData.X * _globalDataVisualizer.ScallingProperties.scaleX + _globalDataVisualizer.ScallingProperties.offset;
+                    var cellY = pointData.Y * _globalDataVisualizer.ScallingProperties.scaleY + _globalDataVisualizer.ScallingProperties.offset;
+
+                    var point = [parseInt(cellX, 10), parseInt(cellY, 10)];
+                    segments.push(point);
+                    $(keySelector).addClass('pathCell');
+                }
+
+                var path = new Path({
+                    segments: segments,
+                    strokeColor: 'red',
+                    strokeWidth: 3
+                });
+                path.smooth();
+                obj.currentShortesPath = path;
+            }, scope);
+        }
+    };
+    return obj;
+}
+
+
 $(function () {
+    
     _globalDataVisualizer = new DataVisualizer();
     _utilityFunctions = new UtilityFunctions();
     _createProject = new CreateProject();
+    _pathPlanningViewer = new PathPlanningViewer();
+    _globalGraphViewerObj = new GraphViewer();
 
     initializeCanvasView();
     initializeMenuContainer();

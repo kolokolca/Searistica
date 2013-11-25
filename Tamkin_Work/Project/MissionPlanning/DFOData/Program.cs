@@ -11,8 +11,10 @@ namespace DFOData
     {
         static void Main(string[] args)
         {
-            var p = new DFOdataProcessor();
-            p.Strat();
+            var dfOdataProcessor = new DFOdataProcessor();
+            dfOdataProcessor.Strat();
+            //dfOdataProcessor.DupmCellMeanVectors();
+
         }
     }
 }

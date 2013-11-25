@@ -251,10 +251,10 @@ namespace Business.DFOdata
                         totalCell++;
                         Console.Write(string.Format("{0} {1}\n", i, j));
                     }
-                    //else
-                    //{
-                    //    nanCellStr += string.Format("{0},{1},{2},{3}\n", adjacentCell.X, adjacentCell.Y, uComp, vComp);
-                    //}
+                    else
+                    {
+                        nanCellStr += string.Format("{0},{1},{2},{3}\n", adjacentCell.X, adjacentCell.Y, uComp, vComp);
+                    }
                     //Console.Write("Total {0} poins for cell {1},{2}.\n", totalDataPoint, adjacentCell.X, adjacentCell.Y);
                     
                     
@@ -266,11 +266,11 @@ namespace Business.DFOdata
                 
             }
             
-            dfoDataRepository.ExecuteCommandDirectly(insertStatement);
+            //dfoDataRepository.ExecuteCommandDirectly(insertStatement);
 
             wr1.Write(selectedPointsStr);
             wr2.Write(cellCenterStr);
-            //wr3.Write(nanCellStr);
+            wr3.Write(nanCellStr);
 
             var currentTime = DateTime.Now;
             var diff = currentTime.Subtract(startTime).TotalSeconds;
@@ -340,6 +340,35 @@ namespace Business.DFOdata
             Console.ReadLine();
         }
 
+        public void DupmCellMeanVectors()
+        {
+            var wr = GetFileWriterForDumpingCellMeanVectors();
+            using (var work = new UnitOfWork())
+            {
+                var dfoDataCellRepository = RepositoryContainer.GetRepository<Cell>(work);
+                var sqlQuery = string.Format("Select * from Cells");
+                var dfoDataCells = dfoDataCellRepository.ExecuteCommand<Cell>(sqlQuery);
+                var msg = string.Format("Total {0} cell mean vector is being dumping ...", dfoDataCells.Count);
+                Console.WriteLine(msg);
+
+                foreach (var dfoDataCell in dfoDataCells)
+                {
+                    wr.WriteLine("{0},{1},{2},{3}", dfoDataCell.X, dfoDataCell.Y, dfoDataCell.U, dfoDataCell.V);
+                }
+                
+            }
+            wr.Close();
+            Console.WriteLine("Done!!");
+        }
+
+        private StreamWriter GetFileWriterForDumpingCellMeanVectors()
+        {
+            var selectedPointsTxtFile = GetDataFolderPath();
+            var filePathForMathLab = selectedPointsTxtFile + "\\cellMeanVectorsDump.txt";
+            if (File.Exists(filePathForMathLab)) File.Delete(filePathForMathLab);
+            return File.AppendText(filePathForMathLab);
+            
+        }
     }
 
 }

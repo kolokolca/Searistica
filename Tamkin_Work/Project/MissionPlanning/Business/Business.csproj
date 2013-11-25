@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DFOdata\extractedData\cellMeanVector.txt" />
+    <Content Include="DFOdata\extractedData\cellMeanVectorsDump.txt" />
     <Content Include="DFOdata\extractedData\NaNPoints.txt" />
     <Content Include="DFOdata\extractedData\paresedXY.txt" />
     <Content Include="DFOdata\extractedData\parsedVelocity.txt" />
@@ -71,8 +72,6 @@
     <Content Include="DFOdata\extractedData\velocityViewer.m" />
     <Content Include="PythonCodes\InstantceGenerator_From_CostMatrix.py" />
     <Content Include="PythonCodes\modelOutputParser.py" />
-    <Content Include="Solver\decodedResult.txt" />
-    <Content Include="Solver\InstantceGenerator_From_CostMatrix.py" />
     <Content Include="Solver\org.sat4j.pb-src.jar" />
     <Content Include="Solver\org.sat4j.pb.jar" />
     <Content Include="Solver\sat4j-pb.jar" />
