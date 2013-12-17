@@ -12,7 +12,6 @@
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:GridCell.cs" caret="54" fromTop="2" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:Mapper.cs" caret="135" fromTop="6" />
       <File id="B09B82C3-91A6-4529-A163-CF87AD330883/f:CellVector.cs" caret="107" fromTop="5" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:SolverRunner.cs" caret="6496" fromTop="32" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:PsuedoBooleanEncoding.cs" caret="4106" fromTop="37" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:velocityViewer.m" caret="0" fromTop="0" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:cellMeanVectorsDump.txt" caret="0" fromTop="0" />
@@ -23,23 +22,22 @@
       <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="115" fromTop="5" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="7551" fromTop="25" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="6521" fromTop="24" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="6508" fromTop="16" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:Service.svc.cs" caret="2456" fromTop="21" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="8812" fromTop="0" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:SolverRunner.cs" caret="6128" fromTop="161" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="7679" fromTop="58" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1034" fromTop="17" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="41263" fromTop="27" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:common.js" caret="1052" fromTop="23" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Site.Master" caret="888" fromTop="13" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="39717" fromTop="14" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2863" fromTop="17" />
     </RecentFiles>
     <RecentEdits>
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="9322" fromTop="21" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43102" fromTop="33" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="42763" fromTop="29" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="42761" fromTop="29" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="6811" fromTop="38" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="6680" fromTop="33" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="6388" fromTop="16" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="39765" fromTop="30" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43124" fromTop="28" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43122" fromTop="28" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="40238" fromTop="19" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2399" fromTop="22" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1230" fromTop="21" />
@@ -49,19 +47,21 @@
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="10486" fromTop="43" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="10745" fromTop="28" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="9984" fromTop="28" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43437" fromTop="13" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43811" fromTop="25" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43435" fromTop="13" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43809" fromTop="25" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="6956" fromTop="9" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43811" fromTop="24" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43809" fromTop="24" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="617" fromTop="7" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="7029" fromTop="11" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43441" fromTop="20" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43439" fromTop="20" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="385" fromTop="0" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="40730" fromTop="45" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="40408" fromTop="38" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="39982" fromTop="26" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="39717" fromTop="14" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2863" fromTop="17" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="7242" fromTop="33" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="41263" fromTop="27" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>

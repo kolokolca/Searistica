@@ -1,0 +1,55 @@
+c clasp version 2.1.4
+c Reading from ...nchMarks/6_Nodes/PBencd_RandomCost.opb
+c Solving...
+o 369
+o 332
+o 254
+o 209
+o 204
+o 195
+o 189
+o 186
+o 180
+o 174
+o 161
+o 122
+c Answer: 12
+v -x1 -x2 -x3 -x4 x5 -x6 x7 -x8 -x9 -x10 -x11 -x12 -x13 x14 -x15 x16 -x17
+v -x18 -x19 -x20 -x21 -x22 -x23 x24 -x25 -x26 x27 -x28 -x29 -x30 -x31 x32
+v -x33 x34 x35 -x36 x37 -x38 -x39 x40 x41 -x42 -x43 -x44 -x45 x46 x47 x48
+v x49 -x50 -x51 -x52 x53 x54 -x55 -x56 -x57 -x58 x59 -x60 -x61 -x62 x63 x64
+v -x65 -x66 -x67 x68 -x69 -x70 x71 -x72 -x73 -x74 -x75 x76 -x77 x78 -x79
+v -x80 -x81 -x82 -x83 -x84 -x85 x86 x87 x88 x89 -x90 -x91 -x92 x93 x94 x95
+v -x96 -x97 x98 -x99 -x100 x101 -x102 x103 x104 x105 -x106 -x107 -x108 -x109
+v -x110 x111 x112 -x113 x114 x115 -x116 -x117 -x118 -x119 x120 -x121 -x122
+v x123 x124 -x125 -x126 -x127 -x128 x129 -x130 x131 -x132 -x133 x134 -x135
+v -x136 -x137 x138 x139 x140 -x141 -x142 -x143 -x144 x145 -x146 -x147 -x148
+v -x149 -x150 -x151 x152 -x153 x154
+s OPTIMUM FOUND
+
+c Models        : 1     
+c   Enumerated  : 12
+c   Optimum     : yes
+c Optimization  : 122
+c Time          : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+c CPU Time      : 0.000s
+c Choices       : 323
+c Conflicts     : 189
+c Restarts      : 0     
+
+c Variables     : 154    (Eliminated:    0 Frozen:  154)
+c Constraints   : 74     (Binary:  0.0% Ternary:  0.0% Other:100.0%)
+c Lemmas        : 188    (Binary:  3.7% Ternary:  7.4% Other: 88.8%)
+c   Conflict    : 188    (Average Length: 5.6) 
+c   Loop        : 0      (Average Length: 0.0) 
+c   Other       : 0      (Average Length: 0.0)
+c   Deleted     : 0     
+
+c Backtracks            : 1     
+c Backjumps             : 188    (Bounded: 0)
+c Skippable Levels      : 248    (Skipped: 248 Rate: 100.0%)
+c Max Jump Length       : 6      (Executed: 6)
+c Max Bound Length      : 0     
+c Average Jump Length   : 1.3    (Executed: 1.3)
+c Average Bound Length  : 0.0   
+c Average Model Length  : 12.9  

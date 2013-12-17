@@ -18,6 +18,7 @@ var GraphType = function () {
 var DataVisualizer = function () {
     var obj = {
         dimension: null,
+        oceanCurrentData: null,
         selectedPoints: {},
         totalSelectedPoints: 0,
         ScallingProperties: null,
@@ -101,6 +102,35 @@ var DataVisualizer = function () {
                 _utilityFunctions.showStatus("Euclidean cost graph generated.", true, false);
             }, scope);
         },
+        selectRandomWayPoints: function (totalPoint) {
+            debugger;
+            obj.totalSelectedPoints = 0;
+            obj.selectedPoints = {};
+            $('.selectedCell').removeClass('selectedCell');
+
+            var dataLength = obj.oceanCurrentData.length;
+            var randomIndexs = [];
+            for (var i = 0; i < totalPoint; ) {
+                var randomIndex = Math.floor((Math.random() * dataLength) + 0);
+                if (randomIndexs.indexOf(randomIndex) == -1) {
+                    randomIndexs.push(randomIndex);
+                    i++;
+                }
+            }
+            for (i = 0; i < randomIndexs.length; i++) {
+
+                var index = randomIndexs[i];
+                var cellVector = obj.oceanCurrentData[index];
+                var originalX = cellVector.X;
+                var originalY = cellVector.Y;
+                var classKey = "." + originalX + "_" + originalY;
+                var c = $(classKey);
+                c.addClass('selectedCell');
+                var cellPos = { X: parseInt(originalX, 10), Y: parseInt(originalY, 10) };
+                obj.selectedPoints[classKey] = cellPos;
+                obj.totalSelectedPoints += 1;
+            }
+        },
         load: function () {
             var scope = this;
             getDataFromService("GetCurrentDataDimension", null, function (response, textStatus, jqXHR, context) {
@@ -154,6 +184,7 @@ var DataVisualizer = function () {
         },
         drawCellMeanVectors: function (cellVectors, context) {
             context.clearTimer();
+            obj.oceanCurrentData = cellVectors;
             var extraHeight = screen.height * (62 / 100);
             var offset = 20;
             var scaleX = parseInt((screen.width / 1.5) / this.dimension.MaxX, 10);
@@ -221,11 +252,6 @@ var DataVisualizer = function () {
                     //alert(x + ' ' + y);
                 });
 
-                cell.hover(function () {
-                    var c = $(this);
-                    var x = c.attr('x');
-                    var y = c.attr('y');
-                });
             }
             $("#loading").hide();
         },
@@ -331,7 +357,8 @@ var DataVisualizer = function () {
                     _utilityFunctions.showStatus(response.ErrorMessage, true, false);
                     return;
                 }
-                obj.runSolver(response.Data);
+                _utilityFunctions.showStatus("Done !.",true,false);
+                //obj.runSolver(response.Data);
             }, this, false);
         }
     };
@@ -976,6 +1003,10 @@ function handleMenuClick() {
         _pathPlanningViewer.showPath();
     });
 
+    $("#selectRandPoint").click(function () {
+        _globalDataVisualizer.selectRandomWayPoints(4);
+    });
+
 }
 
 function PathPlanningViewer(parameters) {
@@ -1058,7 +1089,6 @@ function PathPlanningViewer(parameters) {
     };
     return obj;
 }
-
 
 $(function () {
     

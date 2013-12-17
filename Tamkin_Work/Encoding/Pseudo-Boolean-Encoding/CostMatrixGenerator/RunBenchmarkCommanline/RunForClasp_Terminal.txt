@@ -1,0 +1,11 @@
+Go to ~/ResearchWorkSpace/Solver/clasp
+then type command line and change the folder name '40_Nodes' -> '4_Nodes'
+All command goes to background
+
+
+./clasp-2.1.4-x86-linux --stats=2 --configuration=handy ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/23_Nodes/PBencd_OceanDataCost.opb > ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/23_Nodes/PBencd_OceanDataCost_Clasp.res1 &
+
+./clasp-2.1.4-x86-linux --stats=2 --configuration=handy ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/23_Nodes/PBencd_RandomCost.opb > ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/23_Nodes/PBencd_RandomCost_Clasp.res1 &
+
+./clasp-2.1.4-x86-linux --stats=2 --configuration=handy ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/23_Nodes/PBencd_EuclideanCost.opb > ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/23_Nodes/PBencd_EuclideanCost_Clasp.res1 &
+

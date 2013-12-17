@@ -1,0 +1,12 @@
+edge1,2 : x1
+edge1,3 : x2
+edge1,4 : x3
+edge2,1 : x4
+edge2,3 : x5
+edge2,4 : x6
+edge3,1 : x7
+edge3,2 : x8
+edge3,4 : x9
+edge4,1 : x10
+edge4,2 : x11
+edge4,3 : x12

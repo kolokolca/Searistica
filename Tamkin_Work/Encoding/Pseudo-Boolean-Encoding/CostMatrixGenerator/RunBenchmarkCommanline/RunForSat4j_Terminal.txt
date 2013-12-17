@@ -1,0 +1,10 @@
+Go to ~/ResearchWorkSpace/Solver/sat5j
+then type command line and change the folder name '50_Nodes' -> '5_Nodes'
+All command goes to background
+
+
+java -server -jar sat4j-pb.jar ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/5_Nodes/PBencd_OceanDataCost.opb > ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/5_Nodes/PBencd_OceanDataCost_Sat4j.res &
+
+java -server -jar sat4j-pb.jar ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/5_Nodes/PBencd_RandomCost.opb > ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/5_Nodes/PBencd_RandomCost_Sat4j.res &
+
+java -server -jar sat4j-pb.jar ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/5_Nodes/PBencd_EuclideanCost.opb > ~/ResearchWorkSpace/EncodingGenerator/PBEncoding/CostMatrixGenerator/BenchMarks/5_Nodes/PBencd_EuclideanCost_Sat4j.res &

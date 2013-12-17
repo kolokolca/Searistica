@@ -30,6 +30,8 @@
                 Select Way Points</div>
             <div id="loadStoredPoints" class="subMenuIteam">
                 Load Stored Way Points</div>
+            <div id="selectRandPoint" class="subMenuIteam">
+                Select Random Number of Points</div>
         </div>
         <div id="createNewProject" class="menuIteam" style="cursor: pointer">
             3. Create a new project</div>

@@ -72,9 +72,25 @@
     <Content Include="DFOdata\extractedData\velocityViewer.m" />
     <Content Include="PythonCodes\InstantceGenerator_From_CostMatrix.py" />
     <Content Include="PythonCodes\modelOutputParser.py" />
+    <Content Include="PythonCodes\PathPlanning\AStarPlanner.py" />
+    <Content Include="PythonCodes\PathPlanning\cellMeanVectorsDump.txt" />
+    <Content Include="PythonCodes\PathPlanning\NewPathPlanning.py" />
+    <Content Include="PythonCodes\PathPlanning\NewPathPlanningV1.py" />
+    <Content Include="PythonCodes\PathPlanning\OceanCurrentDataGrid.py" />
+    <Content Include="PythonCodes\PathPlanning\path.txt" />
+    <Content Include="PythonCodes\PathPlanning\PathPlanning.py" />
+    <Content Include="PythonCodes\PathPlanning\pathPlanningTesting.m" />
+    <Content Include="PythonCodes\PathPlanning\StartEndPoint.txt" />
     <Content Include="Solver\org.sat4j.pb-src.jar" />
     <Content Include="Solver\org.sat4j.pb.jar" />
     <Content Include="Solver\sat4j-pb.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PythonCodes\PathPlanning\OcceanCurrentDataGrid.pyc" />
+    <None Include="PythonCodes\PathPlanning\OcceanCurrentDataGrid.pyo" />
+    <None Include="PythonCodes\PathPlanning\OccupancyGrid.pyo" />
+    <None Include="PythonCodes\PathPlanning\OceanCurrentDataGrid.pyc" />
+    <None Include="PythonCodes\PathPlanning\OceanCurrentDataGrid.pyo" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
