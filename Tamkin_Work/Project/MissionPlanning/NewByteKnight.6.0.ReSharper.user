@@ -5,7 +5,6 @@
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:RepositoryContainer.cs" caret="296" fromTop="9" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:parsedVelocity.txt" caret="700" fromTop="31" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:paresedXY.txt" caret="0" fromTop="0" />
-      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:Repository.cs" caret="4650" fromTop="24" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:IRepository.cs" caret="1594" fromTop="26" />
       <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:ByteKnight.Designer.cs" caret="39710" fromTop="25" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:nanoscroller.css" caret="561" fromTop="4" />
@@ -19,24 +18,20 @@
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/d:extractedData/f:cellMeanVector.txt" caret="0" fromTop="0" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:IService.cs" caret="3056" fromTop="26" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Account/f:Login.aspx.cs" caret="147" fromTop="7" />
-      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="115" fromTop="5" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:UtilityFunctions.cs" caret="7551" fromTop="25" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="6521" fromTop="24" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:SolverRunner.cs" caret="6128" fromTop="161" />
+      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="0" fromTop="0" />
+      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="7679" fromTop="58" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Service/f:Service.svc.cs" caret="2456" fromTop="21" />
       <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/d:DFOdata/f:DFOdataProcessor.cs" caret="8812" fromTop="0" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:SolverRunner.cs" caret="6128" fromTop="161" />
-      <File id="2EB597E1-5C70-4983-A2BA-CD9FC922C21E/f:ByteKnightLogic.cs" caret="7679" fromTop="58" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="1034" fromTop="17" />
+      <File id="AFB8668B-B7B9-4FBE-A281-8BA761279E98/f:Repository.cs" caret="0" fromTop="0" />
+      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="1449" fromTop="51" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="41263" fromTop="27" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:common.js" caret="1052" fromTop="23" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Site.Master" caret="888" fromTop="13" />
     </RecentFiles>
     <RecentEdits>
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="42761" fromTop="29" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="6811" fromTop="38" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="6680" fromTop="33" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Styles/f:base.css" caret="6388" fromTop="16" />
-      <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="39765" fromTop="30" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="43122" fromTop="28" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="40238" fromTop="19" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2399" fromTop="22" />
@@ -62,6 +57,11 @@
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/f:Default.aspx" caret="2863" fromTop="17" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="7242" fromTop="33" />
       <File id="3958FC5F-FD0E-40C6-96AD-0858F30B76CB/d:Scripts/d:Application/f:default.js" caret="41263" fromTop="27" />
+      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="233" fromTop="13" />
+      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="536" fromTop="17" />
+      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="681" fromTop="22" />
+      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="1064" fromTop="32" />
+      <File id="D6DB5126-C020-490F-AC64-B2A370E33DDF/f:Program.cs" caret="1433" fromTop="46" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
@@ -331,7 +331,7 @@
       <Item value="cell" priority="9" />
     </ItemStatistics>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="return" priority="1151" />
+      <Item value="return" priority="1183" />
       <Item value="byteknightEntities`0" priority="31" />
       <Item value="public" priority="509" />
       <Item value="void" priority="383" />
@@ -404,7 +404,7 @@
       <Item value="t" priority="255" />
       <Item value="team" priority="31" />
       <Item value="teams" priority="31" />
-      <Item value="foreach" priority="415" />
+      <Item value="foreach" priority="447" />
       <Item value="score" priority="31" />
       <Item value="lastSubmittedProblem" priority="31" />
       <Item value="lastSubmittedProblems" priority="63" />
@@ -429,7 +429,7 @@
       <Item value="dbSolution" priority="31" />
       <Item value="dfoDataRepository" priority="158" />
       <Item value="d" priority="95" />
-      <Item value="Console`0" priority="415" />
+      <Item value="Console`0" priority="479" />
       <Item value="Boolean`0" priority="31" />
       <Item value="dfOdata" priority="31" />
       <Item value="DeletePreviousData`0" priority="31" />
@@ -560,6 +560,9 @@
       <Item value="startEndPoint" priority="31" />
       <Item value="CreateNewProject`0" priority="63" />
       <Item value="Response&lt;bool&gt;" priority="28" />
+      <Item value="System" priority="31" />
+      <Item value="OutOfMemoryException`0" priority="26" />
+      <Item value="EncodeString`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.ServiceModel.Web.WebMessageBodyStyle">
       <Item value="Wrapped" priority="54" />
@@ -774,8 +777,8 @@
       <Item value="V" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="Write`0" priority="215" />
-      <Item value="WriteLine`0" priority="80" />
+      <Item value="Write`0" priority="242" />
+      <Item value="WriteLine`0" priority="107" />
       <Item value="ReadLine`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
