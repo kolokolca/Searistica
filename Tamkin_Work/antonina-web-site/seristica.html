@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Antonina Kolokolova</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Header -->
+			<div id="header" class="skel-layers-fixed">
+
+				<div class="top">
+					</hr>
+					<!-- Nav -->
+						<nav id="nav">
+							<!--							
+								1. Hash link (scrolls to a different section within the page)
+								
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+							-->
+							<ul>
+								<li>
+									<a href="#serictica" id="serictica-link" class="skel-layers-ignoreHref"><span class="icon  fa-cogs">Seristica</span></a>
+								</li>
+							</ul>
+						</nav>	
+				</div>			
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+							<header>
+								<h2 class="alt"><strong>Antonina Kolokolova</strong></h2>
+								Assistant Professor
+								<a href="#" class="image munlogo"><img src="images/MUN-Logo.jpg" alt="MUN logo" /></a>
+								<div class="smalltext">Newfoundland, Canada</div>
+							</header>
+						</div>
+					</section>
+
+				<!-- Porjects -->
+					<section id="serictica" class="two">
+						<div class="container">
+							<div id="project">
+								<h3>Seristica:</h3>
+
+								<p>Autonomous underwater vehicles (AUVs), in particular gliders, have been used for
+								many tasks such as underwater surveys. Modern-day gliders can perform month-long missions.
+								During a mission, several factors impact their performance: ocean currents, lack of
+								communication and GPS while under water, weather. At present engineers do not seem to
+								do much mission planning, supplying a glider with a list of goals created by hand. Developing
+								techniques for planning such missions for possibly heterogeneous groups of gliders
+								is the goal of this project.
+								</p>
+								<p>At the heart of such mission planning problem are variants of the Asymmetric Traveling
+								Salesman problem: as it is NP-hard, there is no known algorithm to solve it exactly in
+								polynomial time. However, over the last decade heuristic solvers, in particular solvers
+								based on Integer Linear Programming and Satisfiability, have been used successfully in
+								practice to solve industrial instances of many NP-hard problems.</p>
+								<p>In this project we will describe a glider mission planner that we developed, which is
+								based on using such solvers. We evaluate performance of generic solvers, in particular we
+								used a Mixed Integer Linear Programming (MILP) solver CPLEX, several Pseudo-Boolean
+								Optimization (PBO) solvers Sat4j, Clasp, SCIP and Satisfiability Modulo Theories (SMT)
+								solver Z3 as the core engine of our planner. The performance of finding a optimal mission
+								plan also heavily depends on the type of encodings. In addition to different solvers, we
+								analyzed several types of encodings, from the classic Miller, Tucker and Zemlin encoding
+								to Fox, Gavish and Graves’ time-dependent TSP encoding. In our experiments, Mixed
+								Integer Linear Programming solver (MILP) has been the most successful compare to other
+								types of generic solvers.</p>
+								<p>An important question in satisfiability heuristic solver research is modelling the realworld
+								instances by a synthetic distribution. Here, we compared the performance of the
+								solvers on instances of ATSP coming from ocean current data with their performance on
+								crafted instance of random graphs, Euclidean graphs and Euclidean with varying amounts
+								of noise, both symmetric and asymmetric. Developing techniques for planning such mission
+								was the goal of this project, and in this thesis we describe and evaluate several approaches
+								to AUV mission planning problem. <a target="_blank" href="" class="more">See more</a>  </p>
+
+								<p>You can download Pseudo-Boolean, LP or incremental SAT encoding benchmarks or this project from 
+									<a target="_blank" class="more" href="https://github.com/kolokolca/Searistica/tree/master/Tamkin_Work">github</a>
+									<span class="icon fa-github"></span>
+								</p>
+								<br/>
+								<div class="row">
+									<div class="4u">
+										<article class="item">
+											<a target="_blank" href="images/selectedGoals.jpg" class="image fit"><img src="images/selectedGoals.jpg" alt="" /></a>
+											<header>
+												<h3>Selecting goal points form user interface.</h3>
+											</header>
+										</article>
+										<article class="item">
+											<a target="_blank" href="images/allSolversPerformance1.png" class="image fit"><img src="images/allSolversPerformance1.png" alt="" /></a>
+											<header>
+												<h3>PBO, LP, SAT encoding and it running time in differnt generic solvers.</h3>
+											</header>
+										</article>
+									</div>
+									<div class="4u">
+										<article class="item">
+											<a target="_blank" href="images/shortestPath.jpg" class="image fit"><img src="images/shortestPath.jpg" alt="" /></a>
+											<header>
+												<h3>Hueiristic algorithm finds the shortest path in given ocean current.</h3>
+											</header>
+										</article>
+										<article class="item">
+											<a target="_blank" href="images/allSolversPerformance2.png" class="image fit"><img src="images/allSolversPerformance2.png" alt="" /></a>
+											<header>
+												<h3>Optimal vs fisible solution found by solvers.</h3>
+											</header>
+										</article>
+									</div>
+									<div class="4u">
+										<article class="item">
+											<a target="_blank" href="images/completeGraph.jpg" class="image fit"><img src="images/completeGraph.jpg" alt="" /></a>
+											<header>
+												<h3>Complete graph generated from selected goal locations.</h3>
+											</header>
+										</article>
+										<article class="item">
+											<a target="_blank" href="images/cplexPerformance.png" class="image fit"><img src="images/cplexPerformance.png" alt="" /></a>
+											<header>
+												<h3>CPLEX LP solver on Mixed and Binary integer programming encoding.</h3>
+											</header>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+			</div>
+	</body>
+</html>
